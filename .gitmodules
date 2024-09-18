@@ -1,9 +1,9 @@
 [submodule "arkhon-tcc/arkhon"]
 	path = arkhon-tcc/arkhon
-	url = git@github.com:swibly/arkhon.git
+	url = https://github.com/swibly/arkhon.git
 [submodule "arkhon-tcc/swibly-api"]
 	path = arkhon-tcc/swibly-api
-	url = git@github.com:swibly/swibly-api.git
+	url = https://github.com/swibly/swibly-api.git
 [submodule "arkhon-tcc/www.swibly.com.br"]
 	path = arkhon-tcc/www.swibly.com.br
-	url = git@github.com:swibly/www.swibly.com.br.git
+	url = https://github.com/swibly/www.swibly.com.br.git
