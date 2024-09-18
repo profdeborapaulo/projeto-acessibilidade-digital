@@ -4,7 +4,10 @@ A Swibly é uma empresa dedicada a criar soluções inovadoras por meio da tecno
 
 ## ⚙️ Rodando Localmente
 
-### 🗿 Arkhon
+### 🐨 Swibly / 🗿 Arkhon
+
+> [!NOTE]  
+> Ambos projetos (www.swibly.com.br e arkhon), podem ser rodados da mesma maneira.
 
 Requisitos:
 
