@@ -1,0 +1,394 @@
+@import url(../css/cores.css);
+@import url(../css/tipografia.css);
+
+.section-inicial {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 50em;
+  margin: 2em 3em;
+}
+
+.heart-icon {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 5em; 
+  left: 4em; 
+  background-color: #0098FF;
+  border-radius: 50%;
+  padding: 10px; 
+  z-index: 10;
+}
+
+.heart-icon img {
+  width: 1.5em;
+  height: auto;
+  cursor: pointer;
+}
+
+.heart-icon.filled img {
+  content: url("./img/Heart-filled.svg");
+}
+
+.layout-lugar {
+  position: relative;
+  width: 80em;
+  height: 40em;
+  margin: 2em;
+  gap: 10em;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.titulo-local {
+  font-family: "Poppins-semibold";
+  color: #1e1e1e;
+}
+
+#praca-boulevard {
+  width: 30%;
+  position: relative;
+  bottom: 5em;
+  border-radius: 30px;
+}
+
+.grupo-direita {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  margin-right: -2em;
+}
+
+.btn-acessibilidade {
+  font-family: "Poppins-regular";
+  border: none;
+  border-radius: 10px;
+  margin: 15px 0 0 0;
+  padding: 5px 10px;
+}
+
+#piso-tatil {
+  background-color: #fcedb3;
+  color: #9a7a00;
+}
+
+#placas-braille {
+  background-color: #cff7d3;
+  color: #02542d;
+}
+
+#mapas-tateis {
+  background-color: #bce2fc;
+  color: #007acd;
+}
+
+.grupo-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  margin: 15px 0;
+}
+
+#icon {
+  width: 2em;
+}
+
+.titulo-acessibilidade {
+  font-family: "Poppins-medium";
+}
+
+.grupo-acessibilidade {
+  display: flex;
+  flex-direction: row;
+  margin: 1em 0;
+  gap: 5em;
+}
+
+.titulo-input {
+  font-family: "Poppins-semibold";
+  color: #1e1e1e;
+}
+
+.select-container {
+  position: relative;
+  display: inline-block;
+}
+
+#select-acessibilidade {
+  width: 13em;
+  height: 3em;
+  border: 1px solid #d9d9d9;
+  border-radius: 10px;
+  outline: none;
+  background: transparent;
+  margin: 5px 0;
+  padding: 5px;
+  font-family: "Poppins-regular";
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.select-container::after {
+  content: url(../img/Icon.svg);
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #6d6d6d;
+  font-size: 12px;
+  z-index: 1;
+}
+
+#select-acessibilidade::-ms-expand {
+  display: none;
+}
+
+.comentario {
+  width: 35em;
+  height: 15em;
+  padding: 0 0 10px 0;
+}
+
+.usuario-comentario {
+  display: flex;
+  flex-direction: row;
+  margin-left: 10px;
+}
+
+.usuario-data {
+  margin: 10px;
+}
+
+.nome-user {
+  font-family: "Poppins-semibold";
+  font-size: 15px;
+  color: #757575;
+}
+
+.data {
+  font-family: "Poppins-regular";
+  font-size: 14px;
+  color: #b3b3b3;
+}
+
+.coment {
+  font-family: "Poppins-semibold";
+  font-size: 15px;
+  color: #1e1e1e;
+  margin: 5px 15px;
+}
+
+.conteudo-comentario {
+  font-family: "Poppins-regular";
+  color: #1e1e1e;
+  outline: none;
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
+  margin-left: 10px;
+  padding: 5px;
+  min-width: 40em;
+  max-width: 40em;
+  max-height: 10em;
+  min-height: 10em;
+  display: flex;
+  flex-wrap: wrap;
+  resize: none;
+}
+
+.botao {
+  display: flex;
+  align-items: end;
+  justify-content: end;
+  margin: 2em 0;
+}
+
+.btn-enviar {
+  font-family: "Poppins-bold";
+  background-color: #0098ff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  width: 8em;
+  height: 2.5em;
+  cursor: pointer;
+}
+
+.outros-comentarios {
+  margin: 2em 5em;
+}
+
+.titulo-outros {
+  font-family: "Poppins-semibold";
+  color: #1e1e1e;
+}
+
+.texto-outros {
+  font-family: "Poppins-regular";
+  color: #757575;
+}
+
+.campo-outros-comentarios {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.5em;
+  gap: 5em;
+}
+
+.grupo-outros-comentarios {
+  width: 15em;
+  height: 13em;
+  margin-top: 1em;
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
+}
+
+.estrelas {
+  display: flex;
+  flex-direction: row;
+  margin: 0.5em 0.7em;
+}
+
+#star {
+  width: 8%;
+}
+
+.titulo-comentario {
+  font-family: "Poppins-semibold";
+  font-size: 20px;
+  margin: 0 0.5em;
+}
+
+.p-comentario {
+  font-family: "Poppins-regular";
+  font-size: 14px;
+  margin: 0 0.6em 1em 0.7em;
+  height: 3em;
+}
+
+.outros-comentarios .usuario-comentario {
+  display: flex;
+  flex-direction: row;
+  margin: 15px;
+}
+
+.localizar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 5em;
+}
+
+.titulo-localize {
+  font-family: "Poppins-semibold";
+  color: #1e1e1e;
+}
+
+.p-localize {
+  font-family: "Poppins-regular";
+  color: #757575;
+}
+
+.localizar img {
+  margin: 2em;
+}
+
+/* Estilos do modal do perfil */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.modal-content {
+  background-color: var(--azul);
+  margin: 4.5em 0 0 75em;
+  width: 14em;
+  height: 12em;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+}
+
+.content-sem-perfil {
+  background-color: var(--branco);
+  padding: 0;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  width: 14em;
+  height: 13em;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  bottom: 2em;
+}
+
+.perfil {
+  font-family: "Poppins-bold";
+  color: var(--branco);
+  text-align: center;
+  margin: 0.5em 0;
+}
+
+#foto-perfil {
+  width: 45%;
+  z-index: 1;
+}
+
+.linha {
+  width: 12em;
+  margin: 10px 1px;
+}
+
+.user {
+  cursor: pointer;
+}
+
+.titulo-perfil {
+  font-family: "Poppins-bold";
+  color: #fff;
+}
+
+.usuario {
+  font-family: "Poppins-bold";
+  font-size: 16px;
+  color: #606060;
+  text-align: center;
+  margin: 2.5em 0 0 0;
+}
+
+.links {
+  margin: 1em;
+}
+
+.texto-perfil,
+.texto-sair {
+  font-family: "Poppins-medium";
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.texto-perfil {
+  color: var(--preto);
+}
+
+.texto-sair {
+  color: #e10531;
+}

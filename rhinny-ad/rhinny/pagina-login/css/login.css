@@ -1,0 +1,109 @@
+@import url(../css/cores.css);
+@import url(../css/tipografia.css);
+
+.campo-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 35em 10em 0 10em;
+  height: 1em;
+}
+
+.titulo-login {
+  font-family: "Poppins-bold";
+  font-size: 2.5em;
+}
+
+.subtitulo-login {
+  font-family: "Poppins-regular";
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+
+.form-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
+  width: 28em;
+  height: 21em;
+  margin: 10px 0 0 0;
+}
+
+.form-login input {
+  font-family: "Poppins-regular";
+  padding: 5px;
+}
+
+.campo-email {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 0px;
+}
+
+.campo-senha {
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0px;
+}
+
+#titulo-form {
+  font-family: "Poppins-regular";
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+.titulo-form {
+  font-family: "Poppins-regular";
+  font-size: 1.0em;
+  margin-bottom: 5px;
+  color: red;
+  display: none;
+}
+.email_cadastro,
+#senha_cadastro {
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
+  width: 28em;
+  height: 2.5em;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 15px 15px 15px;
+}
+
+#btn-entrar {
+  font-family: "Poppins-semibold";
+  font-size: 1.2em;
+  color: #f5f5f5;
+  background-color: var(--azul);
+  border: none;
+  border-radius: 8px;
+  width: 20em;
+  height: 2.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1em;
+  cursor: pointer;
+}
+
+#rhinny-form {
+  width: 22em;
+  position: relative;
+  bottom: 20em;
+  left: 37em;
+}
+
+.esqueceu-senha {
+  font-family: "Poppins-regular";
+  text-decoration: underline;
+  margin-top: 1em;
+}
