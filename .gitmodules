@@ -10,3 +10,6 @@
 [submodule "arkhon-tcc/swibly-sdk-js"]
 	path = arkhon-tcc/swibly-sdk-js
 	url = https://github.com/swibly/swibly-sdk-js.git
+[submodule "higia/Higia"]
+	path = higia/Higia
+	url = https://github.com/gabriellydsantos/Higia.git
