@@ -1,0 +1,67 @@
+.carrousel {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carrousel img {
+    width: 100%;
+    height: auto;
+}
+
+.carrousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: red;
+    color: black;
+    cursor: pointer;
+    border-radius: 50%;
+    border: none;
+    height: 60px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    z-index: 10; /* Certifique-se de que os botões fiquem sobrepostos às imagens */
+}
+
+.carrousel-button.left {
+    left: 10px; /* Adicione um padding de 10px da borda esquerda */
+}
+
+.carrousel-button.right {
+    right: 10px;
+}
+
+.carrousel-content {
+    position: relative;
+}
+
+.carrousel-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.saiba-mais-button {
+    background-color: red;
+    color: #000;
+    border: 1px white solid;
+    padding: 18px 35px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 25px;
+}
+
+.saiba-mais-button:hover {
+    background-color: #f0f0f0;
+}

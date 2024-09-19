@@ -1,0 +1,14 @@
+.linhasLi {
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 19px;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.linhasLi:hover {
+    color: rgb(255, 140, 0);
+    text-decoration: underline;
+    text-underline-offset: 40px; 
+    text-decoration-thickness: 2px;
+}

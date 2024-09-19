@@ -1,0 +1,1068 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="shortcut icon" href="assets/img/Macote_-_Cabeça-removebg-preview.png" type="">
+</head>
+
+<body>
+  <main>
+
+    <div class="container" style="width: 100%;">
+      <section class="primeiro">
+        <img class="mascote" src="assets/img/Frame 231.png" alt="">
+      </section>
+      <section class="segunda">
+        <form class="form" action="../Resutadoperfil/index.html" method="GET">
+          <div class="title">
+            <h1>Perfil </h1>
+          </div>
+          <div class="inputForm">
+            <input type="text" class="input" placeholder="Nome do usuario">
+          </div>
+
+          <div class="inputForm">
+            <input type="text" class="input" placeholder="Descrição pessoa (bio)">
+          </div>
+          <br>
+          <h3>Escolha seu avatar</h3>
+          <h10>Após escolher clique em "Continuar"</h10>
+
+          <div class="flex-row">
+            <div style="flex: 1">
+              <br>
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Avatares cadeirantes
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <div class="galeria">
+                        <!-- As primeiras imagens serão inseridas aqui -->
+                        <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                            src="assets/img/Avatares/Feminino/Feminino-cadeirantes/IMG_3277.PNG"
+                            alt="imagem 1"></button>
+                        <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                            src="assets/img/Avatares/Masculino/Masculinos-cadeirantes/IMG_3503.PNG"
+                            alt="imagem 2"></button>
+                        <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                            src="assets/img/Avatares/Feminino/Feminino-cadeirantes/IMG_3243.PNG"
+                            alt="imagem 3"></button>
+                        <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                            src="assets/img/Avatares/Masculino/Masculinos-cadeirantes/IMG_3505.PNG"
+                            alt="imagem 4"></button>
+                        <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                            src="assets/img/Avatares/Feminino/Feminino-cadeirantes/IMG_3241.PNG"
+                            alt="imagem 4"></button>   
+                        <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                            src="assets/img/Avatares/Feminino/Feminino-cadeirantes/IMG_3247.PNG"
+                            alt="imagem 4"></button>   
+  
+
+                        <!-- Botão Ver mais -->
+                        <button type="button" id="verMais" class="botaoVerMais">Ver mais</button>
+                        <div id="imagensAdicionais" class="imagensAdicionais-1"  style="display:none;">
+                          <!-- As imagens adicionais serão inseridas aqui dinamicamente -->
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-cadeirantes/IMG_3257.PNG"
+                              alt="imagem 1"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-cadeirantes/IMG_3259.PNG"
+                              alt="imagem 2"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-cadeirantes/IMG_3264.PNG"
+                              alt="imagem 3"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-cadeirantes/IMG_3268.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-cadeirantes/IMG_3273.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-cadeirantes/IMG_3281.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-cadeirantes/IMG_3285.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-cadeirantes/IMG_3293.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-cadeirantes/IMG_3298.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-cadeirantes/IMG_3303.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-cadeirantes/IMG_3371.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-cadeirantes/IMG_3373.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-cadeirantes/IMG_3379.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-cadeirantes/IMG_3381.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                                src="assets/img/Avatares/Feminino/Feminino-cadeirantes/IMG_3389.PNG"
+                                alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                                src="assets/img/Avatares/Feminino/Feminino-cadeirantes/IMG_3395.PNG"
+                                alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                                src="assets/img/Avatares/Feminino/Feminino-cadeirantes/IMG_3397.PNG"
+                                alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                                src="assets/img/Avatares/Feminino/Feminino-cadeirantes/IMG_3402.PNG"
+                                alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                                src="assets/img/Avatares/Feminino/Feminino-cadeirantes/IMG_3408.PNG"
+                                alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                                src="assets/img/Avatares/Feminino/Feminino-cadeirantes/IMG_3418.PNG"
+                                alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                                src="assets/img/Avatares/Feminino/Feminino-cadeirantes/IMG_3420.PNG"
+                                alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                                src="assets/img/Avatares/Feminino/Feminino-cadeirantes/IMG_3428.PNG"
+                                alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                                src="assets/img/Avatares/Feminino/Feminino-cadeirantes/IMG_3433.PNG"
+                                alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                                src="assets/img/Avatares/Feminino/Feminino-cadeirantes/IMG_3440.PNG"
+                                alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                                src="assets/img/Avatares/Feminino/Feminino-cadeirantes/IMG_3446.PNG"
+                                alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                                src="assets/img/Avatares/Feminino/Feminino-cadeirantes/IMG_3449.PNG"
+                                alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                                src="assets/img/Avatares/Feminino/Feminino-cadeirantes/IMG_3455.PNG"
+                                alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                                src="assets/img/Avatares/Feminino/Feminino-cadeirantes/IMG_3455.PNG"
+                                alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                                src="assets/img/Avatares/Feminino/Feminino-cadeirantes/IMG_3457.PNG"
+                                alt="imagem 4"></button>
+                         <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                                src="assets/img/Avatares/Feminino/Feminino-cadeirantes/IMG_3463.PNG"
+                                alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                                src="assets/img/Avatares/Feminino/Feminino-cadeirantes/IMG_3471.PNG"
+                                alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                                src="assets/img/Avatares/Feminino/Feminino-cadeirantes/IMG_3473.PNG"
+                                alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                                src="assets/img/Avatares/Masculino/Masculinos-cadeirantes/IMG_3511.PNG"
+                                alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                                src="assets/img/Avatares/Masculino/Masculinos-cadeirantes/IMG_3517.PNG"
+                                alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                                src="assets/img/Avatares/Masculino/Masculinos-cadeirantes/IMG_3524.PNG"
+                                alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                                src="assets/img/Avatares/Masculino/Masculinos-cadeirantes/IMG_3532.PNG"
+                                alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                                src="assets/img/Avatares/Masculino/Masculinos-cadeirantes/IMG_3534.PNG"
+                                alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                                src="assets/img/Avatares/Masculino/Masculinos-cadeirantes/IMG_3541.PNG"
+                                alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                                src="assets/img/Avatares/Masculino/Masculinos-cadeirantes/IMG_3544.PNG"
+                                alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                                  src="assets/img/Avatares/Masculino/Masculinos-cadeirantes/IMG_3550.PNG"
+                                  alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                                  src="assets/img/Avatares/Masculino/Masculinos-cadeirantes/IMG_3552.PNG"
+                                  alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                                  src="assets/img/Avatares/Masculino/Masculinos-cadeirantes/IMG_3561.PNG"
+                                  alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                                  src="assets/img/Avatares/Masculino/Masculinos-cadeirantes/IMG_3567.PNG"
+                                  alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                                  src="assets/img/Avatares/Masculino/Masculinos-cadeirantes/IMG_3575.PNG"
+                                  alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                                  src="assets/img/Avatares/Masculino/Masculinos-cadeirantes/IMG_3577.PNG"
+                                  alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                                  src="assets/img/Avatares/Masculino/Masculinos-cadeirantes/IMG_3586.PNG"
+                                  alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                                  src="assets/img/Avatares/Masculino/Masculinos-cadeirantes/IMG_3592.PNG"
+                                  alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                                  src="assets/img/Avatares/Masculino/Masculinos-cadeirantes/IMG_3600.PNG"
+                                  alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                                    src="assets/img/Avatares/Masculino/Masculinos-cadeirantes/IMG_3602.PNG"
+                                    alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                                    src="assets/img/Avatares/Masculino/Masculinos-cadeirantes/IMG_3608.PNG"
+                                    alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                                    src="assets/img/Avatares/Masculino/Masculinos-cadeirantes/IMG_3610.PNG"
+                                    alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                                    src="assets/img/Avatares/Masculino/Masculinos-cadeirantes/IMG_3616.PNG"
+                                    alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                                    src="assets/img/Avatares/Masculino/Masculinos-cadeirantes/IMG_3618.PNG"
+                                    alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                                    src="assets/img/Avatares/Masculino/Masculinos-cadeirantes/IMG_3624.PNG"
+                                    alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                                    src="assets/img/Avatares/Masculino/Masculinos-cadeirantes/IMG_3626.PNG"
+                                    alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                                    src="assets/img/Avatares/Masculino/Masculinos-cadeirantes/IMG_3632.PNG"
+                                    alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                                    src="assets/img/Avatares/Masculino/Masculinos-cadeirantes/IMG_3634.PNG"
+                                    alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                                    src="assets/img/Avatares/Masculino/Masculinos-cadeirantes/IMG_3640.PNG"
+                                    alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                                    src="assets/img/Avatares/Masculino/Masculinos-cadeirantes/IMG_3642.PNG"
+                                    alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                                    src="assets/img/Avatares/Masculino/Masculinos-cadeirantes/IMG_3648.PNG"
+                                    alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                                    src="assets/img/Avatares/Masculino/Masculinos-cadeirantes/IMG_3650.PNG"
+                                    alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                                    src="assets/img/Avatares/Masculino/Masculinos-cadeirantes/IMG_3707.PNG"
+                                    alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                                    src="assets/img/Avatares/Masculino/Masculinos-cadeirantes/IMG_3725.PNG"
+                                    alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                                    src="assets/img/Avatares/Masculino/Masculinos-cadeirantes/IMG_3731.PNG"
+                                    alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                                    src="assets/img/Avatares/Masculino/Masculinos-cadeirantes/IMG_3745.PNG"
+                                    alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                                    src="assets/img/Avatares/Masculino/Masculinos-cadeirantes/IMG_3753.PNG"
+                                    alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                                    src="assets/img/Avatares/Masculino/Masculinos-cadeirantes/IMG_3759.PNG"
+                                    alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                                      src="assets/img/Avatares/Masculino/Masculinos-cadeirantes/IMG_3761.PNG"
+                                      alt="imagem 4"></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Avatares Pcd auditivo
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <div class="galeria">
+                        <!-- As primeiras imagens serão inseridas aqui -->
+                        <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                            src="assets/img/Avatares/Feminino/Feminino-auditivos/IMG_3246.PNG"
+                            alt="imagem 1"></button>
+                        <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                            src="assets/img/Avatares/Masculino/Masculinos-auditivos/IMG_3497.PNG"
+                            alt="imagem 2"></button>
+                        <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                            src="assets/img/Avatares/Feminino/Feminino-auditivos/IMG_3255.PNG"
+                            alt="imagem 3"></button>
+                        <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                            src="assets/img/Avatares/Masculino/Masculinos-auditivos/IMG_3506.PNG"
+                            alt="imagem 4"></button>
+                        <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-auditivos/IMG_3260.PNG"
+                              alt="imagem 4"></button>
+                        <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                                src="assets/img/Avatares/Masculino/Masculinos-auditivos/IMG_3519.PNG"
+                                alt="imagem 4"></button>
+
+                        <!-- Botão Ver mais -->
+                        <button type="button" id="verMais" class="botaoVerMais">Ver mais</button>
+                        <div id="imagensAdicionais" class="imagensAdicionais-2"  style="display:none;">
+                          <!-- As imagens adicionais serão inseridas aqui dinamicamente -->
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-auditivos/IMG_3265.PNG"
+                              alt="imagem 1"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-auditivos/IMG_3266.PNG"
+                              alt="imagem 2"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-auditivos/IMG_3270.PNG"
+                              alt="imagem 3"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-auditivos/IMG_3291.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-auditivos/IMG_3296.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-auditivos/IMG_3305.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-auditivos/IMG_3368.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-auditivos/IMG_3375.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-auditivos/IMG_3376.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-auditivos/IMG_3383.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-auditivos/IMG_3391.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-auditivos/IMG_3392.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-auditivos/IMG_3399.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-auditivos/IMG_3401.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-auditivos/IMG_3407.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-auditivos/IMG_3416.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-auditivos/IMG_3421.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-auditivos/IMG_3430.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-auditivos/IMG_3431.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-auditivos/IMG_3441.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-auditivos/IMG_3444.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-auditivos/IMG_3450.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-auditivos/IMG_3458.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-auditivos/IMG_3461.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-auditivos/IMG_3466.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-auditivos/IMG_3469.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-auditivos/IMG_3474.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-auditivos/IMG_3477.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-auditivos/IMG_3482.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-auditivos/IMG_3486.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculinos-auditivos/IMG_3522.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculinos-auditivos/IMG_3527.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculinos-auditivos/IMG_3535.PNG"
+                              alt="imagem 4"></button>
+                              <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculinos-auditivos/IMG_3539.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculinos-auditivos/IMG_3545.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculinos-auditivos/IMG_3548.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculinos-auditivos/IMG_3553.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculinos-auditivos/IMG_3562.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculinos-auditivos/IMG_3565.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculinos-auditivos/IMG_3573.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculinos-auditivos/IMG_3578.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculinos-auditivos/IMG_3581.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculinos-auditivos/IMG_3587.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculinos-auditivos/IMG_3590.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculinos-auditivos/IMG_3595.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculinos-auditivos/IMG_3603.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculinos-auditivos/IMG_3611.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculinos-auditivos/IMG_3614.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculinos-auditivos/IMG_3619.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculinos-auditivos/IMG_3622.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculinos-auditivos/IMG_3630.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculinos-auditivos/IMG_3635.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculinos-auditivos/IMG_3638.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculinos-auditivos/IMG_3646.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculinos-auditivos/IMG_3651.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculinos-auditivos/IMG_3654.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculinos-auditivos/IMG_3660.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculinos-auditivos/IMG_3702.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculinos-auditivos/IMG_3705.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculinos-auditivos/IMG_3710.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculinos-auditivos/IMG_3726.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculinos-auditivos/IMG_3729.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculinos-auditivos/IMG_3746.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculinos-auditivos/IMG_3750.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculinos-auditivos/IMG_3754.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculinos-auditivos/IMG_3762.PNG"
+                              alt="imagem 4"></button>
+                          
+                              
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Avatares PcD visual
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <div class="galeria">
+                        <!-- As primeiras imagens serão inseridas aqui -->
+                        <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                            src="assets/img/Avatares/Feminino/Feminino-cegas/IMG_3242.PNG"
+                            alt="imagem 1"></button>
+                        <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                            src="assets/img/Avatares/Masculino/Masculinos-cegos/IMG_3498.PNG"
+                            alt="imagem 2"></button>
+                        <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                            src="assets/img/Avatares/Feminino/Feminino-cegas/IMG_3253.PNG"
+                            alt="imagem 3"></button>
+                        <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                            src="assets/img/Avatares/Masculino/Masculinos-cegos/IMG_3499.PNG"
+                            alt="imagem 4"></button>
+                        <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                            src="assets/img/Avatares/Feminino/Feminino-cegas/IMG_3254.PNG"
+                            alt="imagem 4"></button>
+                        <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                            src="assets/img/Avatares/Masculino/Masculinos-cegos/IMG_3507.PNG"
+                            alt="imagem 4"></button>
+
+                        <!-- Botão Ver mais -->
+                        <button type="button" id="verMais" class="botaoVerMais">Ver mais</button>
+                        <div id="imagensAdicionais" class="imagensAdicionais-3" style="display:none;">
+                          <!-- As imagens adicionais serão inseridas aqui dinamicamente -->
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-cegas/IMG_3261.PNG"
+                              alt="imagem 1"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-cegas/IMG_3262.PNG"
+                              alt="imagem 2"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-cegas/IMG_3269.PNG"
+                              alt="imagem 3"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-cegas/IMG_3274.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-cegas/IMG_3278.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-cegas/IMG_3279.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-cegas/IMG_3286.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-cegas/IMG_3287.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-cegas/IMG_3294.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-cegas/IMG_3295.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-cegas/IMG_3304.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-cegas/IMG_3369.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-cegas/IMG_3377.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-cegas/IMG_3382.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-cegas/IMG_3385.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-cegas/IMG_3393.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-cegas/IMG_3398.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-cegas/IMG_3403.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-cegas/IMG_3404.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-cegas/IMG_3415.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-cegas/IMG_3422.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-cegas/IMG_3423.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-cegas/IMG_3429.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-cegas/IMG_3434.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-cegas/IMG_3435.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-cegas/IMG_3442.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-cegas/IMG_3443.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-cegas/IMG_3459.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-cegas/IMG_3467.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-cegas/IMG_3468.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-cegas/IMG_3475.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-cegas/IMG_3476.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-cegas/IMG_3483.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-cegas/IMG_3484.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculinos-cegos/IMG_3513.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculinos-cegos/IMG_3520.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculinos-cegos/IMG_3521.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculinos-cegos/IMG_3528.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculinos-cegos/IMG_3537.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculinos-cegos/IMG_3538.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculinos-cegos/IMG_3546.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculinos-cegos/IMG_3547.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculinos-cegos/IMG_3563.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculinos-cegos/IMG_3571.PNG"
+                              alt="imagem 4"></button>
+                          </button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculinos-cegos/IMG_3579.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculinos-cegos/IMG_3589.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculinos-cegos/IMG_3589.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculinos-cegos/IMG_3597.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculinos-cegos/IMG_3604.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculinos-cegos/IMG_3605.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculinos-cegos/IMG_3612.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculinos-cegos/IMG_3613.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculinos-cegos/IMG_3620.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculinos-cegos/IMG_3621.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculinos-cegos/IMG_3628.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculinos-cegos/IMG_3629.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculinos-cegos/IMG_3636.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculinos-cegos/IMG_3637.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculinos-cegos/IMG_3644.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculinos-cegos/IMG_3711.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculinos-cegos/IMG_3712.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculinos-cegos/IMG_3728.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculinos-cegos/IMG_3735.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculinos-cegos/IMG_3736.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculinos-cegos/IMG_3743.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculinos-cegos/IMG_3748.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculinos-cegos/IMG_3749.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculinos-cegos/IMG_3755.PNG"
+                              alt="imagem 4"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculinos-cegos/IMG_3756.PNG"
+                              alt="imagem 4"></button>
+                            
+                            
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!---->
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                      data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                      Avatares Pessoas não deficiente 
+                    </button>
+                  </h2>
+                  <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                    data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                      <div class="galeria">
+                        <!-- As primeiras imagens serão inseridas aqui -->
+                        <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                            src="assets/img/Avatares/Feminino/Feminino-naodeficiente/IMG_3244.PNG"
+                            alt="imagem 1"></button>
+                        <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                            src="assets/img/Avatares/Masculino/Masculino-nãodeficiente/IMG_3495.PNG"
+                            alt="imagem 2"></button>
+                        <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                            src="assets/img/Avatares/Feminino/Feminino-naodeficiente/IMG_3249.PNG"
+                            alt="imagem 3"></button>
+                        <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                            src="assets/img/Avatares/Masculino/Masculino-nãodeficiente/IMG_3504.PNG"
+                            alt="imagem 4"></button>
+                        <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                            src="assets/img/Avatares/Feminino/Feminino-naodeficiente/IMG_3256.PNG"
+                            alt="imagem 3"></button>
+                        <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                            src="assets/img/Avatares/Masculino/Masculino-nãodeficiente/IMG_3516.PNG"
+                            alt="imagem 4"></button>
+                        
+
+                        <!-- Botão Ver mais -->
+                        <button type="button" id="verMais" class="botaoVerMais">Ver mais</button>
+                        <div id="imagensAdicionais" class="imagensAdicionais-4"  style="display:none;">
+                          <!-- As imagens adicionais serão inseridas aqui dinamicamente -->
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-naodeficiente/IMG_3258.PNG"
+                              alt="imagem 1"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-naodeficiente/IMG_3263.PNG"
+                              alt="imagem 1"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-naodeficiente/IMG_3267.PNG"
+                              alt="imagem 1"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-naodeficiente/IMG_3271.PNG"
+                              alt="imagem 1"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-naodeficiente/IMG_3272.PNG"
+                              alt="imagem 1"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-naodeficiente/IMG_3275.PNG"
+                              alt="imagem 1"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-naodeficiente/IMG_3280.PNG"
+                              alt="imagem 1"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-naodeficiente/IMG_3284.PNG"
+                              alt="imagem 1"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-naodeficiente/IMG_3288.PNG"
+                              alt="imagem 1"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-naodeficiente/IMG_3292.PNG"
+                              alt="imagem 1"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-naodeficiente/IMG_3297.PNG"
+                              alt="imagem 1"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-naodeficiente/IMG_3302.PNG"
+                              alt="imagem 1"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-naodeficiente/IMG_3309.PNG"
+                              alt="imagem 1"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-naodeficiente/IMG_3370.PNG"
+                              alt="imagem 1"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-naodeficiente/IMG_3372.PNG"
+                              alt="imagem 1"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-naodeficiente/IMG_3378.PNG"
+                              alt="imagem 1"></button>
+                          <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-naodeficiente/IMG_3380.PNG"
+                              alt="imagem 1"></button>
+                           <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-naodeficiente/IMG_3386.PNG"
+                              alt="imagem 1"></button>
+                            <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-naodeficiente/IMG_3394.PNG"
+                              alt="imagem 1"></button>
+                            <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-naodeficiente/IMG_3396.PNG"
+                              alt="imagem 1"></button>
+                            <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-naodeficiente/IMG_3400.PNG"
+                              alt="imagem 1"></button>
+                            <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-naodeficiente/IMG_3406.PNG"
+                              alt="imagem 1"></button>
+                            <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-naodeficiente/IMG_3417.PNG"
+                              alt="imagem 1"></button>
+                            <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-naodeficiente/IMG_3419.PNG"
+                              alt="imagem 1"></button>
+                            <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-naodeficiente/IMG_3425.PNG"
+                              alt="imagem 1"></button>
+                            <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-naodeficiente/IMG_3427.PNG"
+                              alt="imagem 1"></button>
+                            <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-naodeficiente/IMG_3437.PNG"
+                              alt="imagem 1"></button>
+                            <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-naodeficiente/IMG_3456.PNG"
+                              alt="imagem 1"></button>
+                            <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-naodeficiente/IMG_3462.PNG"
+                              alt="imagem 1"></button>
+                            <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-naodeficiente/IMG_3464.PNG"
+                              alt="imagem 1"></button>
+                            <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-naodeficiente/IMG_3470.PNG"
+                              alt="imagem 1"></button>
+                            <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-naodeficiente/IMG_3472.PNG"
+                              alt="imagem 1"></button>
+                            <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-naodeficiente/IMG_3478.PNG"
+                              alt="imagem 1"></button>
+                            <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-naodeficiente/IMG_3480.PNG"
+                              alt="imagem 1"></button>
+                            <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Feminino/Feminino-naodeficiente/IMG_3485.PNG"
+                              alt="imagem 1"></button>
+                            <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculino-nãodeficiente/IMG_3523.PNG"
+                              alt="imagem 1"></button>
+                            <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculino-nãodeficiente/IMG_3523.PNG"
+                              alt="imagem 1"></button>
+                            <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculino-nãodeficiente/IMG_3525.PNG"
+                              alt="imagem 1"></button>
+                            <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculino-nãodeficiente/IMG_3531.PNG"
+                              alt="imagem 1"></button>
+                            <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculino-nãodeficiente/IMG_3533.PNG"
+                              alt="imagem 1"></button>
+                            <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculino-nãodeficiente/IMG_3540.PNG"
+                              alt="imagem 1"></button>
+                            <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculino-nãodeficiente/IMG_3543.PNG"
+                              alt="imagem 1"></button>
+                            <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculino-nãodeficiente/IMG_3549.PNG"
+                              alt="imagem 1"></button>
+                            <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculino-nãodeficiente/IMG_3551.PNG"
+                              alt="imagem 1"></button>
+                            <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculino-nãodeficiente/IMG_3560.PNG"
+                              alt="imagem 1"></button>
+                            <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculino-nãodeficiente/IMG_3568.PNG"
+                              alt="imagem 1"></button>
+                            <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculino-nãodeficiente/IMG_3576.PNG"
+                              alt="imagem 1"></button>
+                            <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculino-nãodeficiente/IMG_3585.PNG"
+                              alt="imagem 1"></button>
+                            <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculino-nãodeficiente/IMG_3591.PNG"
+                              alt="imagem 1"></button>
+                            <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculino-nãodeficiente/IMG_3593.PNG"
+                              alt="imagem 1"></button>
+                            <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculino-nãodeficiente/IMG_3601.PNG"
+                              alt="imagem 1"></button>
+                            <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculino-nãodeficiente/IMG_3609.PNG"
+                              alt="imagem 1"></button>
+                            <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculino-nãodeficiente/IMG_3615.PNG"
+                              alt="imagem 1"></button>
+                            <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculino-nãodeficiente/IMG_3617.PNG"
+                              alt="imagem 1"></button>
+                            <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculino-nãodeficiente/IMG_3631.PNG"
+                              alt="imagem 1"></button>
+                            <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculino-nãodeficiente/IMG_3633.PNG"
+                              alt="imagem 1"></button>
+                            <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculino-nãodeficiente/IMG_3639.PNG"
+                              alt="imagem 1"></button>
+                            <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculino-nãodeficiente/IMG_3641.PNG"
+                              alt="imagem 1"></button>
+                            <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculino-nãodeficiente/IMG_3649.PNG"
+                              alt="imagem 1"></button>
+                            <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculino-nãodeficiente/IMG_3655.PNG"
+                              alt="imagem 1"></button>
+                            <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculino-nãodeficiente/IMG_3698.PNG"
+                              alt="imagem 1"></button>
+                            <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculino-nãodeficiente/IMG_3700.PNG"
+                              alt="imagem 1"></button>
+                            <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculino-nãodeficiente/IMG_3706.PNG"
+                              alt="imagem 1"></button>
+                            <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculino-nãodeficiente/IMG_3708.PNG"
+                              alt="imagem 1"></button>
+                            <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculino-nãodeficiente/IMG_3716.PNG"
+                              alt="imagem 1"></button>
+                            <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculino-nãodeficiente/IMG_3722.PNG"
+                              alt="imagem 1"></button>
+                            <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculino-nãodeficiente/IMG_3724.PNG"
+                              alt="imagem 1"></button>
+                            <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculino-nãodeficiente/IMG_3732.PNG"
+                              alt="imagem 1"></button>
+                            <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculino-nãodeficiente/IMG_3740.PNG"
+                              alt="imagem 1"></button>
+                            <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculino-nãodeficiente/IMG_3744.PNG"
+                              alt="imagem 1"></button>
+                            <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculino-nãodeficiente/IMG_3752.PNG"
+                              alt="imagem 1"></button>
+                            <button type="button" class="img" onclick="deixarVermelho(this)"><img
+                              src="assets/img/Avatares/Masculino/Masculino-nãodeficiente/IMG_3760.PNG"
+                              alt="imagem 1"></button>
+                           
+
+                        
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+                
+              </div>
+              <button class="button-submit ">Continuar</button>
+
+              <script>
+                function deixarVermelho(button) {
+                  document.querySelectorAll(".img").forEach((item) => {
+                    item.style.background = "none"
+                  })
+                  button.style.background = "red"
+                }
+              </script>
+
+
+
+
+              <script src="script.js"></script>
+      </section>
+
+    </div>
+
+  </main>
+
+</body>
+
+</html>

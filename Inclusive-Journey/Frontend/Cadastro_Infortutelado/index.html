@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tutelado</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="assets/img/Macote_-_Cabeça-removebg-preview.png" type="">
+</head>
+
+<body>
+  <main>
+
+    <div class="container">
+      <section class="primeiro">
+        <div style="height: 100%; background-color: #002234;">
+          <img src="assets/img/Frame 231.png" alt="">
+        </div>
+      </section>
+
+      <section class="segunda">
+        <form class="form">
+          <div class="title">
+            <h1><strong>Tutelado</strong></h1>
+          </div>
+          <div class="row">
+            <div class="space col-md-12">
+              <div class="inputForm" >
+                <input type="text" class="input" placeholder="Nome Completo">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+
+            <div class="space col-md-6">
+              <div class="inputForm" >
+                <input type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="date" class="input" placeholder="Data de nascimento">
+              </div>
+            </div>
+
+            <div class="space col-md-6">
+
+              <div class="inputForm ">
+                <select name="cars" class="input" id="cars">
+                  <option value="volvo">Gênero</option>
+                  <option value="volvo">Masculino</option>
+                  <option value="saab">Feminino</option>
+                  <option value="mercedes">Outros</option>
+                  <option value="audi">Prefiro não dizer</option>
+                </select>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="row">
+            <div class="space col-md-12">
+              <div class="inputForm" >
+                <input type="text" class="input" placeholder="Monitorado por (ex- pai,mãe) ">
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="space col-md-12">
+              <div class="inputForm" >
+                <input type="text" class="input" placeholder="Tipo de deficiência (caso tenha)  ">
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="space col-md-6">
+              <div class="inputForm" >
+                <input type="number" class="input" placeholder="CEP">
+              </div>
+            </div>
+            <div class="space col-md-6">
+              <div class="inputForm " >
+                <input type="number" class="input" placeholder="Rua">
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="space col-md-12">
+              <div class="inputForm">
+                <input type="text" class="input" placeholder="Complemento ">
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="space col-md-6">
+              <div class="inputForm" >
+                <input type="text" class="input" placeholder="Bairro">
+              </div>
+            </div>
+            <div class="space col-md-6">
+              <div class="inputForm " >
+                <input type="text" class="input" placeholder="Cidade">
+              </div>
+            </div>
+          </div>
+
+
+          <div class="row">
+            <div class="space col-md-6">
+              <div class="inputForm" >
+                <input type="number" class="input" placeholder="Numero">
+              </div>
+            </div>
+            <div class="space col-md-6">
+              <div class="inputForm " >
+                <select name="cars" class="input" id="cars">
+                  <option value="uf">UF</option>
+                  <option value="uf">RO</option>
+                  <option value="uf">AC</option>
+                  <option value="uf">AM</option>
+                  <option value="uf">RR</option>
+                  <option value="uf">PA</option>
+                  <option value="uf">AP</option>
+                  <option value="uf">TO</option>
+                  <option value="uf">MA</option>
+                  <option value="uf">PI</option>
+                  <option value="uf">CE</option>
+                  <option value="uf">RN</option>
+                  <option value="uf">PB</option>
+                  <option value="uf">PE</option>
+                  <option value="uf">AL</option>
+                  <option value="uf">SE</option>
+                  <option value="uf">BA</option>
+                  <option value="uf">MG</option>
+                  <option value="uf">ES</option>
+                  <option value="uf">RJ</option>
+                  <option value="uf">SP</option>
+                  <option value="uf">PR</option>
+                  <option value="uf">SC</option>
+                  <option value="uf">RS</option>
+                  <option value="uf">MS</option>
+                  <option value="uf">MT</option>
+                  <option value="uf">GO</option>
+                  <option value="uf">DF</option>
+
+                </select>
+              </div>
+            </div>
+          </div>
+          <button class="button-submit">Continuar</button>
+        
+          <p> Ja possui uma conta? Faça <a href="">login</a> </p>
+          <p> Ao continuar, você declara que leu e concorda com os<a href=""> Termos e Condições</a> </p>
+        </form>
+
+      </section>
+    </div>
+  </main>
+</body>
+
+</html>
