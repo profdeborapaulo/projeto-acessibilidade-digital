@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/pagina-inicial.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/header.css" />
+  <link rel="stylesheet" href="./css/footer.css" />
+  <link rel="stylesheet" href="./css/lugar.css" />
+  <link rel="stylesheet" href="./css/layout.css" />
+
+
+  <link rel="shortcut icon" href="./img/rhinny.svg" type="image/x-icon" />
+  <title>Página lugar</title>
+
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <nav>
+      <ul id="logo-nav">
+        <li><img src="./img/logo.svg" id="rhinny" alt="Rhinny" /></li>
+        <div class="user" id="user-icon">
+          <box-icon name="chevron-down" id="chevron-down" color="#6d6d6d"></box-icon>
+          <img src="./img/user.svg" id="foto-usuario" alt="Usuário" />
+        </div>
+      </ul>
+    </nav>
+
+    <!-- Modal -->
+    <div id="user-modal" class="modal">
+      <div class="modal-content">
+        <p class="perfil">Perfil</p>
+        <img src="./img/user.svg" id="foto-perfil" alt="Foto de perfil">
+        <div class="content-sem-perfil">
+          <h3 class="usuario">Lucas Jesus Silva</h3>
+          <div class="links">
+            <a href="../pagina-perfil/perfil.html" class="texto-perfil">Perfil</a>
+            <hr class="linha">
+            <a href="../pagina-faq/faq.html" class="texto-perfil">Suporte</a>
+            <hr class="linha">
+            <a href="" class="texto-sair">Sair</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="inicial">
+      <div class="layout-lugar">
+        <div class="heart-icon">
+          <img src="./img/Heart.svg" alt="Ícone de coração" />
+        </div>
+        
+        <img src="./img/praca-boulevard.svg" id="praca-boulevard" alt="" />
+        <div class="grupo-direita">
+          <h3 class="titulo-local">Praça Boulevard Barueri</h3>
+          <div class="acessibilidades">
+            <button class="btn-acessibilidade" id="piso-tatil">Piso Tátil</button>
+            <button class="btn-acessibilidade" id="placas-braille">Placas de Braille</button>
+            <button class="btn-acessibilidade" id="mapas-tateis">Mapas Táteis</button>
+          </div>
+          <div class="grupo-icons">
+            <img src="./img/icon-elevador-sem-cor.svg" id="icon" alt="" />
+            <img src="./img/icon-banheiro-sem-cor.svg" id="icon" alt="" />
+            <img src="./img/icon-rampa.svg" id="icon" alt="" />
+          </div>
+          <p class="titulo-acessibilidade">Adicione as acessibilidades disponíveis no local:</p>
+          <div class="grupo-acessibilidade">
+            <div class="grupo-input">
+              <p class="titulo-input">Sinalização</p>
+              <div class="select-container">
+                <select name="" id="select-acessibilidade">
+                  <option value="">Placas em Braille</option>
+                  <option value="">Sinalização tátil</option>
+                  <option value="">Trilhas adaptadas</option>
+                  <option value="">Mapas táteis</option>
+                </select>
+              </div>
+            </div>
+            <div class="grupo-input">
+              <p class="titulo-input">Áudio</p>
+              <div class="select-container">
+                <select name="" id="select-acessibilidade">
+                  <option value="">Guias de áudio</option>
+                  <option value="">Descrição de áudio</option>
+                  <option value="">App de orientação auditiva</option>
+                  <option value="">Legendagem ao vivo</option>
+                  <option value="">Audiodescrição de performances</option>
+                </select>
+              </div>
+            </div>
+            <div class="grupo-input">
+              <p class="titulo-input">Equipamentos</p>
+              <div class="select-container">
+                <select name="" id="select-acessibilidade">
+                  <option value="">Brinquedos táteis</option>
+                  <option value="">Equipamentos com audiodescrição</option>
+                  <option value="">Áreas de descanso acessíveis</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="comentario">
+            <div class="usuario-comentario">
+              <img src="./img/user.svg" alt="Foto de perfil">
+              <div class="usuario-data">
+                <p class="nome-user">Lucas Jesus Silva</p>
+                <p class="data">15-10-24 </p>
+              </div>
+            </div>
+            <p class="coment">Escrever comentário</p>
+            <textarea name="" class="conteudo-comentario" placeholder="Escreva seu comentário aqui"></textarea>
+            <div class="botao">
+              <button type="submit" class="btn-enviar">Enviar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>   
+
+    <section class="outros-comentarios">
+      <h2 class="titulo-outros">Outros comentários</h2>
+      <p class="texto-outros">Veja a opinião de outros visitantes</p>
+      <div class="campo-outros-comentarios">
+        <div class="grupo-outros-comentarios">
+          <div class="estrelas">
+            <box-icon name='star' id="star" type='solid' color='#fcc803'></box-icon>
+            <box-icon name='star' id="star" type='solid' color='#fcc803'></box-icon>
+            <box-icon name='star' id="star" type='solid' color='#fcc803'></box-icon>
+            <box-icon name='star' id="star" type='solid' color='#fcc803'></box-icon>
+            <box-icon name='star' id="star" type='solid' color='#fcc803'></box-icon>
+          </div>
+          <h2 class="titulo-comentario">Gostei!</h2>
+          <p class="p-comentario">As acessibilidades condizem com as do site.</p>
+          <div class="usuario-comentario">
+            <img src="./img/user1.svg" alt="Foto de perfil">
+            <div class="usuario-data">
+              <p class="nome-user">Ana Paula</p>
+              <p class="data">05-06-24</p>
+            </div>
+          </div>
+        </div>
+        <div class="grupo-outros-comentarios">
+          <div class="estrelas">
+            <box-icon name='star' id="star" type='solid' color='#fcc803'></box-icon>
+            <box-icon name='star' id="star" type='solid' color='#fcc803'></box-icon>
+            <box-icon name='star' id="star" type='solid' color='#fcc803'></box-icon>
+            <box-icon name='star' id="star" type='solid' color='#fcc803'></box-icon>
+            <box-icon name='star' id="star" color='#fcc803'></box-icon>
+          </div>
+          <h2 class="titulo-comentario">Sem título</h2>
+          <p class="p-comentario">É um lugar legal</p>
+          <div class="usuario-comentario">
+            <img src="./img/user2.svg" alt="Foto de perfil">
+            <div class="usuario-data">
+              <p class="nome-user">Bruno</p>
+              <p class="data">14-06-24</p>
+            </div>
+          </div>
+        </div>
+        <div class="grupo-outros-comentarios">
+          <div class="estrelas">
+            <box-icon name='star' id="star" type='solid' color='#fcc803'></box-icon>
+            <box-icon name='star' id="star" type='solid' color='#fcc803'></box-icon>
+            <box-icon name='star' id="star" type='solid' color='#fcc803'></box-icon>
+            <box-icon name='star' id="star" type='solid' color='#fcc803'></box-icon>
+            <box-icon name='star' color='#fcc803'></box-icon>
+          </div>
+          <h2 class="titulo-comentario">Sem título</h2>
+          <p class="p-comentario">Bonito</p>
+          <div class="usuario-comentario">
+            <img src="./img/user3.svg" alt="Foto de perfil">
+            <div class="usuario-data">
+              <p class="nome-user">Giovana Julia</p>
+              <p class="data">12-03-24</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="localizar">
+      <h1 class="titulo-localize">Localize</h1>
+      <p class="p-localize">Encontre o local no qual deseja ir</p>
+      <!-- temporario dps coloco a api -->
+      <img src="./img/image 6.svg" alt="">
+    </section>
+
+    <footer class="footer-container">
+      <div class="descricao-footer">
+        <div class="logo">
+          <img src="./img/logo.svg" class="logo-footer" alt="Imagem Logo 'Rhinny'" />
+        </div>
+        <div class="paginas">
+          <p id="titulo-paginas">Páginas</p>
+          <ul>
+            <li><a href="../landing-page/landing_page.html">Landing page</a></li>
+            <li><a href="../pagina-inicial/pagina-inicial.html">Tela inicial</a></li>
+            <li><a href="../pagina-perfil/perfil.html">Perfil</a></li>
+            <li><a href="../pagina-faq/faq.html">Fale conosco</a></li>
+            <li><a href="../pagina-politicas/politicas.html">Política e Privacidade</a></li>
+            <li><a href="../pagina-termos/termos.html">Termos de uso</a></li>
+          </ul>
+        </div>
+        <div class="redes-sociais">
+          <p id="redes_sociais-titulo">Redes Sociais</p>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Linkedln</a></li>
+          </ul>
+        </div>
+        <div class="contato">
+          <p id="contato-titulo">Contato</p>
+          <ul>
+            <li><a href="">Telefone</a></li>
+            <li><a href="">Email</a></li>
+            <li><a href="">Endereço</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="copyright">Copyright &copy; 2024 Rampoint</p>
+    </footer>
+  </div>
+  <script defer src="./js/api-mapa.js"></script>
+  <script defer src="./js/modal-perfil.js"></script>
+  <script defer src="./js/animacao-coracao.js"></script>
+</body>
+
+</html>

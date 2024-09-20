@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/header.css" />
+  <link rel="stylesheet" href="./css/footer.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/perfil.css" />
+  <link rel="stylesheet" href="./css/layout.css">
+
+  <link rel="shortcut icon" href="./img/rhinny.png" type="image/x-icon" />
+  <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+  <title>Perfil</title>
+</head>
+
+<body>
+  <div class="container">
+    <nav>
+      <ul id="logo-nav">
+        <li><img src="./img/logo.svg" id="rhinny" alt="Rhinny" /></li>
+        <div class="user" id="user-icon">
+          <box-icon name="chevron-down" id="chevron-down" color="#6d6d6d"></box-icon>
+          <img src="./img/user.svg" id="foto-usuario" alt="Usuário" />
+        </div>
+      </ul>
+    </nav>
+
+    <!-- Modal -->
+    <div id="user-modal" class="modal">
+      <div class="modal-content">
+        <p class="perfil">Perfil</p>
+        <img src="./img/user.svg" id="foto-perfil" alt="Foto de perfil">
+        <div class="content-sem-perfil">
+          <h3 id="nome_usuario" class="usuario"></h3>
+          <div class="links">
+            <a href="../pagina-perfil/perfil.html" class="texto-perfil">Perfil</a>
+            <hr class="linha">
+            <a href="../pagina-faq/faq.html" class="texto-perfil">Suporte</a>
+            <hr class="linha">
+            <a href="" class="texto-sair" onclick="logout()">Sair</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="campo-perfil">
+      <img src="./img/foto-perfil.svg" id="perfil-usuario" alt="" />
+      <div class="textos">
+        <h3 id="nome_crianca" class="nome-usuario"></h3>
+        <p class="p-responsavel">Responsável</p>
+        <p id="nome_adulto" class="nome-responsavel"></p>
+      </div>
+
+      <a href="javascript:void(0)" id="editar-perfil"><img src="./img/icon-lapis.svg" alt="" />Editar perfil</a>
+    </section>
+
+    <!-- Modal de Edição de Perfil -->
+    <div id="modal-config-perfil" class="modal-config">
+      <div class="modal-content-config">
+        <span class="close-btn">&times;</span>
+        <h2>Configurações de perfil</h2>
+
+        <div class="form-content">
+          <div class="left-section">
+            <img src="./img/user.svg" alt="Foto de Perfil" class="profile-pic">
+            <a href="#" class="edit-icon"><img src="./img/lapis-modal.svg" alt="Editar"></a>
+          </div>
+          <div class="right-section">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Nome</label>
+                <input type="text" id="nome_trocar" value="" placeholder="">
+              </div>
+              <div class="form-group">
+                <label for="birthdate">Nascimento</label>
+                <input type="text" id="birthdate" placeholder="00/00/0000" disabled>
+                <img src="./img/calendario-icon.svg" alt="Calendário" class="calendar-icon">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email_trocar">
+              </div>
+              <div class="form-group">
+                <label for="password">Senha</label>
+                <input type="password" id="password-trocar">
+              </div>
+            </div>
+            <div class="actions">
+              <a href="#" onclick="apagandoUsuario()" class="delete-account">Excluir minha conta</a>
+              <button onclick="mudarDados()" type="button" class="save-btn">Salvar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <section class="campo-favoritos">
+      <h2 class="titulo-favoritos">Meus favoritos</h2>
+      <p class="p-textos">Lugares marcados como favorito por você</p>
+
+      <div class="campo-locais">
+        <div class="lugar">
+          <img src="./img/parque-barueri.svg" class="imagem-lugar" alt="">
+          <p class="p-titulo-lugar">Parque de Barueri</p>
+          <div class="estrelas">
+            <box-icon name='star' type='solid' color='#fcc803'></box-icon>
+            <box-icon name='star' type='solid' color='#fcc803'></box-icon>
+            <box-icon name='star' type='solid' color='#fcc803'></box-icon>
+            <box-icon name='star' color='#fcc803'></box-icon>
+            <box-icon name='star' color='#fcc803'></box-icon>
+          </div>
+        </div>
+        <div class="lugar">
+          <a href="../pagina-lugar/pagina-lugar.html">
+            <img src="./img/praca-boulevard.svg" class="imagem-lugar" alt="">
+            <p class="p-titulo-lugar">Praça Boulevard Barueri</p>
+            <div class="estrelas">
+              <box-icon name='star' type='solid' color='#fcc803'></box-icon>
+              <box-icon name='star' type='solid' color='#fcc803'></box-icon>
+              <box-icon name='star' type='solid' color='#fcc803'></box-icon>
+              <box-icon name='star' color='#fcc803'></box-icon>
+              <box-icon name='star' color='#fcc803'></box-icon>
+            </div>
+          </a>
+        </div>
+        <div class="lugar">
+          <img src="./img/praca-artes.svg" class="imagem-lugar" alt="">
+          <p class="p-titulo-lugar">Praça das Artes</p>
+          <div class="estrelas">
+            <box-icon name='star' type='solid' color='#fcc803'></box-icon>
+            <box-icon name='star' type='solid' color='#fcc803'></box-icon>
+            <box-icon name='star' type='solid' color='#fcc803'></box-icon>
+            <box-icon name='star' color='#fcc803'></box-icon>
+            <box-icon name='star' color='#fcc803'></box-icon>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="campo-comentarios">
+      <h2 class="titulo-comentario-perfil">Meus comentários</h2>
+      <p class="p-comentario-perfil">Sua opinião por onde você passou</p>
+
+      <div class="grupo-comentarios">
+        <div class="comentario-perfil">
+          <h3>Comentário 1</h3>
+          <div class="usuario-comentario">
+            <img src="./img/user.svg" alt="Foto de perfil">
+            <div class="usuario-data">
+              <p class="nome-user">Lucas Jesus Silva</p>
+              <p class="data">15-10-24 </p>
+            </div>
+          </div>
+        </div>
+        <div class="comentario-perfil">
+          <h3>Comentário 2</h3>
+          <div class="usuario-comentario">
+            <img src="./img/user.svg" alt="Foto de perfil">
+            <div class="usuario-data">
+              <p class="nome-user">Lucas Jesus Silva</p>
+              <p class="data">15-10-24 </p>
+            </div>
+          </div>
+        </div>
+        <div class="comentario-perfil">
+          <h3>Comentário 3</h3>
+          <div class="usuario-comentario">
+            <img src="./img/user.svg" alt="Foto de perfil">
+            <div class="usuario-data">
+              <p class="nome-user">Lucas Jesus Silva</p>
+              <p class="data">15-10-24 </p>
+            </div>
+          </div>
+        </div>
+        <div class="comentario-perfil">
+          <h3>Comentário 4</h3>
+          <div class="usuario-comentario">
+            <img src="./img/user.svg" alt="Foto de perfil">
+            <div class="usuario-data">
+              <p class="nome-user">Lucas Jesus Silva</p>
+              <p class="data">15-10-24 </p>
+            </div>
+          </div>
+        </div>
+        <div class="comentario-perfil">
+          <h3>Comentário 5</h3>
+          <div class="usuario-comentario">
+            <img src="./img/user.svg" alt="Foto de perfil">
+            <div class="usuario-data">
+              <p class="nome-user">Lucas Jesus Silva</p>
+              <p class="data">15-10-24 </p>
+            </div>
+          </div>
+        </div>
+        <div class="comentario-perfil">
+          <h3>Comentário 6</h3>
+          <div class="usuario-comentario">
+            <img src="./img/user.svg" alt="Foto de perfil">
+            <div class="usuario-data">
+              <p class="nome-user">Lucas Jesus Silva</p>
+              <p class="data">15-10-24 </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer-container">
+      <div class="descricao-footer">
+        <div class="logo">
+          <img src="./img/logo.svg" class="logo-footer" alt="Imagem Logo 'Rhinny'" />
+        </div>
+        <div class="paginas">
+          <p id="titulo-paginas">Páginas</p>
+          <ul>
+            <li><a href="../landing-page/landing_page.html">Landing page</a></li>
+            <li><a href="../pagina-inicial/pagina-inicial.html">Tela inicial</a></li>
+            <li><a href="../pagina-perfil/perfil.html">Perfil</a></li>
+            <li><a href="../pagina-faq/faq.html">Fale conosco</a></li>
+            <li><a href="../pagina-politicas/politicas.html">Política e Privacidade</a></li>
+            <li><a href="../pagina-termos/termos.html">Termos de uso</a></li>
+          </ul>
+        </div>
+        <div class="redes-sociais">
+          <p id="redes_sociais-titulo">Redes Sociais</p>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Linkedln</a></li>
+          </ul>
+        </div>
+        <div class="contato">
+          <p id="contato-titulo">Contato</p>
+          <ul>
+            <li><a href="">Telefone</a></li>
+            <li><a href="">Email</a></li>
+            <li><a href="">Endereço</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="copyright">Copyright &copy; 2024 Rampoint</p>
+    </footer>
+  </div>
+
+  <script src="./js/modal-perfil.js"></script>
+  <script src="./js/modal-editar-perfil.js"></script>
+</body>
+<script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-firestore-compat.js"></script>
+<script src="../firebase_js/authGuard.js"></script>
+<script src="../firebase_js/mostrarDados.js"></script>
+
+</html>

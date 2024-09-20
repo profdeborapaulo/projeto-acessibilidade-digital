@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/termos.css" />
+    <link rel="stylesheet" href="./css/layout.css">
+
+    <link rel="shortcut icon" href="./img/rhinny.png" type="image/x-icon" />
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <title>Termos de uso</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <ul id="logo-nav">
+                <li><img src="./img/logo.svg" id="rhinny" alt="Rhinny" /></li>
+                <div class="user" id="user-icon">
+                    <box-icon name="chevron-down" id="chevron-down" color="#6d6d6d"></box-icon>
+                    <img src="./img/user.svg" id="foto-usuario" alt="Usuário" />
+                </div>
+            </ul>
+        </nav>
+
+        <!-- Modal -->
+        <div id="user-modal" class="modal">
+            <div class="modal-content">
+                <p class="perfil">Perfil</p>
+                <img src="./img/user.svg" id="foto-perfil" alt="Foto de perfil">
+                <div class="content-sem-perfil">
+                    <h3 id="nome_usuario" class="usuario"></h3>
+                    <div class="links">
+                        <a href="../pagina-perfil/perfil.html" class="texto-perfil">Perfil</a>
+                        <hr class="linha">
+                        <a href="../pagina-faq/faq.html" class="texto-perfil">Suporte</a>
+                        <hr class="linha">
+                        <a href="" onclick="logout()" class="texto-sair">Sair</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="termos">
+            <h1 class="titulo">Termos de Uso</h1>
+
+            <ul class="lista-termos">
+                <li class="titulo-termos">1. Aceitação dos Termos</li>
+                <li class="texto-termos">Bem-vindo à Rampoint! Ao acessar e usar este site, você concorda em cumprir e
+                    estar vinculado aos seguintes Termos de Uso. Se você não concorda com estes termos, não utilize este
+                    site.
+                </li>
+                <li class="titulo-termos">2. Modificações dos Termos</li>
+                <li class="texto-termos">Podemos atualizar estes Termos de Uso a qualquer momento. As alterações entram
+                    em vigor imediatamente após a publicação no Site. Recomendamos que você revise estes termos
+                    periodicamente.
+                </li>
+                <li class="titulo-termos">3. Uso do Site</li>
+                <li class="texto-termos">Você concorda em usar o site apenas para fins legais e de acordo com estes
+                    Termos de Uso. Você não deve:
+                    <br>
+                    - Usar o Site de qualquer maneira que possa danificar, desativar, sobrecarregar ou prejudicar o
+                    site.
+                    <br>
+                    - Tentar obter acesso não autorizado a qualquer parte do site ou a sistemas ou redes conectados ao
+                    site.
+                    <br>
+                    - Usar qualquer robô, spider ou outro dispositivo automático, processo ou meio para acessar o site
+                    para qualquer finalidade.
+                </li>
+                <li class="titulo-termos">4. Conteúdo do Usuário</li>
+                <li class="texto-termos">Você pode enviar conteúdo para o site, como comentários, sugestões e outras
+                    informações em feedback. Ao enviar conteúdo do usuário, você concede ao site uma licença não
+                    exclusiva, livre de royalties, perpétua, irrevogável e totalmente sublicenciável para usar,
+                    reproduzir, modificar, adaptar, publicar, traduzir, criar trabalhos derivados, distribuir e exibir
+                    esse conteúdo em qualquer mídia.
+                </li>
+                <li class="titulo-termos">5. Propriedade Intelectual</li>
+                <li class="texto-termos">Todo o conteúdo do site, incluindo, mas não se limitando a, textos, gráficos,
+                    logotipos, ícones, imagens, clipes de áudio e software, é propriedade do site ou de seus
+                    fornecedores de conteúdo e é protegido por leis de direitos autorais, marcas registradas e outras
+                    leis de propriedade intelectual.
+                </li>
+                <li class="titulo-termos">6. Links para Sites de Terceiros</li>
+                <li class="texto-termos">O site pode conter links para sites de terceiros. Esses links são fornecidos
+                    apenas para sua conveniência e não implicam endosso do conteúdo desses sites. Não temos controle
+                    sobre esses sites e não assumimos responsabilidade por seu conteúdo ou práticas de privacidade.
+                </li>
+                <li class="titulo-termos">7. Isenção de Garantias</li>
+                <li class="texto-termos">O site é fornecido "como está" e "conforme disponível". Não garantimos que o
+                    Site será ininterrupto, livre de erros ou seguro. Na máxima extensão permitida por lei, isentamo-nos
+                    de todas as garantias, expressas ou implícitas, incluindo, mas não se limitando a, garantias
+                    implícitas de comercialização, adequação a um propósito específico e não violação.
+                </li>
+                <li class="titulo-termos">8. Limitação de Responsabilidade</li>
+                <li class="texto-termos">Na máxima extensão permitida por lei, o site, seus proprietários, funcionários,
+                    agentes e fornecedores não serão responsáveis por quaisquer danos indiretos, incidentais, especiais,
+                    consequenciais ou punitivos decorrentes ou relacionados ao uso ou incapacidade de usar o site.
+                </li>
+                <li class="titulo-termos">9. Indenização</li>
+                <li class="texto-termos">Você concorda em indenizar, defender e isentar o site, seus proprietários,
+                    funcionários, agentes e fornecedores de quaisquer reivindicações, responsabilidades, danos, perdas
+                    ou despesas, incluindo honorários advocatícios razoáveis, decorrentes de ou de qualquer forma
+                    relacionados ao seu uso do site, sua violação destes Termos de Uso ou sua violação de quaisquer
+                    direitos de terceiros.
+                </li>
+                <li class="titulo-termos">10. Lei Aplicável e Jurisdição</li>
+                <li class="texto-termos">Estes Termos de Uso serão regidos e interpretados de acordo com as leis de São
+                    Paulo, Brasil. Você concorda que qualquer disputa decorrente de ou relacionada a estes Termos de Uso
+                    será resolvida nos tribunais localizados em Barueri, São Paulo, Brasil.
+                </li>
+                <li class="titulo-termos">11. Disposições Gerais</li>
+                <li class="texto-termos">Se qualquer disposição destes Termos de Uso for considerada inválida ou
+                    inexequível, essa disposição será aplicada na máxima extensão possível, e as demais disposições
+                    permanecerão em pleno vigor e efeito. O não exercício ou execução de qualquer direito ou disposição
+                    destes Termos de Uso não constituirá uma renúncia a esse direito ou disposição.
+                </li>
+                <li class="titulo-termos">12. Contato</li>
+                <li class="texto-termos">Se você tiver dúvidas sobre estes Termos de Uso, entre em contato conosco:</li>
+                <li class="texto-termos">- E-mail: rampointofc@gmail.com</li>
+                <li class="texto-termos">- Telefone: (11) 93350-6834</li>
+                <li class="data"><span id="span-preto">Data de Vigência:</span> 1 de junho de 2024</li>
+                <li class="texto-termos">Estes Termos de Uso foram atualizados pela última vez em 25 de junho de 2024.
+                </li>
+
+            </ul>
+        </section>
+
+        <footer class="footer-container">
+            <div class="descricao-footer">
+                <div class="logo">
+                    <img src="./img/logo.svg" class="logo-footer" alt="Imagem Logo 'Rhinny'" />
+                </div>
+                <div class="paginas">
+                    <p id="titulo-paginas">Páginas</p>
+                    <ul>
+                        <li><a href="../landing-page/landing_page.html">Landing page</a></li>
+                        <li><a href="../pagina-inicial/pagina-inicial.html">Tela inicial</a></li>
+                        <li><a href="../pagina-perfil/perfil.html">Perfil</a></li>
+                        <li><a href="../pagina-faq/faq.html">Fale conosco</a></li>
+                        <li><a href="../pagina-politicas/politicas.html">Política e Privacidade</a></li>
+                        <li><a href="../pagina-termos/termos.html">Termos de uso</a></li>
+                    </ul>
+                </div>
+                <div class="redes-sociais">
+                    <p id="redes_sociais-titulo">Redes Sociais</p>
+                    <ul>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Linkedln</a></li>
+                    </ul>
+                </div>
+                <div class="contato">
+                    <p id="contato-titulo">Contato</p>
+                    <ul>
+                        <li><a href="">Telefone</a></li>
+                        <li><a href="">Email</a></li>
+                        <li><a href="">Endereço</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="copyright">Copyright &copy; 2024 Rampoint</p>
+        </footer>
+    </div>
+    <script src="./js/modal-perfil.js"></script>
+    
+</body>
+
+<script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-firestore-compat.js"></script>
+<script src="../firebase_js/authGuard.js"></script>
+<script src="../firebase_js/mostrarDados.js"></script>
+</html>

@@ -1,0 +1,243 @@
+@media (min-width: 1920px) {
+  .modal-content-config {
+    height: 40vh;
+  }
+}
+
+@media (max-width: 1100px) {
+  .campo-perfil {
+    margin-top: 2em;
+  }
+
+  .campo-locais {
+    flex-wrap: wrap;
+    gap: 2em;
+  }
+
+  .footer-container {
+    width: 100em;
+  }
+}
+
+@media (max-width: 1000px) {
+  .modal-content-config {
+    width: 25em;
+    height: auto;
+    margin: 4% auto;
+  }
+
+  .modal-content-config h2 {
+    margin-top: 30px;
+  }
+
+  .form-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .form-row {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .form-group {
+    width: 100%;
+  }
+
+  .calendar-icon {
+    display: none;
+  }
+
+  .footer-container {
+    width: 100em;
+  }
+}
+
+@media (max-width: 975px) {
+  .modal-content-config {
+    width: 24em;
+    height: auto;
+    margin: 5% auto;
+  }
+
+  .modal-content-config h2 {
+    margin-top: 30px;
+  }
+
+  .form-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .form-row {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .form-group {
+    width: 100%;
+  }
+
+  .calendar-icon {
+    display: none;
+  }
+}
+
+/* Responsividade para telas menores que 768px */
+@media (max-width: 768px) {
+  .modal-content-config {
+    width: 22em;
+    height: 85vh;
+  }
+
+  .modal-content-config h2 {
+    margin-top: 35px;
+  }
+
+  .form-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .form-row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .calendar-icon {
+    display: none;
+  }
+}
+
+/* Responsividade para telas menores que 480px (celulares) */
+@media (max-width: 480px) {
+  #logo-nav {
+    width: 27em;
+  }
+
+  .campo-perfil {
+    width: 15em;
+    margin: 2em 5em;
+    flex-direction: column;
+  }
+
+  #editar-perfil {
+    margin: 0;
+  }
+
+  /* Estilos do modal do perfil */
+  .modal-content {
+    margin: 4.5em 0 0 9.5em;
+  }
+
+  .modal-content-config {
+    background-color: #f8f8ff;
+    margin: 10% 0 0 1em;
+    width: 25em;
+    height: 65vh;
+  }
+
+  .modal-content-config h2 {
+    margin-top: 35px;
+  }
+
+  .actions {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 15px;
+  }
+
+  .form-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .form-row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .calendar-icon {
+    display: none;
+  }
+
+  .campo-favoritos {
+    width: 23em;
+    height: 77em;
+    margin: 2em;
+  }
+
+  .campo-comentarios {
+    width: 20em;
+    height: 70em;
+    margin: 3em 2em;
+  }
+
+  .grupo-comentarios {
+    flex-direction: column;
+    align-items: baseline;
+    margin: 1em 3em;
+    gap: 2em;
+  }
+
+  .footer-container {
+    width: 26.5em;
+  }
+
+  .logo-footer {
+    display: none;
+  }
+
+  .descricao-footer {
+    width: 10em;
+    margin-left: 3em;
+    flex-direction: column;
+    align-items: baseline;
+  }
+
+  .redes-sociais {
+    height: 8em;
+  }
+
+  .copyright {
+    bottom: 4em;
+  }
+}
+
+@media (max-width: 415px) {
+  .modal-content-config {
+    background-color: #f8f8ff;
+    margin: 10% 0 0 1.5em;
+    width: 22em;
+    height: 85vh;
+  }
+}
+
+@media (max-width: 395px) {
+  .modal-content-config {
+    width: 22em;
+    height: 85vh;
+  }
+}

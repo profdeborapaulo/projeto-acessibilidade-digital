@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/header.css" />
+  <link rel="stylesheet" href="./css/login.css" />
+  <link rel="stylesheet" href="./css/layout.css" />
+
+  <link rel="shortcut icon" href="./img/rhinny.svg" type="image/x-icon" />
+  <title>Página login</title>
+</head>
+
+<body>
+  <div class="container">
+    <nav>
+      <ul id="logo-nav">
+        <li>
+          <a href="../landing-page/landing_page.html">
+            <img src="./img/logo.svg" id="rhinny" alt="Rhinny" />
+          </a>
+        </li>
+        <div class="menu-toggle" onclick="toggleMenu()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </ul>
+      <div class="menu-collapse">
+        <div class="botoes">
+          <a href="../pagina-login/login.html" class="btn-login">Login</a>
+          <a href="../pagina-cadastro/cadastro.html" class="btn-cadastro">Cadastro</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="menu-overlay"></div> <!-- Overlay de fundo -->
+
+    <section class="campo-login">
+      <h1 class="titulo-login">Login</h1>
+      <p class="subtitulo-login">Entre em sua conta!</p>
+
+      <form action="" class="form-login">
+        <div class="campo-email">
+          <label for="" id="titulo-form">Email</label>
+          <input type="email" id="email_login" class="email_cadastro">
+        </div>
+        <div class="campo-senha">
+          <label for="" id="titulo-form">Senha</label>
+          <input type="password" id="senha_cadastro">
+          <p onclick="recuperarSenha()" class="esqueceu-senha">Esqueceu sua senha?</p>
+          <label for="" class="titulo-form" id="erro-recuperacao">Coloque um email no campo</label>
+        </div>
+        <div class="btn">
+          <button type="button" onclick="entrar()" id="btn-entrar">Entrar</button>
+        </div>
+      </form>
+      <img src="./img/rhinny2.svg" id="rhinny-form" alt="Imagem do mascote Rhinny">
+
+    </section>
+  </div>
+
+  <script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-auth-compat.js"></script>
+  <script src="../firebase_js/firebase-init.js"></script>
+  <script src="js/login.js"></script>
+  <script src="./js/menu.js"></script>
+</body>
+
+</html>
