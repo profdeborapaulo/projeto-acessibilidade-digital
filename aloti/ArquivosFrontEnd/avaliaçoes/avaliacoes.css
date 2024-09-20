@@ -1,0 +1,213 @@
+@font-face {
+  font-family: "Nunito-regular";
+  src: url(../avaliaçoes/font/Nunito-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Nunito-semibold";
+  src: url(../avaliaçoes/font/Nunito-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: "Nunito-bold";
+  src: url(../avaliaçoes/font/Nunito-Bold.ttf);
+}
+
+body {
+  background-color: #f5f6fa;
+}
+
+h3 {
+  font-family: "Nunito-bold";
+  color: #606060;
+}
+
+h1 {
+  font-family: "Nunito-bold";
+}
+
+.container_principal {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+}
+
+.img_maria img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.container {
+  width: 650px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.container2 {
+  width: 650px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 22px;
+}
+
+a {
+  color: #ff9bb1;
+  font-family: "Nunito-semibold";
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.profile img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.name-date {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  font-family: "Nunito-semibold";
+}
+
+.stars-date {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.stars {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+
+
+.date {
+  font-size: 14px;
+  color: #666;
+  font-family: "Nunito-regular";
+}
+
+.description {
+  font-size: 14px;
+  color: #333;
+  line-height: 1.4;
+  font-family: "Nunito-regular";
+}
+
+
+
+
+li {
+  list-style: none;
+}
+
+.estatisticas {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 30em;
+  margin-bottom: 30px;
+  margin-bottom: 50px;
+}
+
+.ratings-summary {
+  float: left;
+  text-align: center;
+}
+
+.ratings-summary-numbers .ratings-summary-overall {
+  font-family: "Nunito-regular";
+  display: inline-block;
+  font-size: 55px;
+  color: #212121;
+  margin-top: 4px;
+}
+
+.numeros {
+  display: flex;
+  flex-direction: row;
+}
+
+.ratings-summary-numbers .ratings-summary-star {
+  font-family: "Nunito-regular";
+  font-size: 13px;
+  margin-top: 45px;
+  padding: 0 0 0 4px;
+  display: inline-block;
+  color: #212121;
+}
+.ratings-summary-total-figures {
+  font-size: 14px;
+  color: #878787;
+  text-align: center;
+}
+.rating-category {
+  width: 4%;
+  float: left;
+  clear: both;
+}
+.rating-bars {
+  width: 90%;
+  float: left;
+}
+.rating-holder .rating-category .rating-digit-holder {
+  font-family: "Nunito-semibold";
+  font-size: 12px;
+  font-weight: 500;
+  color: #212121;
+  padding: 2px 0;
+}
+.rating-holder .rating-category .rating-star-holder {
+  font-size: 10px;
+  color: #212121;
+  padding: 0 0 0 2px;
+}
+.rating-bar-bg,
+.rating-bar-bg .bar-position {
+  height: 9px;
+  border-radius: 100px;
+}
+
+.rating-bar-bg {
+  position: relative;
+  background: #f0f0f0;
+  margin-top: 7px;
+  margin-left: 7px;
+}
+
+.rating-bar-bg .green {
+  background-color: #FF9BB1;
+}
+.rating-bar-bg .yellow {
+  background-color: #FF9BB1;
+}
+.rating-bar-bg .red {
+  background-color: #FF9BB1;
+}
+.rating-bar-bg .bar-position {
+  left: 0;
+  position: absolute;
+  width: 0;
+}
+

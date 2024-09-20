@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+.container {
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+body {
+    font-family: "Nunito";
+    background-color: #F5F5F5;
+}
+
+h1{   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px; 
+    color: #DB7495;
+}
+
+.img-carrossel{
+    width: 100%;
+    max-width: 900px;
+    
+}
+
+.titulo-categoria-explorar {
+    display: flex;
+    margin-top: 60px; 
+    color: #005351;
+    text-align: left;
+    margin-left: 4%;
+}
+
+.titulo-categoria{
+    display: flex;
+    margin-top: 60px; 
+    color: #005351;
+    text-align: left;
+    margin-left: 15%;
+}
+
+.categorias{
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    margin-top: 2%;
+}
+
+.bloco{
+    background-color: #FFFFFF;
+    width: 160px;
+    height: 207px;
+    border-radius: 22px;
+    margin-left: 23px;
+    margin-top: 2%; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.10); /*Sombreamento*/
+}
+
+.bloco img{
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    height: 60px;
+    margin-top: 27%;
+}
+
+.bloco:hover {
+    transform: scale(1.15); /* Aumenta o tamanho do bloco ao passar o mouse */
+  }
+
+.bloco a {
+    text-decoration: none; /
+  }
+
+.bloco h3{
+    color: #4D4D4D;
+    align-items: center;
+    margin-top: 12%;
+}
+
+/*Perfil dos Profissionais*/
+
+.fileira-profissional{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    margin-left: 15%;
+}
+
+.profissional , .profissional2{
+    background-color: #FFFFFF;
+    width: 300px;
+    height:498px;
+    border-radius: 22px;
+    margin-top: 3%;
+    margin-left: 3%;   
+}
+
+.profissional2{
+    height:510px;
+}
+.profissional  .nome-prof {
+    margin-top: 5%;
+    margin-left: 5%;
+    color: #4D4D4D;
+}
+
+.profissional2 .nome-prof {
+    margin-left: 5%;
+    color: #4D4D4D;
+}
+
+
+.profissional p{
+    color: #5A6364;
+    margin-left: 5%;
+    margin-top: 2%;
+    font-size: 18px;
+}
+
+.profissional2 p{
+    color: #5A6364;
+    margin-left: 5%;
+    margin-top: 2%;
+    font-size: 18px;
+}
+
+.img-perfil{
+    width:300px;
+    height:200px;
+    border-radius: 20px 20px 0px 0px;
+
+}
+.icones-profissional{
+    display: flex;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.icones-profissional p{
+    margin-left: 1%;
+    margin-right: 5%;
+    margin-top: 0%;
+}
+
+.icones-profissional img{
+    width: 20px;
+    height: 20px;
+}
+
+.profissional .valor-serviço{
+    color: #DB7495;
+    margin-left: 5%;
+    margin-top: 7%;
+}
+
+.profissional2 .valor-serviço{
+    color: #DB7495;
+    margin-left: 5%;
+    margin-top: 7%;
+}
+
+button{
+    background-color: #34A087;
+    color: #FFFFFF;
+    border: none;
+    width: 230px;
+    height: 45px;
+    border-radius: 10px;
+    margin-left: 10%;
+    margin-top: 4%;
+    font-size: 16px;
+    font-family: "Nunito";  
+}
+.carregar-mais {
+    cursor: pointer;
+    width: 230px;
+    height: 45px;
+    display: block;
+    background-color: #DB7495;
+    color: #FFFFFF;
+    margin: 4% auto; /* Centraliza horizontalmente usando margens automáticas */
+    border: none;
+    font-size: 16px;
+    border-radius: 15px;
+  }
+
+  .button-favoritos{
+    margin-top: -30px;
+    margin-left: 227px;
+    
+  }
+  
+  @media (max-width: 375px) {
+    .titulo-categoria{
+        margin-left: 1%;
+    }
+}
+@media (max-width: 600px) {
+    .carregar-mais{
+        justify-content: center;
+        align-items:center;
+    }
+}
+
+@media (max-width: 598) {
+    .carregar-mais{
+        justify-content: center;
+        align-items:center;
+    }
+}
+
+@media (max-width:768) {
+    .carregar-mais{
+        justify-content: center;
+        align-items:center;
+    }
+}
+
+@media (max-width: 1803) {
+    .carregar-mais{
+        margin-left: 40%;
+        justify-content: center;
+        align-items:center;
+    }
+}

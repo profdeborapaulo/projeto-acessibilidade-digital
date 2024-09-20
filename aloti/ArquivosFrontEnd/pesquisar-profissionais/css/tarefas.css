@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+body {
+    font-family: "Nunito";
+    background-color: #F5F5F5;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 20px;  
+    max-width: 100%; /* Garante que a largura da container seja ajustável */
+    box-sizing: border-box;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 13px;
+}
+
+.tarefas, .estatisticas {
+    display: flex;
+    width: 100%; 
+    max-width: 200px;
+    height: 48px;
+    background-color: #34A087; 
+    border-radius: 22px;
+    align-items: center;
+    justify-content: center;
+}
+
+.estatisticas a{
+    text-decoration: none; 
+    color: white;
+}
+.tarefas a{
+    text-decoration: none; 
+    color: white;
+}
+.estatisticas {
+    background-color: #DB7495; 
+}
+
+.img-buttons {
+    width: 23px;
+    height: 30px;    
+}
+
+.buttons p {
+    font-size: 20px;
+    margin-left: 10px;
+    margin-top: 5px;
+    font-weight: 500;
+}
+
+.img-carrossel {
+    margin-top: 20px;
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    display: flex;
+}
+.text-atividade {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 60px;
+    margin-top: 8px;
+    font-weight: 400;
+}
+
+.estado-atividades  a{
+    text-decoration: none; 
+}
+.estado-atividades {
+    margin-top: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative; 
+    justify-content: center;
+    flex-wrap: nowrap; /* Garante que os botões não quebrem para a linha seguinte */
+}
+
+.fazer, .concluida , .fazer2 , .concluida2 {
+    position: relative; 
+    height: 44px;
+    width: 100%; 
+    max-width: 390px; 
+    border-radius: 32px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    
+}
+
+.fazer {
+    background-color: #34A087; 
+    z-index: 2;   /*Quem fica por cima e por baixo*/
+
+}
+
+.concluida {
+    background-color: #C4C5C8; 
+    margin-left: -50px;        
+    z-index: 1;              
+}
+
+.fazer2{
+    background-color: #C4C5C8; 
+    z-index: 1;
+}
+
+.concluida2{
+    background-color: #34A087; 
+    margin-left: -50px;   
+    z-index: 2;
+}
+.add-tarefa {
+    width: 280px;
+    height: 42px;
+    border-radius: 12px;
+    display: flex;
+    background-color:#DB7495;
+    color: white;
+    margin-top: 50px;
+}
+
+.add-tarefa p {
+    font-size: 19px;
+    font-weight: 600;
+    margin-top: 9px;
+    margin-left: 14px;
+}
+.add-tarefa a{
+    text-decoration: none; 
+    color: white;
+}
+.add-tarefa img {
+    width: 21px;
+    height: 21px;
+    margin-left: 26px;
+    margin-top: 10px;
+}
+
+.container-tarefas {
+    margin-top: 30px;
+}
+
+.fazer-tarefas {
+    display: flex;
+}
+
+.horario {
+    color: #6D7578;
+    text-align: center; 
+    display: flex;    
+    justify-content: center; 
+    align-items: center;  
+}
+
+.card-tarefa, .card-tarefa2 {
+    background-color: #51CBB3;
+    border-radius: 12px;
+    max-width: 1000px;
+    margin-left: 30px;
+    width: 100%;
+    height: 86px;
+    min-height: 86px;
+    height: auto; 
+    position: relative;
+}
+
+.card-tarefa2 {
+    background-color: #EFEFEF;
+}
+
+.titulo, .titulo2 {
+    font-size: 19px;
+    font-weight: 700;
+    color: #2B645C;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.titulo2 {
+    color:#6B7374;
+}
+
+.subtitulo, .subtitulo2 {
+    font-size: 15px;
+    font-weight: 500;
+    color: #2B645C;
+    margin-left: 40px;
+}
+
+.subtitulo2 {
+    color:#6B7374;
+}
+
+.button-editar, .button-editar2 {
+    position: absolute;
+    top: 50%;           
+    right: 20px;        
+    transform: translateY(-50%); 
+    cursor: pointer;
+}
+
+.button-editar2 {
+    width: 24px;
+    height: 24px;
+}
+
+.linha-com-bolinha, .linha {
+    position: relative;
+    max-width:1000px;    
+    width: 100%;
+    height: 2px;      
+    background-color: #34A087; 
+    margin: 20px 0;
+    margin-left: 45px;
+}
+.linha{
+    background-color: #C4C5C8;
+}
+.linha-com-bolinha::after {
+    content: '';
+    position: absolute;
+    left: 0;              
+    top: 50%;
+    transform: translateY(-50%);
+    width: 6px;       
+    height: 6px;
+    background-color: #34A087; 
+    border-radius: 50%;
+}
+
+/* Media Queries para ajuste responsivo */
+@media (max-width: 760px) {
+    .fazer, .concluida , .fazer2 , .concluida2{
+        height: 40px;
+        max-width: 150px; 
+    }
+
+    .estado-atividades p {
+        font-size: 18px;
+        margin-left: 10px;
+    }
+    .concluida {
+        margin-left: -30px; /
+    }
+    .add-tarefa {
+        width: 220px;
+        height: 40px;
+        border-radius: 10px;
+        margin-top: 30px;
+    }
+
+    .add-tarefa p {
+        font-size: 16px;
+        margin-left: 10px;
+    }
+
+    .add-tarefa img {
+        width: 18px;
+        height: 18px;
+        margin-left: 15px;
+    }
+
+    .card-tarefa, .card-tarefa2 {
+        margin-left: 20px;
+        height: 70px;
+    }
+
+    .titulo, .titulo2 {
+        margin-top: 10px;
+        font-size: 16px;
+        margin-left: 30px;
+    }
+
+    .subtitulo, .subtitulo2 {
+        font-size: 13px;
+        margin-left: 30px;
+    }
+
+    .linha-com-bolinha, .linha {
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .fazer, .concluida .fazer2 , .concluida2{
+        max-width: 120px; /* Ajusta ainda mais a largura dos botões em telas muito pequenas */
+    }
+    .estado-atividades p {
+        font-size: 15px;
+        margin-left: 30px;
+    }
+    .img-buttons {
+        width: 18px;
+        height: 25px; 
+    }
+    .buttons p {
+        font-size: 15px;
+    }
+
+    .add-tarefa {
+        width: 180px;
+        height: 35px;
+        border-radius: 8px;
+    }
+
+    .add-tarefa p {
+        font-size: 14px;
+        margin-left: 8px;
+    }
+
+    .add-tarefa img {
+        width: 16px;
+        height: 16px;
+        margin-left: 10px;
+    }
+
+    .card-tarefa, .card-tarefa2 {
+        margin-left: 10px;
+        height: 60px;
+    }
+
+    .titulo, .titulo2 {
+        font-size: 14px;
+        margin-left: 20px;
+    }
+
+    .subtitulo, .subtitulo2 {
+        font-size: 12px;
+        margin-left: 20px;
+    }
+
+    .button-editar, .button-editar2 {
+        right: 10px;
+    }
+
+    .linha-com-bolinha, .linha {
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 430px) {
+    .tarefas .img-buttons {
+        margin-left: 5px;
+    }
+    .estatisticas .img-buttons {
+        margin-left: 10px; 
+    }
+
+    .button-editar, .button-editar2{
+        width: 17px;
+        right: 27px;
+        top: 22px;
+    }
+    .subtitulo , .subtitulo2{
+        margin-top: 3px;
+        clear: both;
+    }
+}
+
+@media (max-width: 368px) {
+    .button-editar, .button-editar2{
+        right: 20px;
+        top: 22px;
+    }
+}
+
+@media (max-width: 360px) {
+    .button-editar, .button-editar2{
+        right: 13px;
+    }
+
+    .card-tarefa2 {
+        min-height: 86px; 
+        height: auto; 
+    }
+}
+
+@media (max-width: 344px) {
+    .tarefas {
+        margin-left: 20px;
+    }
+    .estado-atividades p {
+        font-size: 13px;
+        margin-left: 20px;
+    }
+    .titulo, .titulo2{
+        margin-top: 3px;
+        font-size: 13px;
+        margin-left: 10px;
+    }
+    .subtitulo , .subtitulo2{
+        margin-left: 10px;
+    }
+    .button-editar , .button-editar2{
+        width: 15px;
+        
+    }
+}

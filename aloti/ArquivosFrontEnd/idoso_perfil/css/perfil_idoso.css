@@ -1,0 +1,237 @@
+@font-face {
+  font-family: "Nunito-regular";
+  src: url(../../font/Nunito-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Nunito-semibold";
+  src: url(../../font/Nunito-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: "Nunito-bold";
+  src: url(../../font/Nunito-Bold.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5;
+  font-family: Nunito;
+  box-sizing: border-box;
+  background-image: url(../img/resumo2.svg);
+}
+
+h2 {
+  color: #005351;
+}
+
+.InformaçõesProfissionais {
+  font-family: Nunito;
+}
+
+.texto {
+  font-family: "Nunito-regular";
+  display: flex;
+  align-items: flex-start;
+  margin: 10px 0;
+}
+
+.verde {
+  flex: 0 0 200px; /* Largura fixa para os títulos */
+  color: #34a087;
+  font-weight: 600;
+  font-family: "Nunito-semibold";
+}
+
+.textos {
+  flex: 1;
+  margin-left: 10px; /* Espaçamento entre o título e o texto */
+}
+
+.textos p {
+  margin: 0; /* Remove a margem padrão dos parágrafos dentro de .textos */
+}
+
+.subtitulo {
+  font-family: "Nunito-semibold";
+  color: rgb(87, 87, 87);
+  font-size: 18px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.subtitulo1 {
+  font-family: "Nunito-semibold";
+  color: rgb(87, 87, 87);
+  font-size: 18px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.ServiçosDisponibilidade {
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.InformaçõesProfissionais {
+  margin-left: 30px;
+  margin-bottom: 30px;
+  /* padding-right: 90px; */
+}
+
+.InformaçõesPessoais {
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.perfil {
+  background-color: #f5f6fa;
+  border-radius: 55px 55px 0 0;
+  height: 105em;
+}
+
+.perfil2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.containt {
+  top: 70px;
+  margin-bottom: 20px;
+}
+
+.Fundoverde {
+  height: 233px;
+}
+
+.contratar {
+  height: 96px;
+  background-color: #f5f6fa;
+  display: flex;
+  align-items: center;
+}
+
+.buttons {
+  margin-left: 980px;
+}
+
+div2 {
+  display: flex;
+}
+
+.contrat img {
+  width: 66px;
+  height: 66px;
+  border-radius: 100px;
+}
+
+.estrelas {
+  display: block;
+  margin: auto;
+  margin-bottom: 25px;
+  margin-top: 70px;
+  height: 30%;
+}
+
+.informacaoes {
+  font-family: "Nunito-bold";
+  font-size: 30px;
+  margin-left: 30px;
+}
+
+.hora {
+  margin: 0;
+  font-size: 20px;
+}
+.favoritos {
+  background-color: #34a087;
+  width: 180px;
+  height: 40px;
+  border-radius: 20px;
+  color: #ffffff;
+  font-size: 16px;
+  border: #34a087 1px solid;
+  margin-right: 10px;
+}
+
+.editar {
+  background-color: #34a087;
+  width: 180px;
+  height: 40px;
+  border-radius: 20px;
+  color: #ffffff;
+  font-size: 16px;
+  border: #34a087 1px solid;
+  margin-left: 10px;
+}
+
+.favoritos,
+.editar {
+  font-family: "Nunito-semibold";
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+
+.contratarEnfermeira {
+  margin: 0px;
+}
+
+.MariaLucia {
+  margin: 0px;
+}
+
+.mariaLucia2 {
+  font-family: "Nunito-bold";
+  font-size: 30px;
+  margin: -60px;
+}
+
+.imgPerfil {
+  border-radius: 100%;
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.imgPerfil1 {
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  margin: 0px 20px;
+}
+
+.circle {
+  /* width: 150px;
+    height: 150px; */
+  margin: auto;
+  border-radius: 50%;
+
+  position: relative;
+  top: -70px;
+}
+
+.coracao {
+  background: #c0c1c2;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  /* bottom: 3px;
+    right: 11px; */
+}
+
+.coracao img {
+  width: 35px;
+  height: 35px;
+}
+
+p {
+  font-size: 18px;
+}

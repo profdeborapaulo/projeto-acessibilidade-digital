@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro3</title>
+    <!-- Inclua o Font Awesome para usar os ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/CadastroForm3.css">
+    <script>
+        // Função para mostrar/ocultar elementos com base no botão clicado
+        function toggleDisplay(option) {
+            var fileOption = document.getElementById('fileOption');
+            var linkOption = document.getElementById('linkOption');
+
+            if (option === 'file') {
+                fileOption.style.display = 'block';
+                linkOption.style.display = 'none';
+            } else if (option === 'link') {
+                fileOption.style.display = 'none';
+                linkOption.style.display = 'block';
+            }
+        }
+
+        // Função para mostrar o nome do arquivo e adicionar a opção de remover
+        function updateFileName() {
+            var input = document.getElementById('input_file');
+            var fileName = document.getElementById('file-name');
+            var removeButton = document.getElementById('remove-file');
+
+            // Mostrar o nome do arquivo
+            if (input.files.length > 0) {
+                fileName.textContent = input.files[0].name;
+                removeButton.style.display = 'inline'; // Mostrar o botão de remoção
+            } else {
+                fileName.textContent = '';
+                removeButton.style.display = 'none'; // Ocultar o botão de remoção
+            }
+        }
+
+        // Função para remover o arquivo selecionado
+        function removeFile() {
+            var input = document.getElementById('input_file');
+            var fileName = document.getElementById('file-name');
+            var removeButton = document.getElementById('remove-file');
+
+            // Resetar o input de arquivo
+            input.value = '';
+            fileName.textContent = '';
+            removeButton.style.display = 'none'; // Ocultar o botão de remoção
+        }
+    </script>
+</head>
+<body>
+    <a href="CadastroForm2.html"><img class="seta" src="img/seta.svg" alt=""></a>
+    <h1>Cadastro</h1>
+    <div class="container">
+
+        <div class="progress-bar">
+          <div class="step">
+            <div class="bullet" id="bullet1"></div>
+            
+          </div>
+          <div class="step">
+            <div class="bullet" id="bullet2"></div>
+            
+          </div>
+          <div class="step">
+            <div class="bullet" id="bullet3"></div>
+            
+          </div>
+          <div class="step">
+            <div class="bullet" id="bullet4"></div>
+      
+          </div>
+        </div>
+    </div>
+    <p class="pessoais">Informações profissionais</p>
+    <div class="content">
+
+        <div class="content1">
+            <label for="">Área de atuação</label>
+            <select id="areaAtuacao" required>
+              <option value="" selected disabled>Selecionar</option>
+              <option value="">Cuidador Geral</option>
+              <option value="">Cuidador Ocupacional</option>
+              <option value="">Cozinheiro</option>
+              <option value="">Enfermeiro</option>
+              <option value="">Fisioterapeuta</option>
+              <option value="">Psicólogo</option>
+            </select>
+            <label for="">Número de registro profissional</label>
+            <input type="text" id="registroProfissional" placeholder="ex: CRM, COREN, CRP" required>
+            <label for="">Instituição de formação</label>
+            <input type="text" id="instituicaoFormacao" placeholder="Digite o nome da instituição que conferiu sua habilitação profissional" required>
+            <label for="">Ano de formação</label>
+            <input type="date" id="anoFormacao" required>
+        </div>
+    
+        <div class="content2">
+            <label for="">Comprovação de formação</label>
+            <div class="btn">
+                <button id="btn" type="button" onclick="toggleDisplay('file')">Arquivo</button>
+                <button id="btn" type="button" onclick="toggleDisplay('link')">Link</button>
+            </div>
+            <!-- Seção para upload de arquivo -->
+            <div id="fileOption"  style="display: none;">
+              <p>Por favor, anexe um documento comprobatório  <br> 
+                de sua formação. O arquivo deve estar em um dos <br> 
+                 seguintes formatos: PDF, JPG, PNG ou DOCX, e deve ter <br>
+                 entre 50 KB e 10 MB.</p>
+                
+                    <label class="labelFile" for='input_file' style="cursor: pointer;">Selecionar um arquivo<i class="fas fa-folder"style="margin-left: 5px;"></i></label>
+                    <input id='input_file' type='file' onchange="updateFileName()" />
+                    <span id='file-name'></span>
+                    <!-- Botão de remoção com ícone de lixo -->
+                    <button type='button' id='remove-file' onclick="removeFile()" style="display:none;">
+                        <i class="fas fa-trash"></i>
+                    </button>
+            </div>
+            <!-- Seção para inserção de link -->
+            <div id="linkOption" style="display: none;">
+              <div>
+                <p>Por favor, insira o link da credencial, registro profissional <br>
+                  ou do verificador oficial da sua formação para validar<br>
+                    sua autenticidade.</p>
+              </div>
+                <input type="text" id="linkComprovacao" placeholder="Ex: https://examplo.com/registro-profissional">
+            </div>
+        </div>
+    </div>
+    
+    <div class="button-wrapper">
+        <button type="submit" id="submit">Próximo</button>
+
+    </div> 
+
+<script>
+      function toggleDisplay(option) {
+      document.getElementById('fileOption').style.display = (option === 'file') ? 'block' : 'none';
+      document.getElementById('linkOption').style.display = (option === 'link') ? 'block' : 'none';
+    }
+    // Função para capturar e enviar os dados do formulário para o Firebase
+    document.getElementById('submit').addEventListener('click', function(e) {
+    e.preventDefault();
+
+      // Pega os valores do formulário
+      const areaAtuacao = document.getElementById('areaAtuacao').value;
+      const registroProfissional = document.getElementById('registroProfissional').value;
+      const instituicaoFormacao = document.getElementById('instituicaoFormacao').value;
+      const anoFormacao = document.getElementById('anoFormacao').value;
+      const linkComprovacao = document.getElementById('linkComprovacao').value;
+      // Verifica se o usuário anexou um arquivo
+      const file = document.getElementById('input_file').files[0];
+
+      localStorage.setItem('areaAtuacao', areaAtuacao);
+      localStorage.setItem('registroProfissional', registroProfissional);
+      localStorage.setItem('instituicaoFormacao', instituicaoFormacao);
+      localStorage.setItem('anoFormacao', anoFormacao);
+      localStorage.setItem('linkComprovacao', linkComprovacao);
+      localStorage.setItem('input_file', input_file);
+  
+
+      // Envia os dados para o Firebase
+      alert("Documentos enviado com sucesso!");
+  window.location.href = 'CadastroForm4.html';
+    })
+    </script>
+    <!-- <script src="CadastroForm3.js"></script> -->
+</body>
+</html>

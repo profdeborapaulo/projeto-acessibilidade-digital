@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+</head>
+
+<body>
+
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form>
+                <h1 class="title">Criar conta</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="icon"><i class="fab fa-instagram"></i></a>
+                </div>
+                <span>ou use seu email para registrar:</span>
+
+                <input type="text" placeholder="Nome">
+
+                <input type="email" placeholder="Email" id="email_cad" onchange="onChangeEmailCad()">
+                <div class="error" id="email_cad-required-error">Email é obrigatório</div>
+                <div class="error" id="email_cad-invalid-error">Email é inválido</div>
+                
+                <input type="password" placeholder="Senha" id="password_cad" onchange="onChangePasswordCad()">
+                <div class="error" id="password_cad-required-error">Senha é obrigatória</div>
+                <div class="error" id="password_cad-min-length-error">Senha deve ter pelo menos 6 caracteres</div>
+
+                <input type="password" placeholder="Confirmar senha" id="confirmPassword" onchange="onChangeConfirmPassword()">
+                <div class="error" id="password_cad-doesnt-match-error">"Senha" e "Confirmar senha" devem ser iguais!</div>
+
+                <button type="button" onclick="register();" id="cad_button" disabled>Cadastrar</button>
+            </form>
+        </div>
+
+        <div class="form-container sign-in">
+            <form>
+                <h1 class="title">Entrar</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <span>ou use seu email para acessar:</span>
+                
+                <input type="email" placeholder="Email" id="email_login" onchange="onChangeEmailLogin()">
+                <div class="error" id="email_login-required-error">Email é obrigatório</div>
+                <div class="error" id="email_login-invalid-error">Email é inválido</div>
+
+                <input type="password" placeholder="Senha" id="password_login" onchange="onChangePasswordLogin()">
+                <div class="error" id="password_login-required-error">Senha é obrigatória</div>
+                
+                <button id="recover-password-button" type="button" onclick="recoverPassword()" disabled>Esqueceu a senha?</button>
+                <button type="button" id="login-button" disabled onclick="login()">Entrar</button>
+            </form>
+        </div>
+
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <img src="img/logoLogin.svg" alt="">
+                    <h1>Olá novamente!</h1>
+                    <p>Faça login para acessar sua conta e continuar a usufruir de nossos serviços de cuidado domiciliar.</p>
+                    <button class="hiddenB" id="login">Entrar</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <img src="img/logoLogin.svg" alt="">
+                    <h1>Seja bem-vindo(a)!</h1>
+                    <p>Registre-se para usufruir de nossos serviços de cuidado domiciliar.</p>
+                    <button class="hiddenB" id="register">Cadastrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="loading-overlay" class="loading-overlay hidden">
+        <div class="loader"></div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="register.js"></script>
+    <script src="validations.js"></script>
+    <script src="../loading.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-auth-compat.js"></script>
+    <script src="../firebase-init.js"> </script>
+</body>
+</html>

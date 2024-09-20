@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style_landingpage.css">
+  <link rel="stylesheet" href="css/header_landingpage.css">
+  <link rel="stylesheet" href="css/footer_landingpage.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <!--Boxicons-->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <script defer src="script_landingpage.js"></script>
+  <title>Aloti</title>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul class="sidebar">
+        <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960"
+              width="26">
+              <path
+                d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z" />
+            </svg></a></li>
+        <li><a href="#encontrar-profissionais">Encontrar profissionais</a></li>
+        <li><a href="#">Contato</a></li>
+        <li><a href="#">Funcionalidades</a></li>
+        <li><a href="#">Depoimentos</a></li>
+        <li><a href="#">Sobre</a></li>
+      </ul>
+      <ul>
+        <li><img class="logo" src="img/Vector 125.svg" width="80px"></li>
+        <li class="hideOnMobile"><a href="#encontrar-profissionais">Encontrar profissionais</a></li>
+        <li class="hideOnMobile"><a href="#">Contato</a></li>
+        <li class="hideOnMobile"><a href="#">Funcionalidades</a></li>
+        <li class="hideOnMobile"><a href="#">Depoimentos</a></li>
+        <li class="hideOnMobile"><a href="#">Sobre</a></li>
+        <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26"
+              viewBox="0 96 960 960" width="26">
+              <path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z" />
+            </svg></a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!--Banner-->
+  <div class="banner">
+    <img src="img/bannerTop.png">
+    <div class="textos_banner">
+      <div class="texto1">Olá, seja bem-vindo(a) ao Aloti!</div>
+      <div class="texto2">Encontre o cuidado homecare especializado e personalizado que você merece com profissionais
+        dedicados e confiáveis.</div>
+
+      <a href="../home/index.html"><button type="submit" class="button1">Entrar</button></a> 
+      <button type="submit" class="button2">Cadastre-se</button>
+    </div>
+  </div>
+
+  <!--Encontrar profissionais-->
+  <div id="encontrar-profissionais">
+  <div class="encontre">
+    <h1>Encontre profissionais</h1>
+    <p>O Aloti simplifica a busca por profissionais qualificados ao oferecer filtros detalhados e uma interface
+      intuitiva. Usuários podem procurar cuidadores com base em especialidades, localização, disponibilidade, gostos e
+      interesses, e avaliações de outros clientes.</p>
+  </div>
+
+  <!--Cards-->
+  <div class="container_card">
+    <!-- Card 1 -->
+    <div class="card card-1">
+      <!-- card1-header -->
+      <div class="card-header">
+        <img src="img/card1.png" class="card-img" />
+      </div>
+      <!-- card1-body -->
+      <div class="card-body">
+        <h2 class="card-titulo">Cuidador geral</h2>
+        <p class="card-texto">
+          Profissionais treinados para ajudar em atividades diárias e oferecer companhia, promovendo o bem-estar geral
+          dos idosos.
+        </p>
+      </div>
+    </div>
+
+    <!-- Card 2 -->
+    <div class="card card-2">
+      <!-- card2-header -->
+      <div class="card-header">
+        <img src="img/card2.png" class="card-img" />
+      </div>
+      <!-- card-body -->
+      <div class="card-body">
+        <h2 class="card-titulo">Cuidador ocupacional</h2>
+        <p class="card-texto">
+          Especialistas em atividades terapêuticas e recreativas para manter a mente e o corpo dos idosos ativos e
+          saudáveis.
+        </p>
+      </div>
+    </div>
+
+    <!-- Card 3 -->
+    <div class="card card-3">
+      <!-- card3-header -->
+      <div class="card-header">
+        <img src="img/c3.jpg" class="card-img" />
+      </div>
+
+      <!-- card3-body -->
+      <div class="card-body">
+        <h2 class="card-titulo">Cozinheiro</h2>
+        <p class="card-texto">
+          Chefs especializados em preparar refeições nutritivas e adaptadas às necessidades dietéticas dos idosos.
+        </p>
+      </div>
+    </div>
+
+    <!-- Card 4 -->
+    <div class="card card-4 hidden">
+      <div class="card-header">
+        <img src="img/c4.jpg" class="card-img" />
+      </div>
+      <div class="card-body">
+        <h2 class="card-titulo">Enfermeiro</h2>
+        <p class="card-texto">
+          Chefs especializados em preparar refeições nutritivas e adaptadas às necessidades dietéticas dos idosos.
+        </p>
+      </div>
+    </div>
+
+    <!-- Card 5 -->
+    <div class="card card-5 hidden">
+      <div class="card-header">
+        <img src="img/c5.jpg" class="card-img" />
+      </div>
+      <div class="card-body">
+        <h2 class="card-titulo">Fisioterapeuta</h2>
+        <p class="card-texto">
+          Terapeutas que oferecem exercícios físicos e tratamentos para melhorar a mobilidade e aliviar dores crônicas.
+        </p>
+      </div>
+    </div>
+
+    <!-- Card 6 -->
+    <div class="card card-6 hidden">
+      <div class="card-header">
+        <img src="img/c6.jpg" class="card-img" />
+      </div>
+      <div class="card-body">
+        <h2 class="card-titulo">Psicólogo</h2>
+        <p class="card-texto">
+          Especialistas em saúde mental que fornecem suporte emocional e terapias para melhorar a qualidade de vida e o
+          bem-estar emocional.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <button id="ver-mais">Ver mais</button>
+</div>
+
+  <!--Entre em  Contato-->
+  <div class="fundo-contato">
+    <div class="lado-esquerdo">
+      <h1 id="titulo-contato">Entre em contato</h1>
+      <p class="texto-contato">Confira como você pode nos encontrar e cadastre seu e-mail para receber todas as
+        novidades! Siga-nos nas
+        redes sociais e entre em contato pelo nosso SAC via e-mail ou telefone.
+      </p>
+
+      <div class="redes-sociais">
+        <div class="grupo-redes">
+          <img src="img/facebbokVerde.svg" alt="">
+          <div class="texto-redes">
+            <p>Facebook</p>
+            <p class="usuario">@aloti.etec</p>
+          </div>
+        </div>
+
+        <div class="grupo-redes">
+          <img src="img/instagramVerde.svg">
+          <div class="texto-redes">
+            <p>Instagram</p>
+            <p class="usuario">@aloti.etec</p>
+          </div>
+        </div>
+
+        <div class="grupo-redes">
+          <img src="img/linkedinVerde.svg">
+          <div class="texto-redes">
+            <p>Linkedin</p>
+            <p class="usuario">@aloti.etec</p>
+          </div>
+        </div>
+
+        <div class="grupo-redes-email">
+          <img src="img/emailVerde.svg">
+          <div class="texto-redes">
+            <p>Email</p>
+            <p class="usuario">@aloti.etec@gmail.com</p>
+          </div>
+        </div>
+
+        <div class="grupo-redes-sac">
+          <img src="img/sacVerde.svg">
+          <div class="texto-redes">
+            <p>SAC</p>
+            <p class="usuario">0800-123-4567</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="lado-direito">
+      <form class="formulario">
+        <h3 class="titulo-formulario">Seja um de nós!</h3>
+        <div class="campo-forms">
+          <label for="email">Email:</label>
+          <input type="email" id="email">
+        </div>
+
+        <div class="campo-forms">
+          <label for="email">Confirmar email:</label>
+          <input type="email" id="confirmar-email">
+        </div>
+
+        <input type="checkbox" id="termos" name="termos">
+        <label>Eu aceito receber informações por email </label>
+
+        <div class="botao">
+          <button type="submit" class="btn-inscrever">Inscrever</button>
+
+      </form>
+
+    </div>
+  </div> <img src="img/lottie.png" id="lottie" width="300px" height="300px">
+  </div>
+
+  <!--Funcionalidades-->
+  <div class="fundo-funcionalidades">
+    <h1>Funcionalidades</h1>
+    <!-- Container de cards -->
+    <div class="custom-container-card">
+      <!-- Card 1 -->
+      <div class="custom-card">
+        <h2 class="custom-card-titulo">Agendamentos</h2>
+        <div class="custom-card-header">
+          <img src="img/agendamentos.png" class="custom-card-img" alt="Cuidador geral" />
+        </div>
+        <div class="custom-card-body">
+          <p class="custom-card-texto">
+            A interface é intuitiva, oferecendo controle total e organização eficiente dos compromissos, 
+            garantindo que todas as necessidades dos idosos sejam atendidas de maneira oportuna.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="custom-card">
+        <h2 class="custom-card-titulo">Contratos</h2>
+        <div class="custom-card-header">
+          <img src="img/contratos.png" class="custom-card-img" alt="Cuidador ocupacional" />
+        </div>
+        <div class="custom-card-body">
+          <p class="custom-card-texto">
+            Com a plataforma Aloti, é possível administrar contratos  de forma prática e segura. A
+            o final, o contrato é gerado, permitindo visualização detalhada e opção de download em formato PDF ou DOCX.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="custom-card">
+        <h2 class="custom-card-titulo">Pagamentos</h2>
+        <div class="custom-card-header">
+          <img src="img/pagamentos.png" class="custom-card-img" alt="Cozinheiro" />
+        </div>
+        <div class="custom-card-body">
+          <p class="custom-card-texto">
+            Oferecemos uma variedade de opções de pagamento para atender às suas preferências. Desde cartões de crédito
+            até transferências bancárias, escolha a forma mais conveniente para você.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!--Depoimentos-->
+    <div class="fundo-depoimentos">
+      <h1 class="titulo-depoimento">Depoimentos</h1>
+      <p id="texto-depoimentos">Conheça o que nossos clientes têm a dizer! Seja parte da nossa comunidade e descubra como o Aloti está transformando a vida de idosos e suas famílias. Seja bem-vindo ao nosso mundo de cuidado e confiança!</p>
+      <!-- Container de cards -->
+      <div class="custom-container-card">
+        <!-- Card 1 -->
+        <div class="custom-card">
+          <div class="custom-card-header">
+            <img src="img/d1.png" class="custom-card-img" alt="Cuidador geral" />
+          </div>
+          <h2 class="custom-card-titulo">Fernanda Machado</h2>
+          <div class="estrelas">
+            <i class='bx bxs-star' style='color:#ff9bb1'  ></i>
+            <i class='bx bxs-star' style='color:#ff9bb1'  ></i>
+            <i class='bx bxs-star' style='color:#ff9bb1'  ></i>
+            <i class='bx bxs-star' style='color:#ff9bb1'  ></i>
+            <i class='bx bxs-star' style='color:#ff9bb1'  ></i>
+          </div>
+          <div class="custom-card-body">
+            <p class="custom-card-texto">
+              Estou muito satisfeita com o serviço prestado pelo Aloti. Encontrei um cuidador excelente que tem sido um
+              verdadeiro anjo na vida da minha mãe. Recomendo totalmente!
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="custom-card">
+          <div class="custom-card-header">
+            <img src="img/d2.png" class="custom-card-img" alt="Cuidador ocupacional" />
+          </div>
+          <h2 class="custom-card-titulo">José Silva Pires</h2>
+          <div class="estrelas">
+            <i class='bx bxs-star' style='color:#ff9bb1'  ></i>
+            <i class='bx bxs-star' style='color:#ff9bb1'  ></i>
+            <i class='bx bxs-star' style='color:#ff9bb1'  ></i>
+            <i class='bx bxs-star' style='color:#ff9bb1'  ></i>
+            <i class='bx bxs-star' style='color:#ff9bb1'  ></i>
+          </div>
+          <div class="custom-card-body">
+            <p class="custom-card-texto">
+              O Aloti me proporcionou uma experiência incrível ao encontrar um fisioterapeuta altamente qualificado.
+              Graças a eles, estou me recuperando mais rápido do que imaginei!
+            </p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="custom-card">
+          <div class="custom-card-header">
+            <img src="img/d3.png" class="custom-card-img" alt="Cozinheiro" />
+          </div>
+          <h2 class="custom-card-titulo">Maria Oliveira</h2>
+          <div class="estrelas">
+            <i class='bx bxs-star' style='color:#ff9bb1'  ></i>
+            <i class='bx bxs-star' style='color:#ff9bb1'  ></i>
+            <i class='bx bxs-star' style='color:#ff9bb1'  ></i>
+            <i class='bx bxs-star' style='color:#ff9bb1'  ></i>
+            <i class='bx bxs-star' style='color:#ff9bb1'  ></i>
+          </div>
+          <div class="custom-card-body">
+            <p class="custom-card-texto">
+              O Aloti trouxe luz à minha rotina! Com profissionais atenciosos e prestativos, agora me sinto mais segura
+              e confiante em minha própria casa. Minha gratidão a toda equipe!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--Sobre o Aloti-->
+
+    <h1 class="titulo-sobre">Sobre o Aloti</h1>
+    <div class="sobre">
+      <div class="sobre-esquerda">
+        <img src="img/sobre.png">
+      </div>
+      <div class="sobre-direita">
+        <div class="missao">
+          <img src="img/missao.svg">
+          <div class="textos-sobre">
+            <p class="titulo-missao">Missão</p>
+            <p>Promover o bem-estar e a autonomia dos idosos, conectando-os a profissionais de cuidados domiciliares
+              qualificados.</p>
+          </div>
+        </div>
+        <div class="visao">
+          <img src="img/visão.svg">
+          <div class="textos-sobre">
+            <p class="titulo-visao">Visão</p>
+            <p>Ser referência na prestação de serviços de assistência domiciliar, oferecendo uma experiência
+              personalizada e de qualidade.</p>
+          </div>
+        </div>
+        <div class="valores">
+          <img src="img/valores.svg">
+          <div class="textos-sobre">
+            <p class="titulo-valores">Valores</p>
+            <p>Compromisso com a excelência, respeito à individualidade, e cuidado humanizado são os pilares que
+              orientam nosso trabalho.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <img class="logoFooter" src="img/Vector.png" alt="">
+
+            <ul>
+              <li><a href="#">© 2024, Aloti - All rights deserved.</a></li>
+              <li><a href="#">aloti.tcc@gmail.com</a></li>
+            </ul>
+          </div>
+
+
+          <div class="footer-col">
+
+            <ul>
+              <li><a href="#">PÁGINA INICIAL</a></li>
+              <li><a href="#">ENCONTRAR PROFISSIONAIS</a></li>
+              <li><a href="#">AGENDAMENTOS</a></li>
+              <li><a href="#">CONTRATOS</a></li>
+              <li><a href="#">CONVERSAS</a></li>
+              <li><a href="#">PAGAMENTOS</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <ul>
+              <p class="imgFooter"> <img src="img/Vector (2).svg" alt="" class="imgFooterPng"> <a href="#">Termos de
+                  privacidade</a></p>
+              <p class="imgFooter"> <img src="img/confg.svg" alt="" class="imgFooterPng"><a href="#">Configurações</a>
+              </p>
+              <p class="imgFooter"> <img src="img/fone.svg" alt="" class="imgFooterPng"><a href="#">Ajuda e suporte</a>
+              </p>
+
+            </ul>
+          </div>
+          <div class="footer-col">
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

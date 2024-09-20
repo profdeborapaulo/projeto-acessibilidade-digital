@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+body {
+    font-family: "Nunito";
+    background-color: #F5F6FA;
+}
+
+h1{
+    color: #DB7495;
+    text-align: center;
+    font-size: 34px;
+    margin: 0;
+}
+
+.pessoais{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p{
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+label{
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 20px;
+    display: block;
+ }
+
+input .nome {
+    width: 200px;
+}
+
+.parentesco input{
+    width: 200px;
+}
+
+
+input{  
+    /* padding: 10px 100px; */
+    height: 35px;
+    width: 400px;
+    margin-top: 10px;
+    font-size: 15px;
+    border: 1px solid #E6E6E6;
+    border-radius: 12px;
+    background-color: #E6E6E6;
+    outline: none;
+    padding-left: 5px;
+ }
+
+ input:focus {
+    border-color: #CBCBCB; 
+  }
+
+button{
+    text-align: center;
+    padding: 9px 90px;
+    font-size: 18px;
+    margin-top: 10px;
+    border: 1px solid #34A087;
+    border-radius: 20px;
+    background-color: #34A087;
+    color: white;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    margin-top: 50px;
+    font-family: "Nunito";
+
+    box-sizing: border-box; 
+}
+
+
+
+.content{
+    display: flex;
+    justify-content: center; 
+    gap: 40px; 
+    margin: 0 auto; 
+    padding: 20px;
+    
+}
+
+.seta{
+  margin-top: 20px;
+  margin-left: 70px;
+}
+  
+
+.nomeParentesco{
+    display: flex;
+}
+
+
+
+h2{
+    color: #34A087;
+}
+
+
+.container{
+    width: 330px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin: 0 auto; 
+  }
+  
+  
+  .container .progress-bar{
+    display: flex;
+    margin: 40px 0;
+    user-select: none;
+  }
+  .container .progress-bar .step{
+    position: relative;
+    text-align: center;
+    width: 100%;
+  }
+  
+  
+  .progress-bar .step .bullet{
+    height: 25px;
+    width: 25px;
+    border: 2px solid #34A087;
+    display: inline-block;
+    border-radius: 50%;
+    position: relative;
+    transition: 0.2s;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 25px;
+  }
+  
+  .progress-bar .step .bullet span{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .progress-bar .step .bullet.active span{
+    display: none;
+  }
+  
+  .progress-bar .step .bullet:before,
+  .progress-bar .step .bullet:after{
+    position: absolute;
+    content: '';
+    bottom: 11px;
+    right: -51px;
+    height: 3px;
+    width: 44px;
+    background: #34A087;
+  }
+  
+  .progress-bar .step:last-child .bullet:before,
+  .progress-bar .step:last-child .bullet:after{
+    display: none;
+  }
+
+#bullet2{
+    background: #34A087;
+  }
+
+/* Media Queries para telas menores (tablets e smartphones) */
+@media screen and (max-width: 768px) {
+  input {
+      width: 100%; /* O input ocupa 100% da largura disponível */
+  }
+
+  .content {
+      flex-direction: column;
+      padding: 10px;
+  }
+
+  .container {
+      width: 90%; /* A largura da barra de progresso será 90% da largura da tela */
+  }
+
+  button {
+      width: 100%;
+      padding: 9px 0;
+  }
+}
+
+/* Media Queries para telas muito pequenas (smartphones em modo retrato) */
+@media (max-width: 768px) {
+  .content {
+      flex-direction: column;
+      gap: 10px;
+      padding: 10px;
+  }
+
+  button {
+      width: 100%;
+      padding: 12px 20px;
+  }
+
+  .container {
+      width: 90%;
+  }
+
+  .content1, .content2 {
+      width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+      font-size: 28px;
+  }
+
+  .pessoais {
+      font-size: 18px;
+  }
+
+  label, input {
+      font-size: 16px;
+  }
+
+  .seta {
+      margin-left: 10px;
+  }
+
+  .content {
+      padding: 5px;
+  }
+}

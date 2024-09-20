@@ -1,0 +1,203 @@
+@font-face {
+  font-family: "Nunito-regular";
+  src: url(../../font/Nunito-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Nunito-semibold";
+  src: url(../../font/Nunito-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: "Nunito-bold";
+  src: url(../../font/Nunito-Bold.ttf);
+}
+
+
+body{
+    background-color: #F5F6FA;
+    overflow-x: hidden;
+}
+
+h1{
+    color: #DB7495;
+    text-align: center;
+    font-family: "Nunito-bold";
+    font-size: 34px;
+}
+
+h2{
+    font-family: "Nunito-semibold";
+    font-size: 24px;
+}
+
+.container {
+    width: 330px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin: 0 auto; 
+}
+  
+  .container .progress-bar{
+    display: flex;
+    margin: 40px 0;
+    user-select: none;
+  }
+  .container .progress-bar .step{
+    position: relative;
+    text-align: center;
+    width: 100%;
+  }
+  
+  
+  .progress-bar .step .bullet{
+    height: 25px;
+    width: 25px;
+    border: 2px solid #34A087;
+    display: inline-block;
+    border-radius: 50%;
+    position: relative;
+    transition: 0.2s;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 25px;
+  }
+  
+  .progress-bar .step .bullet span{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .progress-bar .step .bullet.active span{
+    display: none;
+  }
+  
+  .progress-bar .step .bullet:before,
+  .progress-bar .step .bullet:after{
+    position: absolute;
+    content: '';
+    bottom: 11px;
+    right: -51px;
+    height: 3px;
+    width: 44px;
+    background: #34A087;
+  }
+  
+  .progress-bar .step:last-child .bullet:before,
+  .progress-bar .step:last-child .bullet:after{
+    display: none;
+  }
+
+
+
+p{
+    font-size: 18px;
+    margin-bottom: 0;
+    font-family: "Nunito-regular";
+}
+
+.seta{
+    margin-top: 20px;
+    margin-left: 70px;
+}
+
+#botao{
+    text-align: center;
+    padding: 9px 90px;
+    font-size: 18px;
+    margin-top: 10px;
+    border: 1px solid #34A087;
+    border-radius: 20px;
+    background-color: #34A087;
+    color: white;
+    cursor: pointer;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-family: "Nunito-regular";
+    box-sizing: border-box; 
+}
+
+.button-wrapper{
+    text-align: center;
+}
+
+.container2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.section1, .section2 {
+  width: 35%;
+  margin-left: 50px; /* Margens laterais */
+  margin-right: 50px;
+  margin-bottom: 20px; /* Margem inferior */
+  box-sizing: border-box;
+}
+
+
+
+/* Quando a tela for menor que 768px, as divs ficam uma embaixo da outra */
+@media (max-width: 768px) {
+  .section1, .section2 {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom: 20px; /* Mantém o espaço entre as divs */
+  }
+}
+
+
+  .buttons {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 20px;
+    border: 1px solid #34A087;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: "Nunito-regular";
+  }
+
+  
+
+  .buttons[type="text"] {
+    cursor: text;
+}
+
+.buttons-outros {
+  background-color: #E6E6E6;
+  border: none;
+  font-family: "Nunito-regular";
+  border-radius: 50px;
+  display: inline-block;
+  margin: 5px;
+  padding: 10px 20px;
+  outline: none; /* Remove o contorno padrão ao clicar */
+  box-sizing: border-box;
+}
+
+ .buttons-outros:focus {
+  border: 1px solid #34A087;
+} 
+
+.buttons.clicked {
+  background-color: #34A087;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .section1, .section2 {
+      width: 100%;
+      margin: 0 0 20px 0;
+  }
+  .seta {
+      margin-left: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .buttons, .buttons-outros {
+      flex: 1 1 100%;
+  }
+}

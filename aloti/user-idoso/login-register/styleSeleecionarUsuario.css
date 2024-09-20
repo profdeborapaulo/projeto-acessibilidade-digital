@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito";
+}
+
+body{
+    background-color: #005351;
+    /* background: linear-gradient(to right, #e2e2e2, #c9d6ff); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+h2{
+    margin-bottom: 10px;
+    
+}
+
+h1{
+    color: #DB7495;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.principal{
+    margin-bottom: 35px;
+}
+
+.container{
+    background-color: #F5F6FA;
+    border-radius: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
+    position: relative;
+    overflow: hidden;
+    width: 968px;
+    /* max-width: 100%; */
+    /* min-height: 550px; */
+    padding: 40px;
+}
+
+.container button{
+    font-size: Nunito;
+    background-color: #34A087;
+    color: #fff;
+    font-size: 14px;
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    border-radius: 30px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    cursor: pointer;
+    margin-top: 40px;
+}
+
+.container button.hidden{
+    background-color: transparent;
+    border-color: #fff;
+}
+
+.button-container{
+    display: flex;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+
+}
+.card{
+    width: 440px;
+    max-width: 256;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: #FFFFFF;
+    
+}
+
+.card:hover {
+    transform: scale(1.1); /* Aumenta o tamanho do bloco ao passar o mouse */
+  }
+
+.imagem-flutuante {
+    float: left; /* Faz a imagem flutuar à esquerda */
+    margin-right: 20px; /* Espaço entre a imagem e o texto */
+  }
+  
+  .container2::after {
+    content: "";
+    display: table;
+    clear: both; /* Corrige problemas de layout causados pelo float */
+  }
+
+.container2{
+    display: flex;
+    gap: 20px; /* Espaço entre os cards */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.card2{
+    margin-top: 20px;
+}
+  
+@media (max-width: 768px) {
+
+
+
+}
+
+@media (max-width: 1200px) {
+
+    .container {
+        width: 900px;
+        height: 600px;
+    }
+
+}
+
+.card.selected {
+    border: 2px solid #34A087;
+    background-color: #e0f7f4;
+}

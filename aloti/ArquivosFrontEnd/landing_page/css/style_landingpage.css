@@ -1,0 +1,489 @@
+@font-face {
+  font-family: "Nunito-regular";
+  src: url(../../font/Nunito-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Nunito-semibold";
+  src: url(../../font/Nunito-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: "Nunito-bold";
+  src: url(../../font/Nunito-Bold.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.banner img {
+  width: 100%;
+}
+
+.textos_banner {
+  position: relative;
+  bottom: 27rem;
+  height: 20px;
+}
+
+.texto1 {
+  color: #fff;
+  font-size: 35px;
+  margin: 30px;
+  margin-top: 10px;
+  margin-left: 60px;
+  font-family: "Nunito-bold";
+  width: 27%;
+}
+
+.texto2 {
+  color: #fff;
+  font-size: 20px;
+  margin: 15px;
+  margin-left: 60px;
+  font-family: "Nunito-regular";
+  width: 41%;
+}
+
+.button1,
+button2 {
+  margin: 15px;
+  margin-left: 60px;
+  margin-top: 55px;
+}
+
+.button1 {
+  border-radius: 20px;
+  padding: 10px 80px;
+  background-color: #34a087;
+  border: #34a087;
+  color: #fff;
+  font-family: "Nunito-bold";
+  font-size: 18px;
+}
+
+.button1:hover {
+  background-color: #81CFA7; 
+}
+
+.button2 {
+  border-radius: 20px;
+  padding: 10px 80px;
+  background-color: #ff9bb1;
+  border: #ff9bb1;
+  color: #fff;
+  font-family: "Nunito-bold";
+  font-size: 18px;
+}
+
+.button2:hover {
+  background-color: #B24773; 
+}
+
+
+/*Encontrar profissionais*/
+.encontre {
+  margin-top: 20px;
+}
+
+.encontre p {
+  margin: 25px 70px;
+  font-size: 22px;
+  font-family: "Nunito-regular";
+}
+
+h1 {
+  font-family: "Nunito-bold";
+  color: #005351;
+  text-align: center;
+  font-size: 42px;
+}
+
+/*Cards*/
+
+.container_card {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Card */
+.card {
+  width: 370px;
+  height: 350px;
+  margin: 20px;
+  background-color: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px rgba(210, 210, 210, 0.301);
+  transition: 0.3s;
+}
+
+/* Card Header*/
+.card-header {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.card-img {
+  min-width: 100%;
+  width: auto;
+  height: 100%;
+}
+
+/* Card Body */
+.card-body {
+  height: 170px;
+  padding: 15px;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.card-titulo {
+  font-size: 22px;
+  margin: 15px 0;
+  color: #34a087;
+}
+
+.card-texto {
+  font-size: 12px;
+  width: 250px;
+  margin: 0 auto;
+}
+
+/* Card Footer */
+.card-footer {
+  margin-top: 10px;
+  text-align: center;
+  background-color: #000;
+}
+
+.card-footer a {
+  color: #fff;
+  display: block;
+  padding: 16px;
+  text-decoration: none;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+
+/* Animação Hover */
+.card:hover {
+  transform: scale3d(1.1, 1.1, 1);
+}
+
+/* Hidden Class for Cards */
+.hidden {
+  display: none;
+}
+
+/* Button Styling */
+#ver-mais {
+  display: block;
+  margin: 20px auto;
+  background-color: #FFA0B5;
+  border: #FFA0B5;
+  border-radius: 20px;
+  padding: 10px 80px;
+  color: #fff;
+  font-family: "Nunito-bold";
+  font-size: 18px;
+}
+
+#ver-mais:hover {
+  background-color: #B24773;
+  border: #FFA0B5;
+  border-radius: 20px;
+  padding: 10px 80px;
+  color: #fff;
+  font-family: "Nunito-bold";
+  font-size: 18px;
+}
+
+/* contato aqui */
+
+.fundo-contato {
+  width: 100%;
+  height: 500px;
+  background-color: #34a087;
+  display: flex;
+  flex-direction: row;
+  margin: 65px 0;
+}
+
+.texto-contato {
+  color: #fff;
+  width: 70%;
+  text-align: justify;
+  margin-left: 4.8em;
+}
+
+.redes-sociais {
+  margin: 15px 0 0 80px;
+  width: 250px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.lado-esquerdo {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+#titulo-contato {
+  font-family: "Nunito-bold";
+  color: #005351;
+  font-size: 42px;
+  text-align: left;
+  margin: 10px 0 10px 75px;
+}
+
+.grupo-redes {
+  display: flex;
+  flex-direction: row;
+  margin: 15px 0px;
+}
+
+.grupo-redes-email,
+.grupo-redes-sac {
+  display: flex;
+  flex-direction: row;
+  margin: 15px 85px;
+}
+
+.usuario {
+  color: #fff;
+}
+
+.texto-redes {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+}
+
+.lado-esquerdo img {
+  width: 35px;
+}
+
+.lado-direito {
+  width: 60%;
+  margin: 0 0 0 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.formulario {
+  background-color: #fff;
+  width: 450px;
+  height: 75%;
+  border-radius: 15px;
+  padding: 35px;
+}
+
+.titulo-formulario {
+  color: #ff9bb1;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.campo-forms {
+  display: flex;
+  flex-direction: column;
+  margin: 35px 0;
+}
+
+#email,
+#confirmar-email {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+#termos {
+  border-radius: 15%;
+}
+
+.botao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.btn-inscrever {
+  background-color: #005351;
+  color: #fff;
+  width: 250px;
+  height: 35px;
+  border: none;
+  border-radius: 15px;
+  padding: 5px;
+}
+
+.btn-inscrever:hover {
+  background-color: #34a087; /* Cor mais escura no hover */
+
+}
+
+/*Funcionalidades*/
+
+/* Container de cards */
+.custom-container-card {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Card */
+.custom-card {
+  width: 370px;
+
+  margin: 20px;
+  background-color: #fff;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0px 0px 10px rgba(210, 210, 210, 0.301);
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Header do card */
+.custom-card-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* Imagem do card */
+.custom-card-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Corpo do card */
+.custom-card-body {
+  padding: 15px;
+}
+
+/* Título do card */
+.custom-card-titulo {
+  font-size: 22px;
+  margin: 15px 0;
+  color: #34a087;
+  font-family: "Nunito-bold";
+}
+
+.estrela {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Texto do card */
+.custom-card-texto {
+  font-size: 14px;
+  width: 250px;
+  margin: 0 auto;
+  font-family: "Nunito-regular";
+  text-align: justify;
+}
+
+/* Animação Hover */
+.custom-card:hover {
+  transform: scale3d(1.1, 1.1, 1);
+}
+
+/*Depoimentos*/
+
+.fundo-depoimentos {
+  width: 100%;
+  height: 600px;
+  background-color: #ffc6c7;
+  display: flex;
+  flex-direction: column;
+  margin-top: 75px;
+  padding: 15px;
+}
+
+#texto-depoimentos{
+  margin: 25px 70px;
+  font-size: 22px;
+  font-family: "Nunito-regular";
+}
+
+.titulo-depoimento{
+  color: #B7507B;
+}
+
+/*Sobre*/
+
+.titulo-sobre {
+  margin-top: 45px;
+}
+
+.sobre {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  margin: 45px 45px 55px 45px;
+}
+
+.sobre-esquerda {
+  width: 60%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.missao,
+.visao,
+.valores {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 35px 45px;
+}
+
+.titulo-missao,
+.titulo-visao,
+.titulo-valores {
+  color: #2d9077;
+  font-size: 20px;
+  font-family: "Nunito-bold";
+}
+
+.textos-sobre {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+  text-align: justify;
+  font-family: "Nunito-regular";
+
+}
+
+#lottie {
+  z-index: 1;
+  position: relative;
+  right: 0em;
+  top: 12.5em;
+}
+

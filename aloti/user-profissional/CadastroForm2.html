@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro2</title>
+    <link rel="stylesheet" href="css/CadastroForm.css">
+</head>
+<body>
+    <a href="CadastroForm1.html"><img class="seta" src="img/seta.svg" alt="seta"></a>
+    <h1>Cadastro</h1>
+    <div class="container">
+
+        <div class= "progress-bar">
+          <div class="step" >
+            <div class="bullet"id="bullet1">
+          </div>
+          <div class="check fas fa-check">
+          </div>
+        </div>
+    
+          <div class="step" > 
+            <div class="bullet" id="bullet2">
+          </div>
+          <div class="check fas fa-check">
+          </div>
+          </div>
+    
+          <div class="step">
+            <div class="bullet" id="bullet3">
+    
+          </div>
+          <div class="check fas fa-check">
+          </div>  
+          </div>
+    
+          <div class="step">
+            <div class="bullet" id="bullet4">
+          </div>
+          <div class="check fas fa-check">
+          </div>
+          </div>
+        </div>
+    </div>
+    <p class="pessoais">Informações de endereço</p>
+    <div class="content">
+      <div class="content1">
+        <label for="cep">CEP</label>
+        <input type="text" id="cep" required>
+        <label for="rua">Rua/Logradouro</label>
+        <input type="text" id="rua" required>
+        <label for="number">Número</label>
+        <input type="text" id="number" required>
+        <label for="complemento">Complemento</label>
+        <input type="text" id="complemento" placeholder="(Opcional)">
+      </div>
+    
+      <div class="content2">
+        <label for="bairro">Bairro</label>
+        <input type="text" id="bairro" required>
+        <label for="cidade">Cidade</label>
+        <input type="text" id="cidade" required>
+        <label for="estado">Estado</label>
+        <input type="text" id="estado" required>
+        <label for="pais">País</label>
+        <input type="text" id="pais" required>
+      </div>
+  
+    </div>
+    
+    <div class="button-wrapper">
+      <button type="submit" id="submit" >Proximo</button>
+  </div>  
+
+      
+<script>
+  // Função para enviar os dados do formulário ao Firebase
+  document.getElementById("submit").addEventListener('click', function (e) {
+    e.preventDefault(); // Evita o envio automático do formulário
+     const cep = document.getElementById("cep").value;
+     const rua = document.getElementById("rua").value;
+     const number = document.getElementById("number").value;
+     const complemento = document.getElementById("complemento").value;
+     const bairro = document.getElementById("bairro").value;
+     const cidade = document.getElementById("cidade").value;
+     const estado = document.getElementById("estado").value;
+     const pais = document.getElementById("pais").value;
+
+
+     localStorage.setItem('cep', cep);
+      localStorage.setItem('rua', rua);
+      localStorage.setItem('number', number);
+      localStorage.setItem('complemento', complemento);
+      localStorage.setItem('bairro', bairro);
+      localStorage.setItem('cidade', cidade);
+      localStorage.setItem('estado', estado);
+      localStorage.setItem('pais', pais);
+    
+        alert("Endereço enviado com sucesso!");
+  window.location.href = 'CadastroForm3.html';
+  })  
+
+</script>
+        <script src="CadastroForm2.js"></script>
+</body>
+</html>

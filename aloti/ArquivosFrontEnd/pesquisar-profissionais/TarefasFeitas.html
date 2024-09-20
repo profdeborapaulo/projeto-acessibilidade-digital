@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/tarefas.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <title>Tarefas Feitas</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+<!-- Menu -->
+<div class="sidebar">
+  <div class="top">
+    <div class="logo">
+      <img src="./img/Vector.svg" alt="logo" class="imagem-logo">
+    </div>
+    <i class="bx bx-chevron-right toggle" id="btn"></i>
+  </div>
+
+   <!-- Imagem que será exibida no modo responsivo -->
+   <img src="img/menuTop.png" alt="Imagem Responsiva" class="imagem-responsiva">
+    <!-- Linha centralizada -->
+  <div class="linha-centralizada"></div>
+  
+  <div class="user" title="Membro Aloti">
+    <img src="img/vera2.png" class="user-img">
+    <div class="nome-user">
+      <span class="text nav-text">
+        <h4 class="usuario">Vera Fernandes</h4>
+      </span>
+      <span class="text nav-text">
+        <p class="membro">Membro Aloti</p>
+      </span>
+    </div>
+  </div>
+  <ul>
+    <h4 class="categoria-menu">EXPLORAR</h4>
+    <li>
+      <a href="procurar-prof.html" title="Página inicial">
+        <i class="bx bx-home-alt"></i>
+        <span class="nav-item">Página inicial</span>
+      </a>
+    </li>
+    <li>
+      <a href="procurar-prof.html" title="Profissionais">
+        <i class="bx bx-donate-heart icons"></i>
+        <span class="nav-item">Encontrar profissionais</span>
+      </a>
+    </li>
+    <li>
+      <a href="#" title="Contratos">
+        <i class="bx bx-calendar-alt icons"></i>
+        <span class="nav-item">Agendamentos</span>
+      </a>
+    </li>
+    <li>
+      <a href="#" title="Contratos">
+        <i class="bx bx-file icons"></i>
+        <span class="nav-item">Contratos</span>
+      </a>
+    </li>
+    <li>
+      <a href="#" title="Pagamentos">
+        <i class="bx bx-wallet"></i>
+        <span class="nav-item">Pagamentos</span>
+      </a>
+    </li>
+    <li>
+      <a href="#" title="Notificações">
+        <i class='bx bx-bell'></i>
+        <span class="nav-item">Notificações</span>
+      </a>
+    </li>
+    <br>
+    <h4 class="categoria-menu">CONFIGURAÇÕES</h4>
+    <li>
+      <a href="#" title="Configurações">
+        <i class="bx bx-cog"></i>
+        <span class="nav-item">Configurações</span>
+      </a>
+    </li>
+    <li>
+      <a href="#" title="Ajuda e suporte">
+        <i class="bx bx-support"></i>
+        <span class="nav-item">Ajuda e suporte</span>
+      </a>
+    </li>
+    <li>
+      <a href="#" title="Sobre nós">
+        <i class="bx bx-question-mark"></i>
+        <span class="nav-item">Sobre nós</span>
+      </a>
+    </li>
+    <li>
+      <a href="#" title="Sair">
+        <i class="bx bx-log-out"></i>
+        <span class="nav-item">Sair</span>
+      </a>
+    </li>
+  </ul>
+</div>
+<!-- Fim do menu -->
+
+<div class="main-content">
+    <div class="container">
+      <!--button tarefa e estatistica-->
+      <div class="buttons">
+        <div class="tarefas">
+          <img src="img/tarefas.svg" class="img-buttons">
+          <a href="#"><p>Tarefas</p></a>
+        </div>
+        <div class="estatisticas">
+          <img src="img/estatisticas.svg" class="img-buttons">
+          <a href="#"><p>Estatísticas</p></a>
+        </div>
+      </div>
+
+      <!--img-carrossel-->
+      <img src="img/Tarefas2.svg" class="img-carrossel">
+
+      <!--button atividade-->
+      <div class="estado-atividades">
+        <div class="fazer2">
+          <a href="TarefaFazer.html"><p class="text-atividade">A fazer</p></a>
+        </div>
+        <div class="concluida2">
+          <a href="TarefasFeitas.html"><p class="text-atividade">Concluídos</p></a>
+        </div>
+      </div>
+
+      <div class="container-tarefas">
+
+        <div class="fazer-tarefas">
+          <p class="horario">8h</p>
+          <div class="card-tarefa2">
+            <p class="titulo2">Medicamento</p>
+            <p class="subtitulo2">Administrar comprimidos de pressão</p>
+            <img src="img/button-check.svg" class="button-editar2">
+          </div>
+        </div>
+
+        <div class="linha"></div>
+
+        <div class="fazer-tarefas">
+          <p class="horario">9h</p>
+          <div class="card-tarefa2">
+            <p class="titulo2">Café da manhã</p>
+            <p class="subtitulo2">Preparar e servir mingau de aveia</p>
+            <img src="img/button-check.svg" class="button-editar2">
+          </div>
+        </div>
+
+        <div class="linha"></div>
+
+        <div class="fazer-tarefas">
+          <p class="horario">10h</p>
+          <div class="card-tarefa2">
+            <p class="titulo2">Medir pressão</p>
+            <p class="subtitulo2">Medir pressão arterial e temperatura</p>
+            <img src="img/button-check.svg" class="button-editar2">
+          </div>
+        </div>
+
+        <div class="linha"></div>
+
+        <div class="fazer-tarefas">
+          <p class="horario">11h</p>
+          <div class="card-tarefa2">
+            <p class="titulo2">Exercícios leves</p>
+            <p class="subtitulo2">Acompanhar exercícios de alongamento</p>
+            <img src="img/button-check.svg" class="button-editar2">
+          </div>
+        </div>
+
+        <div class="linha"></div>
+
+        <div class="fazer-tarefas">
+          <p class="horario">12h</p>
+          <div class="card-tarefa2">
+            <p class="titulo2">Almoçoo</p>
+            <p class="subtitulo2">Preparar e servir refeição balanceada</p>
+            <img src="img/button-check.svg" class="button-editar2">
+          </div>
+        </div>
+
+        <div class="linha"></div>
+
+        <div class="fazer-tarefas">
+          <p class="horario">13h</p>
+          <div class="card-tarefa2">
+            <p class="titulo2">Descanso</p>
+            <p class="subtitulo2">Monitorar durante a soneca</p>
+            <img src="img/button-check.svg" class="button-editar2">
+          </div>
+        </div>
+
+        <div class="linha"></div>
+
+        <div class="fazer-tarefas">
+          <p class="horario">14h</p>
+          <div class="card-tarefa2">
+            <p class="titulo2">Troca de curativo</p>
+            <p class="subtitulo2">Realizar troca e higienização dos curativos</p>
+            <img src="img/button-check.svg" class="button-editar2">
+          </div>
+        </div>
+
+        
+      </div>
+
+      
+    </div>
+     <!--Footer-->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="footer-col">
+       <img class="logoFooter" src="img/Vector.png" alt="">
+
+          <ul>
+            <li><a href="#">© 2024, Aloti - All rights deserved.</a></li>
+            <li><a href="#">aloti.etec@gmail.com</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <ul>
+            <li><a href="#">PÁGINA INICIAL</a></li>
+            <li><a href="#">ENCONTRAR PROFISSIONAIS</a></li>
+            <li><a href="#">AGENDAMENTOS</a></li>
+            <li><a href="#">CONTRATOS</a></li>
+            <li><a href="#">CONVERSAS</a></li>
+         <li><a href="#">PAGAMENTOS</a></li>
+          </ul> 
+        </div> 
+        <div class="footer-col">
+          <ul>
+         <p class="imgFooter"> <img src="img/iii.svg" alt=""> <a href="#" >Termos de privacidade</a></p>
+         <p class="imgFooter"> <img src="img/config.svg" alt=""><a href="#" >Configurações</a></p>
+         <p class="imgFooter"> <img src="img/fone.svg" alt="" ><a href="#" >Ajuda e suporte</a></p>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <div class="social-links">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fas fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+ </footer> 
+</div>
+    
+  <script src="js/sidebar.js"></script>
+  </body>
+  </html>
+  

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contratação 2</title>
+    <link rel="stylesheet" href="css/Contratacao2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../pesquisar-profissionais/css/sidebar.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+<!-- Menu -->
+<div class="sidebar">
+  <div class="top">
+    <div class="logo">
+      <img src="./img/Vector.svg" alt="logo" class="imagem-logo">
+    </div>
+    <i class="bx bx-chevron-right toggle" id="btn"></i>
+  </div>
+
+   <!-- Imagem que será exibida no modo responsivo -->
+   <img src="img/menuTop.png" alt="Imagem Responsiva" class="imagem-responsiva">
+    <!-- Linha centralizada -->
+  <div class="linha-centralizada"></div>
+  
+  <div class="user" title="Membro Aloti">
+    <img src="img/vera2.png" class="user-img">
+    <div class="nome-user">
+      <span class="text nav-text">
+        <h4 class="usuario">Vera Fernandes</h4>
+      </span>
+      <span class="text nav-text">
+        <p class="membro">Membro Aloti</p>
+      </span>
+    </div>
+  </div>
+  <ul>
+    <h4 class="categoria-menu">EXPLORAR</h4>
+    <li>
+      <a href="procurar-prof.html" title="Página inicial">
+        <i class="bx bx-home-alt"></i>
+        <span class="nav-item">Página inicial</span>
+      </a>
+    </li>
+    <li>
+      <a href="procurar-prof.html" title="Profissionais">
+        <i class="bx bx-donate-heart icons"></i>
+        <span class="nav-item">Encontrar profissionais</span>
+      </a>
+    </li>
+    <li>
+      <a href="#" title="Contratos">
+        <i class="bx bx-calendar-alt icons"></i>
+        <span class="nav-item">Agendamentos</span>
+      </a>
+    </li>
+    <li>
+      <a href="#" title="Contratos">
+        <i class="bx bx-file icons"></i>
+        <span class="nav-item">Contratos</span>
+      </a>
+    </li>
+    <li>
+      <a href="#" title="Pagamentos">
+        <i class="bx bx-wallet"></i>
+        <span class="nav-item">Pagamentos</span>
+      </a>
+    </li>
+    <li>
+      <a href="#" title="Notificações">
+        <i class='bx bx-bell'></i>
+        <span class="nav-item">Notificações</span>
+      </a>
+    </li>
+    <br>
+    <h4 class="categoria-menu">CONFIGURAÇÕES</h4>
+    <li>
+      <a href="#" title="Configurações">
+        <i class="bx bx-cog"></i>
+        <span class="nav-item">Configurações</span>
+      </a>
+    </li>
+    <li>
+      <a href="#" title="Ajuda e suporte">
+        <i class="bx bx-support"></i>
+        <span class="nav-item">Ajuda e suporte</span>
+      </a>
+    </li>
+    <li>
+      <a href="#" title="Sobre nós">
+        <i class="bx bx-question-mark"></i>
+        <span class="nav-item">Sobre nós</span>
+      </a>
+    </li>
+    <li>
+      <a href="#" title="Sair">
+        <i class="bx bx-log-out"></i>
+        <span class="nav-item">Sair</span>
+      </a>
+    </li>
+  </ul>
+</div>
+<!-- Menu -->
+<div class="main-content">
+    <a href="Contratação1.html"><img class="seta" src="img/seta.svg" alt="seta"></a>
+    <h1>Descrição da atividade</h1>
+    <div class="container">
+
+        <div class= "progress-bar">
+          <div class="step" >
+            <div class="bullet"id="bullet1">
+          </div>
+        </div>
+    
+          <div class="step" > 
+            <div class="bullet" id="bullet2">
+          </div>
+          </div>
+    
+          <div class="step">
+            <div class="bullet" id="bullet3">
+          </div> 
+          </div>
+    
+          <div class="step">
+            <div class="bullet" id="bullet4">
+          </div>
+          </div>
+
+          <div class="step">
+            <div class="bullet" id="bullet5">
+          </div>
+          </div>
+
+        </div>
+    </div>
+    <p class="pessoais">Detalhes do serviço</p>
+    <div class="content">
+        <div class="content1">
+            <label for="">Categoria do profissional</label>
+            <select required>
+              <option value="" selected disabled>Selecionar</option>
+              <option value="">Cuidador Geral</option>
+              <option value="">Cuidador Ocupacional</option>
+              <option value="">Cozinheiro</option>
+              <option value="">Enfermeiro</option>
+              <option value="">Fisioterapeuta</option>
+              <option value="">Psicólogo</option>
+            </select>
+            <h2 style="margin-top: 8px;">Tipo de serviço</h2>
+            <div class="boxbuttons">
+              <div style="display: flex;">
+              <div class="boxtext" style="margin-right: 5px;">
+                <p>Monitoramento dos sinais vitais</p>
+              </div>
+
+              <div class="boxtext">
+                <p>Monitorar diabetes</p>
+              </div>
+            </div>
+
+              <div class="Adicionarservico" style="margin-top: 10px;">
+                <button type="button" class="plus">
+                  <i class="fas fa-plus plus-icon"></i> 
+              </button>
+              <p style="font-size: 16px; margin-top: 10px; margin-left: 5px;">Adicionar serviço...</p>
+              </div>
+            </div>
+        
+        </div>
+
+        <div class="content2">
+            <h2>Descrição detalhada sobre o serviço</h2>
+            <div class="text1">Eu, Vera Fernandes, especifico as necessidades e cuidados que gostaria de receber de Maria Lúcia Barros, enfermeira especializada em cuidados domiciliares. A seguir, apresento a descrição detalhada dos serviços de cuidados domiciliares que serão realizados para assegurar meu conforto, bem-estar e segurança: <br>
+              1. Cuidados Pessoais <br>
+              Auxílio no Banho: Necessito de assistência completa durante o banho para garantir minha segurança e higiene adequada. Isso inclui ajuda para entrar...</div>
+        </div>
+
+    </div>
+
+        <a href="Contratação3.html" style="text-decoration: none;"><button type="submit">Avançar</button></a>
+      </div>
+      <script src="sidebar.js"></script>
+</body>
+</html>

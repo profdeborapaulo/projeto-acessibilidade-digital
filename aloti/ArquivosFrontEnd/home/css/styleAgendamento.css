@@ -1,0 +1,228 @@
+@font-face {
+    font-family: "Nunito_bold";
+    src: url(../../fonts/Nunito-Bold.ttf);
+  }
+  
+  @font-face {
+    font-family: "Nunito_medium";
+    src: url(../../fonts/Nunito-Medium.ttf);
+  }
+  
+  @font-face {
+    font-family: "Nunito_regular";
+    src: url(../../font/Nunito-Regular.ttf);
+  } 
+
+body {
+    line-height: 1.5;
+    font-family: "Nunito";
+    box-sizing: border-box;
+    background-color: #F5F6FA;
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    color: #DB7495;
+}
+
+.imgAgendamento{
+    margin: auto;
+    display: block;
+    margin-bottom: 40px;
+}
+
+
+.container-section2 {
+    display: flex;
+    margin-right: 20px;
+    width: 100%;
+    margin-left: 15%;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.container-cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Duas colunas */
+    gap: 20px;
+    width: 100%; /* Faz o container ocupar toda a largura disponível */
+    margin: 0 auto; /* Centraliza o container na tela */
+}
+
+
+.cardProfissional {
+    gap: 10px;
+    width: 100%;
+    max-width: 508px;
+    display: flex;
+    overflow: hidden;
+    background: #fff;
+    border-radius: 16px;
+    height: auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+}
+
+.title2{
+    text-align: center;
+    margin-top: 50px;
+}
+
+.img-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 30px;
+}
+
+.img-card img {
+    /* width: 100%; */
+    display: block;
+}
+
+.iconCard{
+    margin-right: 6px;
+}
+
+.textoCalendario{
+    width: 250px;
+    height: 35px;
+    background-color: #DB7495;
+    border-radius: 0px 12px 12px  0px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.textoCalendario p{
+    font-size: 18px;
+    margin-left: 8px;
+    font-family: "Nunito_regular";
+}
+
+.imgCalendario img{
+    margin: auto;
+    display: block;
+    height: 26px;
+}
+
+.calendario{
+    display: flex;
+    margin-bottom: 30px;
+    margin-left: 15%;
+}
+
+.imgCalendario{
+    width: 65px;
+    height: 35px;
+    background-color: #B7507B;
+    border-radius: 12px 0px 0px  12px;
+    display: flex;
+    align-items: center;
+}
+
+
+.content {
+    width: 60%;
+    padding: 20px;
+    box-sizing: border-box;
+
+}
+
+.cardProfissional .content .title h3 {
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+} 
+
+.cardProfissional .content .title span,
+.cardProfissional .content .text p {
+    color: #393939;
+}
+
+.cardProfissional .content .text p {
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: "Nunito_regular";
+}
+
+.btn-container {
+    display: block;
+    text-align: center;
+    padding: 5px 50px;
+    font-size: 18px;
+    margin-top: 10px;
+    border: 1px solid #34A087;
+    border-radius: 8px;
+    background-color: #34A087;
+    color: white;
+    cursor: pointer;
+    font-family: "Nunito_regular";
+}
+
+.card-container {
+    width: 85%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    border-radius: 16px;
+    padding: 30px;
+}
+
+.pai{
+    display: flex;
+    margin: 0 auto;
+    gap: 30px;
+    justify-content: center; 
+    align-items: center;
+    flex-wrap: wrap; /* Permite que os elementos "quebrem" de linha quando o espaço acabar */
+
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+    margin: auto;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-container h2 {
+    font-size: 22px;
+    margin: 15px 30px;
+}
+
+.card-container p {
+    line-height: 1.5;
+    margin: 0 30px 20px 30px;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+
+
+
+
+
+
+

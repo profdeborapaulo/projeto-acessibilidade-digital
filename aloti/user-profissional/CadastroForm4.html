@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro4</title>
+    <link rel="stylesheet" href="css/CadastroForm4.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+      <script>
+    function editText(elementId) {
+        // Obtém o parágrafo pelo ID
+        var textElement = document.getElementById(elementId);
+
+        // Cria um campo de entrada
+        var inputElement = document.createElement("input");
+        inputElement.type = "text";
+        inputElement.value = textElement.innerText;
+
+        // Substitui o parágrafo pelo campo de entrada
+        textElement.parentNode.replaceChild(inputElement, textElement);
+
+        // Adiciona um listener para quando o input perder o foco, salvar as mudanças
+        inputElement.addEventListener("blur", function() {
+            // Salva o texto atualizado de volta ao parágrafo
+            textElement.innerText = inputElement.value;
+
+            // Substitui o campo de entrada pelo parágrafo novamente
+            inputElement.parentNode.replaceChild(textElement, inputElement);
+        });
+    }
+  
+    function addNewLicense() {
+    // Obtém o valor do novo campo de entrada
+    var newLicenseName = document.getElementById("newLicense").value;
+
+    // Verifica se o campo não está vazio
+    if (newLicenseName.trim() === "") {
+        alert("Por favor, insira o nome da licença ou certificado.");
+        return;
+    }
+
+    // Cria uma nova div para a licença ou certificado
+    var newDiv = document.createElement("div");
+    newDiv.classList.add("Especializacao");
+
+    // Cria o ícone
+    var iconDiv = document.createElement("div");
+    iconDiv.classList.add("Especializacaoimg");
+    var iconImg = document.createElement("img");
+    iconImg.classList.add("medal");
+    iconImg.src = "img/medal.svg"; // Mude o ícone conforme necessário
+    iconDiv.appendChild(iconImg);
+
+    // Cria o parágrafo com o nome da licença ou certificado
+    var newText = document.createElement("p");
+    newText.innerText = newLicenseName;
+
+    // Cria o botão de edição
+    var editButton = document.createElement("button");
+    editButton.classList.add("edit");
+    editButton.innerHTML = '<img src="img/edit.svg" alt="">';
+    editButton.onclick = function () {
+        editText(newText);
+    };
+
+    // Cria o botão de excluir
+    var deleteButton = document.createElement("button");
+    deleteButton.classList.add("delete");
+    deleteButton.innerHTML = '<i class="fas fa-trash"></i>';
+    deleteButton.onclick = function () {
+        deleteLicense(deleteButton);
+    };
+
+    // Adiciona o ícone, texto, botão de edição e botão de excluir à nova div
+    newDiv.appendChild(iconDiv);
+    newDiv.appendChild(newText);
+    newDiv.appendChild(editButton);
+    newDiv.appendChild(deleteButton);
+
+    // Adiciona a nova div à lista de licenças e certificados
+    var contentDiv = document.querySelector(".content1 .Especializacao:last-of-type").parentElement;
+    contentDiv.appendChild(newDiv);
+
+    // Limpa o campo de entrada
+    document.getElementById("newLicense").value = "";
+}
+
+function deleteLicense(button) {
+    // Remove o elemento pai (div .Especializacao) do botão clicado
+    button.parentElement.remove();
+}
+
+    
+</script>
+
+    
+</head>
+<body>
+    <a href=""><img class="seta" src="img/seta.svg" alt=""></a>
+    <h1>Cadastro</h1>
+    <div class="container">
+
+      <div class="progress-bar">
+        <div class="step">
+          <div class="bullet" id="bullet1"></div>
+          
+        </div>
+        <div class="step">
+          <div class="bullet" id="bullet2"></div>
+          
+        </div>
+        <div class="step">
+          <div class="bullet" id="bullet3"></div>
+          
+        </div>
+        <div class="step">
+          <div class="bullet" id="bullet4"></div>
+    
+        </div>
+      </div>
+  </div>
+    
+    <p class="pessoais">Informações profissionais</p>
+    <div class="content">
+        <div class="content1">
+            <label for="">Licenças e certificados</label>
+          <div class="input-group">
+            <input type="text" required placeholder="Nome da licença ou certificado" id="newLicense">
+            <button class="mais" onclick="addNewLicense()"><img src="img/mais.svg" alt=""></button>
+        </div>
+
+          <h2>Licenças e certificados adicionados</h2>
+          <div class="Especializacao">
+            <div class="Especializacaoimg"><img class="medal" src="img/medal.svg" alt=""></div>
+            <p id="text1">Especialização em Enfermagem Geriátrica</p>
+            <button class="edit" onclick="editText('text1')"><img src="img/edit.svg" alt=""></button>
+            <button class="delete" onclick="deleteLicense(this)"><i class="fas fa-trash"></i></button>
+        </div>
+        <div class="Especializacao">
+            <div class="Especializacaoimg"><img class="medal" src="img/graduationHat.svg" alt=""></div>
+            <p id="text2">Curso de Primeiros Socorros Avançados</p>
+            <button class="edit" onclick="editText('text2')"><img src="img/edit.svg" alt=""></button>
+            <button class="delete" onclick="deleteLicense(this)"><i class="fas fa-trash"></i></button>
+        </div>
+        
+        </div>
+
+      
+    </div>
+
+   
+
+        <button class="proximo" id="submit" type="submit">Próximo</button> 
+        
+        
+
+
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
+<script>
+// Firebase config (substitua pelos dados do seu Firebase)
+const firebaseConfig = {
+    apiKey: "AIzaSyDk_gzIjpDebMURwi4pKn40PASAWoEsQS0",
+    authDomain: "aloti-b915b.firebaseapp.com",
+    databaseURL: "https://aloti-b915b-default-rtdb.firebaseio.com",
+    projectId: "aloti-b915b",
+    storageBucket: "aloti-b915b.appspot.com",
+    messagingSenderId: "474323336877",
+    appId: "1:474323336877:web:40d408027c0f50f24b5024"
+};
+
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+const db = firebase.database();
+
+function carregarDados() {
+    const instituicaoFormacao = localStorage.getItem('instituicaoFormacao');
+    const anoFormacao = localStorage.getItem('anoFormacao');
+    const linkComprovacao = localStorage.getItem('linkComprovacao');
+    const input_file = localStorage.getItem('input_file');
+    const nome = localStorage.getItem('name');
+    const gender = localStorage.getItem('gender');
+    const dateOfBirth = localStorage.getItem('dateOFBirth');
+    const cpf = localStorage.getItem('cpf');
+    const rg = localStorage.getItem('rg');
+    const celular = localStorage.getItem('celular');
+    const email = localStorage.getItem('email');
+    const cep = localStorage.getItem('cep');
+    const rua = localStorage.getItem('rua');
+    const number = localStorage.getItem('number');
+    const complemento = localStorage.getItem('complemento');
+    const bairro = localStorage.getItem('bairro');
+    const cidade = localStorage.getItem('cidade');
+    const estado = localStorage.getItem('estado');
+    const pais = localStorage.getItem('pais');
+    
+  }
+  carregarDados()
+
+  document.getElementById('submit').addEventListener('click', function() {
+    const instituicaoFormacao = localStorage.getItem('instituicaoFormacao');
+    const anoFormacao = localStorage.getItem('anoFormacao');
+    const linkComprovacao = localStorage.getItem('linkComprovacao');
+    const input_file = localStorage.getItem('input_file');
+    const nome = localStorage.getItem('name');
+    const gender = localStorage.getItem('gender');
+    const dateOfBirth = localStorage.getItem('dateOFBirth');
+    const cpf = localStorage.getItem('cpf');
+    const rg = localStorage.getItem('rg');
+    const celular = localStorage.getItem('celular');
+    const email = localStorage.getItem('email');
+    const cep = localStorage.getItem('cep');
+    const rua = localStorage.getItem('rua');
+    const number = localStorage.getItem('number');
+    const complemento = localStorage.getItem('complemento');
+    const bairro = localStorage.getItem('bairro');
+    const cidade = localStorage.getItem('cidade');
+    const estado = localStorage.getItem('estado');
+    const pais = localStorage.getItem('pais');
+    
+
+    const dados = {
+      
+      gender: gender,
+      cidade: cidade,
+      estado: estado,
+      instituicaoFormacao: instituicaoFormacao,
+      anoFormacao: anoFormacao,
+      linkComprovacao: linkComprovacao,
+      input_file: input_file,
+      dateOfBirth: dateOfBirth,
+      cpf: cpf,
+      rg: rg,
+      celular : celular,
+      email: email,
+      cep: cep,
+      rua: rua,
+      number: number,
+      complemento: complemento,
+      bairro: bairro,
+      pais:pais,
+      nome: nome,
+    };
+        db.ref('user-profissional').push(dados)
+        .then(() => {
+          alert('Dados enviados com sucesso!');
+          // Limpa o Local Storage depois de enviar os dados
+          localStorage.clear();
+        })
+        .catch((error) => {
+          console.error('Erro ao enviar os dados: ', error);
+        });
+})
+        </script>
+        
+        <!-- <script src="CadastroForm4.js"></script> -->
+</body>
+</html>

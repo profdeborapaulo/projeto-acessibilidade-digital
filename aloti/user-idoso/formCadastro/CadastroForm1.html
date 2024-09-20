@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro1</title>
+    <link rel="stylesheet" href="css/CadastroForm1.css">
+</head>
+<body>
+    <a href="../login-register/selecionarUsuario.html"><img class="seta" src="img/seta.svg" alt=""></a>
+    <h1>Cadastro</h1>
+    <div class="container">
+
+        <div class= "progress-bar">
+          <div class="step" >
+            <div class="bullet"id="bullet1">
+          </div>
+          <div class="check fas fa-check">
+          </div>
+        </div>
+    
+          <div class="step" > 
+            <div class="bullet" id="bullet2">
+          </div>
+          <div class="check fas fa-check">
+          </div>
+          </div>
+    
+          <div class="step">
+            <div class="bullet" id="bullet3">
+    
+          </div>
+          <div class="check fas fa-check">
+          </div>  
+          </div>
+    
+          <div class="step">
+            <div class="bullet" id="bullet4">
+          </div>
+          <div class="check fas fa-check">
+          </div>
+          </div>
+        </div>
+    </div>
+    <h2 class="pessoais">Informações pessoais</h2>
+    <div class="content">
+
+    <div class="content">
+        <div class="content1">
+          <label for="name">Nome completo</label>
+          <input type="text" id="name" required>
+          
+          <label for="gender">Gênero</label>
+          <select id="gender" class="genero" required>
+              <option value="" selected disabled>Selecionar</option>
+              <option value="Feminino">Feminino</option>
+              <option value="Masculino">Masculino</option>
+              <option value="Outro">Outro</option>
+          </select>
+
+            <label for="dateOfBirth">Data de nascimento</label>
+            <input type="date" id="dateOfBirth" required>
+
+            <label for="cpf">CPF</label>
+            <input type="text" id="cpf" required>
+
+            <label for="rg">RG</label>
+            <input type="text" id="rg" required>
+        </div>
+    
+        <div class="content2">
+            <label for="">Número do celular</label>
+            <input type="text" id="celular" required>
+            
+            <label for="email">Email</label>
+            <input type="email" id="email" required>
+            <div>
+                <h2 class="contato">Contato de emergência</h2>
+                <p>Por favor, forneça o contato de emergência para que seja <br>
+                    possível entrar em contato rapidamente em caso de necessidade.</p>
+            </div>
+
+            <div class="nomeParentesco">
+                <div>
+                    <label for="emergencyName" class="nome">Nome</label>
+                    <input type="text" id="emergencyName" required>
+                </div>
+
+                <div>
+                    <label for="relationship" class="parentesco">Parentesco</label>
+                    <select id="relationship" required>
+                      <option value="" selected disabled>Selecionar</option>
+                      <option value="">Mãe</option>
+                      <option value="">Pai</option>
+                      <option value="">Filho/Filha</option>
+                      <option value="">Neto/Neta</option>
+                      <option value="">Irmão/Irmã</option>
+                      <option value="">Tio/Tia</option>
+                      <option value="">Sobrinho/Sobrinha</option>
+                      <option value="">Cônjuge</option>
+                      <option value="">Primo/Prima</option>
+                      <option value="">Avô/Avó</option>
+                      <option value="">Enteado/Enteada</option>
+                      <option value="">Padrasto/Madrasta</option>
+                      <option value="">Genro/Nora</option>
+                      <option value="">Cunhado/Cunhada</option>
+                      <option value="">Amigo/Amiga Próximo(a)</option>
+                      <option value="">Outro</option>
+                    </select>
+                </div>
+            </div>
+
+            <label for="emergencyPhone">Número do celular</label>
+            <input type="number" id="emergencyPhone" required>
+        </div>
+    </div>
+    </div>
+    
+    
+    <div class="button-wrapper">
+      <button type="submit" id="submit">Enviar</button>
+  </div>    
+    
+<!-- Firebase Scripts -->
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
+<script>
+// Firebase config (substitua pelos dados do seu Firebase)
+const firebaseConfig = {
+    apiKey: "AIzaSyDk_gzIjpDebMURwi4pKn40PASAWoEsQS0",
+    authDomain: "aloti-b915b.firebaseapp.com",
+    databaseURL: "https://aloti-b915b-default-rtdb.firebaseio.com",
+    projectId: "aloti-b915b",
+    storageBucket: "aloti-b915b.appspot.com",
+    messagingSenderId: "474323336877",
+    appId: "1:474323336877:web:40d408027c0f50f24b5024"
+};
+
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
+const db = firebase.database();
+
+document.getElementById("submit").addEventListener('click', function (e) {
+    e.preventDefault(); // Evita o envio automático do formulário
+
+    // Adicionando dados ao Firebase
+    db.ref('user-idoso/' + document.getElementById("name").value).set({
+        name: document.getElementById("name").value,
+        gender: document.getElementById("gender").value,
+        dateOfBirth: document.getElementById("dateOfBirth").value,
+        cpf: document.getElementById("cpf").value,
+        rg: document.getElementById("rg").value,
+        celular: document.getElementById("celular").value,
+        email: document.getElementById("email").value,
+        emergencyName: document.getElementById("emergencyName").value,
+        relationship: document.getElementById("relationship").value,
+        emergencyPhone: document.getElementById("emergencyPhone").value
+    })
+    .then(() => {
+        // Exibe um alerta de sucesso
+        alert("Dados enviados com sucesso!");
+    })
+    .catch((error) => {
+        // Caso ocorra algum erro ao enviar os dados
+        console.error("Erro ao enviar os dados:", error);
+        alert("Houve um erro ao enviar os dados. Por favor, tente novamente.");
+    });
+});
+</script>
+
+
+</body>
+</html>

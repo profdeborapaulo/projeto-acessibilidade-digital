@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/sidebar.css">
+    <link rel="stylesheet" href="css/resumoServico.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!-- Boxicons CDN Link -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <title>Resumo Serviço</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+<!-- Menu -->
+<div class="sidebar">
+  <div class="top">
+    <div class="logo">
+      <img src="./img/Vector.svg" alt="logo" class="imagem-logo">
+    </div>
+    <i class="bx bx-chevron-right toggle" id="btn"></i>
+  </div>
+
+   <!-- Imagem que será exibida no modo responsivo -->
+   <img src="img/menuTop.png" alt="Imagem Responsiva" class="imagem-responsiva">
+    <!-- Linha centralizada -->
+  <div class="linha-centralizada"></div>
+  
+  <div class="user" title="Membro Aloti">
+    <img src="img/vera2.png" class="user-img">
+    <div class="nome-user">
+      <span class="text nav-text">
+        <h4 class="usuario">Vera Fernandes</h4>
+      </span>
+      <span class="text nav-text">
+        <p class="membro">Membro Aloti</p>
+      </span>
+    </div>
+  </div>
+  <ul>
+    <h4 class="categoria-menu">EXPLORAR</h4>
+    <li>
+      <a href="procurar-prof.html" title="Página inicial">
+        <i class="bx bx-home-alt"></i>
+        <span class="nav-item">Página inicial</span>
+      </a>
+    </li>
+    <li>
+      <a href="procurar-prof.html" title="Profissionais">
+        <i class="bx bx-donate-heart icons"></i>
+        <span class="nav-item">Encontrar profissionais</span>
+      </a>
+    </li>
+    <li>
+      <a href="#" title="Contratos">
+        <i class="bx bx-calendar-alt icons"></i>
+        <span class="nav-item">Agendamentos</span>
+      </a>
+    </li>
+    <li>
+      <a href="#" title="Contratos">
+        <i class="bx bx-file icons"></i>
+        <span class="nav-item">Contratos</span>
+      </a>
+    </li>
+    <li>
+      <a href="#" title="Pagamentos">
+        <i class="bx bx-wallet"></i>
+        <span class="nav-item">Pagamentos</span>
+      </a>
+    </li>
+    <li>
+      <a href="#" title="Notificações">
+        <i class='bx bx-bell'></i>
+        <span class="nav-item">Notificações</span>
+      </a>
+    </li>
+    <br>
+    <h4 class="categoria-menu">CONFIGURAÇÕES</h4>
+    <li>
+      <a href="#" title="Configurações">
+        <i class="bx bx-cog"></i>
+        <span class="nav-item">Configurações</span>
+      </a>
+    </li>
+    <li>
+      <a href="#" title="Ajuda e suporte">
+        <i class="bx bx-support"></i>
+        <span class="nav-item">Ajuda e suporte</span>
+      </a>
+    </li>
+    <li>
+      <a href="#" title="Sobre nós">
+        <i class="bx bx-question-mark"></i>
+        <span class="nav-item">Sobre nós</span>
+      </a>
+    </li>
+    <li>
+      <a href="#" title="Sair">
+        <i class="bx bx-log-out"></i>
+        <span class="nav-item">Sair</span>
+      </a>
+    </li>
+  </ul>
+</div>
+<!-- Fim do menu -->
+<div class="main-content">
+    <div class="container">
+        <h1>Resumo do Serviço</h1>
+        
+        <div class="Bloco1">
+            <div class="profissional">
+                <h2>Profissional</h2>
+                <div class="profissional-card">
+                    <div class="img-card">
+                        <img src="img/MariaLucia-ResumoServico.svg">
+                    </div>
+                    <div class="title">
+                        <h3>Maria Lúcia Barros</h3>
+                        <span>Enfermeira</span>
+                        <img src="img/estrelas.svg" id="avaliacao">
+                    </div>
+                </div>
+                <div class="info-categorias">
+                    <div class="categorias">
+                        <p>Idade</p>
+                        <p>Sexo</p>
+                        <p>Localização</p>
+                        <p>Telefone</p>
+                        <p>Email</p>
+                    </div>
+    
+                    <div class="categorias-dados">
+                        <p>45 anos</p>
+                        <p>Feminino</p>
+                        <p>Barueri, SP</p>
+                        <p>(11) 98463-6312</p>
+                        <p>marialu@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dados-pessoais">
+                <div class="editar">
+                    <h2>Dados pessoais</h2>
+                    <img src="img/editar-botão.svg" id="botao-editar">
+                </div>
+                
+                <div class="info-categorias">
+                    <div class="categorias">
+                        <p>Nome</p>
+                        <p>Telefone</p>
+                        <p>Endereço</p>
+                        <p id="rg">RG</p>
+                        <p>CPF</p>
+                    </div>
+    
+                    <div class="categorias-dados">
+                        <p>Vera Lúcia Fernandes</p>
+                        <p>(11) 96685-5032</p>
+                        <p>Alameda Brasil, 1254 - Alphaville R. Dois, Barueri - SP</p>
+                        <p>56.856.909-0</p>
+                        <p>066.520.852-30</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <div class="Bloco2">
+                <div class="data-horario">
+                    <div class="editar">
+                        <h2>Local, data e horário</h2>
+                        <img src="img/editar-botão.svg" id="botao-editar2">
+                    </div>
+                    
+                    <div class="info-categorias">
+                        <div class="categorias">
+                            <p>Local</p>
+                            <p>Data de início</p>
+                            <p>Data de término</p>
+                            <p>Horário de início</p>
+                            <p>Horário de início</p>
+                            <p>Carga horária</p>
+                        </div>
+        
+                        <div class="categorias-dados">
+                            <p>Alameda Brasil</p>
+                            <p>02/04/2024</p>
+                            <p>04/04/2024</p>
+                            <p>08:00</p>
+                            <p>18:00</p>
+                            <p>Diária</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="servico">
+                        <div class="editar">
+                            <h2>Detalhes do serviço</h2>
+                            <img src="img/editar-botão.svg" id="botao-editar2">
+                        </div>
+
+                        <p id="tipo-servico">Tipo de serviço</p>
+
+                        <p id="p-padrao">Monitoramento dos sinais vitais - Monitorar diabetes</p>
+
+                        <p id="tipo-servico">Descrição detalhada sobre o serviço</p>
+                        <p id="p-padrao">Eu, Vera Fernandes, especifico as necessidades e cuidados que gostaria de 
+                        receber de Maria Lúcia Barros, enfermeira especializada em cuidados domiciliares. 
+                        A seguir, apresento a descrição detalhada dos serviços de cuidados domiciliares que 
+                        serão realizados para assegurar meu conforto, bem-estar e segurança:</p>
+
+                        <p  id="p-padrao"><b>1. Cuidados Pessoais</b></p>
+                        <ul style="list-style: disc; padding-left: 20px;">
+                            <li><b>Auxílio no Banho:</b> Necessito de assistência completa durante o banho 
+                                para garantir minha segurança e higiene adequada. Isso inclui ajuda para entrar e sair
+                                 do chuveiro... <!--bem como apoio durante o banho. -->
+                            </li>
+                            
+                            <!-- <li><b>Higiene Pessoal:</b> Preciso de cuidados diários com a higiene pessoal para manter
+                                 uma boa saúde e conforto... -->
+                            </li>
+                          </ul>
+                </div>
+            </div>
+
+            <div class="pagamento">
+                <div class="editar">
+                    <h2>Pagamento</h2>
+                    <img src="img/editar-botão.svg" id="botao-editar3">
+                </div>
+                
+                <div class="info-categorias">
+                    <div class="categorias">
+                        <p>Método</p>
+                        <p>Parcelamento</p>
+                    </div>
+    
+                    <div class="categorias-dados">
+                        <p>Cartão de crédito</p>
+                        <p>3x de R$ 500,00</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="observacao">
+                <div class="editar">
+                    <h2>Observação</h2>
+                    <img src="img/editar-botão.svg" id="botao-editar4">
+                </div>
+                <p id="p-padrao">Nenhuma observação deixada.</p>
+            </div>
+
+            <ul class="check-list">
+                <li>
+                    <input type="checkbox" id="item1">
+                    <label for="item1">Declaro que li e aceito os termos e condições do contrato.</label>
+                </li>
+            </ul>
+
+            <div class="termo-uso">
+              <img src="img/atencao-termouso.svg" id="img-termo">
+              <p>Termos e condições</p>
+            </div>
+
+            <div class="button-final">
+              <a href="ContratoD1.html" style="text-decoration: none; color: #ffff;"><h3 class="detalhes">Ver em detalhes</h3></a>
+              <h3 class="finalizar">Finalizar</h3>
+            </div>
+    </div>
+  </div>
+
+<script src="js/sidebar.js"></script>
+</body>
+</html>

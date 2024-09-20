@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+.container {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1200px;
+    width: 100%; 
+}
+
+body {
+    font-family: "Nunito";
+    background-color: #F5F6FA;
+}
+.Bloco1{
+    display: flex;
+    
+}
+h1 {   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px; 
+    margin-bottom: 10px;
+    color: #DB7495;
+}
+h2{
+    color: #34A087;
+    margin-left: 50px;
+    padding-top: 20px; /*margin entre o card e o h2*/
+}
+.profissional{
+    margin-top: 25px;
+    width: 520px;
+    height: 380px;
+    background-color: white;
+    border-radius: 24px;
+    margin-left: 20px;
+    margin-right: 35px;
+}
+.profissional-card{
+    display: flex;
+}
+.img-card{
+    width: 128px;
+    height: 128px;
+    border-radius: 24px;
+    margin-top: 15px;
+    margin-left: 50px;
+}
+span{
+    color: #707070;;
+}
+.title{
+    margin-top: 35px;
+    margin-left: 15px;
+}
+.info-categorias{
+    margin-top: 23px;
+    margin-left: 50px;
+    display: flex;
+}
+.categorias{
+    color: #707070;
+}
+.categorias-dados{
+    margin-left: 60px;
+}
+#avaliacao {
+    display: block;
+    margin-top: 5px; 
+}
+.dados-pessoais{
+    margin-top: 25px;
+    width: 587px;
+    height: 260px;
+    background-color: white;
+    border-radius: 24px;
+    margin-right: 50px;
+}
+.editar{
+    display: flex;
+}
+#botao-editar{
+    width: 20px;
+    height: 20px;
+    margin-top: 27px;
+    margin-left: 250px;
+}
+#rg{
+    margin-top: 29%;
+}
+.Bloco2{
+    display: flex;
+}
+.data-horario{
+    margin-top: 37px;
+    width: 579px;
+    height: 335px;
+    background-color: white;
+    border-radius: 24px;
+    margin-right: 80px;
+    margin-left: 20px;
+}
+#botao-editar2{
+    width: 20px;
+    height: 20px;
+    margin-top: 27px;
+    margin-left: 140px;
+
+}
+.servico{
+    margin-top: -84px;
+    width: 587px;
+    height: 630px;
+    background-color: white;
+    border-radius: 24px;
+    margin-right: 60px;
+}
+#tipo-servico{
+    color: #707070;
+    margin-top: 15px;
+    margin-left: 50px;
+    margin-bottom: 15px;
+}
+#p-padrao{
+    margin-left: 50px;
+    padding-right: 29px;
+}
+li{
+    margin-top: 13px;
+    margin-left: 50px;
+    padding-right: 29px;
+    
+}
+.pagamento{
+    margin-top: -130px;
+    width: 465px;
+    height: 165px;
+    background-color: white;
+    border-radius: 24px;
+    margin-right: 80px;
+    margin-left: 20px;
+}
+.observacao{
+    margin-top: 35px;
+    width: 1013px;
+    height: 120px;
+    background-color: white;
+    border-radius: 24px;
+    margin-left: 20px;
+}
+
+#botao-editar3{
+    width: 20px;
+    height: 20px;
+    margin-top: 27px;
+    margin-left: 220px;
+}
+#botao-editar4{
+    width: 20px;
+    height: 20px;
+    margin-top: 27px;
+    margin-left: 800px;
+}
+.check-list {
+    margin-top: 50px;
+    text-align: center; 
+}
+
+.check-list input[type="checkbox"] {
+    accent-color: #DB7495; 
+}
+.termo-uso {
+    text-align: center;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 10px;
+    color: #1049B5;
+    text-decoration: underline; 
+}
+#img-termo{
+    margin-right: 5px;
+}
+.button-final{
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin-top: 60px; 
+}
+.detalhes{
+    width: 300px;
+    height: 48px;
+    background-color: #34A087;
+    border-radius: 30px;
+    margin-right: 30px;
+    padding-top: 10px;
+    
+}
+.finalizar{
+    width: 280px;
+    height: 48px;
+    background-color: #DB7495;
+    border-radius: 30px;
+    padding-top: 10px;
+}
+/* Ajustes gerais para telas menores */
+@media screen and (max-width: 1024px) {
+    .container {
+      padding: 10px;
+    }
+    .Bloco1, .Bloco2 {
+      flex-direction: column;
+    }
+    .Bloco1, .Bloco2, .pagamento, .observacao {
+      width: 100%;
+      margin-right: 0;
+      margin-left: 0;
+    }
+    .profissional, .dados-pessoais, .data-horario, .servico, .pagamento, .observacao {
+      width: 100%;
+      margin-left: 0;
+      margin-right: 0;
+    }
+    .editar img {
+      margin-left: auto;
+    }
+    h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    h2 {
+      margin-left: 0;
+      text-align: center;
+    }
+  }
+  
+  /* Ajustes para telas ainda menores (smartphones) */
+  @media screen and (max-width: 768px) {
+    .Bloco1, .Bloco2 {
+      flex-direction: column;
+    }
+    .profissional, .dados-pessoais, .data-horario, .servico {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .profissional-card {
+      flex-direction: column;
+      align-items: center;
+    }
+    .img-card {
+      margin: 0;
+      margin-bottom: 15px;
+    }
+    .info-categorias {
+      flex-direction: column;
+      margin-left: 0;
+      text-align: center;
+    }
+    .categorias-dados {
+      margin-left: 0;
+    }
+  }
+  
+  /* Ajustes para telas muito pequenas (mobile) */
+  @media screen and (max-width: 480px) {
+    h1 {
+      font-size: 18px;
+      margin-top: 20px;
+    }
+    h2 {
+      font-size: 16px;
+    }
+    .img-card {
+      width: 100px;
+      height: 100px;
+    }
+    .title h3 {
+      font-size: 18px;
+    }
+    .categorias p, .categorias-dados p {
+      font-size: 14px;
+    }
+    .button-final h3 {
+      font-size: 14px;
+      padding: 5px;
+    }
+  }

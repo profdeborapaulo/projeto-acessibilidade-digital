@@ -1,0 +1,257 @@
+@font-face {
+    font-family: "Nunito_bold";
+    src: url(../../fonts/Nunito-Bold.ttf);
+  }
+  
+  @font-face {
+    font-family: "Nunito_medium";
+    src: url(../../fonts/Nunito-Medium.ttf);
+  }
+  
+  @font-face {
+    font-family: "Nunito_regular";
+    src: url(../../font/Nunito-Regular.ttf);
+  } 
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    line-height: 1.5;
+    box-sizing: border-box;
+    background-color: #E7E7E7;
+    background-image: url(../img/resumo2.svg);
+}
+
+.map{
+    background-image: url(../img/Basemap\ image.svg);
+    height: 368px;
+    width: 80%;
+    border-radius: 12px;
+    margin: 0 auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+h2{
+    color: #DB7495;
+    
+}
+
+.content h3{
+   margin-top: 10px;
+    margin-left: 5%; 
+
+}
+
+h3{
+    color: #34A087;
+    
+}
+
+h4{
+    color: #005351;
+    font-size: 26px;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px; /* Para garantir que as bolinhas fiquem visíveis */
+  }
+
+
+.InformaçõesProfissionais {
+    font-family: Nunito;
+}
+
+.complemento{
+    display: flex;
+    gap: 100px;
+    margin-left: 5%;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.complemento p {
+    margin-left: 0;
+}
+
+
+.perfil{
+    background-color: #F5F6FA;
+    border-radius: 55px 55px 0 0;
+    height: 85em;
+    margin-right: -26px; 
+    margin-left: -6px;
+}
+
+.perfil2{
+    align-items: center;
+    text-align: center;
+}
+
+.containt{
+    margin-bottom: 20px;
+    margin-top: -50px; /* Ajuste o valor conforme necessário para aproximar mais */
+}
+
+.Fundoverde{
+    height: 150px;
+}
+
+.contratar{
+    height: 96px;
+    background-color: #F5F6FA;
+    display: flex;
+    align-items: center;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center; 
+    align-items: center;
+    margin-top: 20px;
+}
+
+.main-content{
+    position: relative;
+    min-width: 100vh;
+    top: 0;
+    left: 80px;
+    transition: all 0.5s ease;
+    width: calc(100% - 90px);
+}
+
+.content p {
+    margin-left: 5%;
+}
+
+ul{
+    margin-left: 7%;
+    font-family: "Nunito_regular";
+}
+
+.contrat img{
+    width: 66px;
+    height: 66px;
+    border-radius: 100px;
+}
+
+button{
+    background-color: #34A087;
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    color: #ffffff;
+    font-size: 18px;
+    border: #34A087 1px solid;
+    
+}
+
+button img {
+    height: 26px;
+    margin-right: 15px;
+    padding-top: 3px;
+}
+.seta{
+    margin-left: 5%;
+    margin-top: 8px;
+}
+
+.MariaLucia{
+    margin: 0px;
+}
+
+.mariaLucia2{
+    font-size: 30px;
+    margin: 0px;
+}
+
+.imgPerfil{
+    border-radius: 100%;
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+    
+}
+
+.imgPerfil1{
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin: 0px 20px;
+    
+}
+
+.circle{
+    margin: auto;
+    border-radius: 50%;
+    position: relative;
+    top: -60px;
+} 
+
+p{
+    font-size: 18px;
+    font-family: "Nunito_regular";
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 200px;
+    }
+
+    .main-content {
+        margin-left: 200px;
+    }
+
+    .perfil {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .seta {
+        display: block; /* Mostrar a seta de volta no modo responsivo */
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebar {
+        width: 100%;
+        position: static;
+    }
+
+    .main-content {
+        margin-left: 0;
+    }
+
+    .buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .perfil {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .perfil2 {
+        text-align: center;
+    }
+
+    .imgPerfil {
+        width: 120px;
+        height: 120px;
+    }
+
+    .content, .complemento {
+        padding: 10px;
+    }
+}

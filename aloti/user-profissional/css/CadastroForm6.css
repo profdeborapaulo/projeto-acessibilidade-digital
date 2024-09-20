@@ -1,0 +1,307 @@
+ @font-face {
+    font-family: "Nunito_bold";
+    src: url(../fonts/Nunito-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Nunito_medium";
+    src: url(../fonts/Nunito-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Nunito_regular";
+    src: url(../fonts/Nunito-Regular.ttf);
+} 
+
+body {
+    font-family: "Nunito";
+    background-color: #F5F6FA;
+}
+
+h1{
+    color: #DB7495;
+    text-align: center;
+    font-size: 34px;
+    margin: 0;
+    font-family: "Nunito_bold";
+    
+}
+
+.pessoais{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+p{
+    font-size: 18px;
+    margin-bottom: 0;
+    font-family: "Nunito_regular";
+}
+
+label{
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 20px;
+    display: block;
+    font-family: "Nunito_regular";
+
+ }
+
+input .nome {
+    width: 200px;
+}
+
+input[type='file'] {
+  display: none
+}
+
+
+.parentesco input{
+    width: 200px;
+}
+
+.labelFile{
+  font-weight: 800;
+}
+#remove-file{
+  padding: 10px 15px;
+}
+
+select {
+  height: 35px;
+  width: 425px;
+  margin-top: 10px;
+  font-size: 16px;
+  padding-left: 5px;
+  border: 1px solid #E6E6E6;
+  border-radius: 12px;
+  background-color: #E6E6E6;
+  outline: none;
+  color: #737373;
+  font-family: "Nunito_regular";
+}
+input{  
+    /* padding: 10px 100px; */
+    height: 35px;
+    width: 420px;
+    margin-top: 10px;
+    font-size: 15px;
+    border: 1px solid #E6E6E6;
+    border-radius: 12px;
+    background-color: #E6E6E6;
+    outline: none;
+    padding-left: 5px;
+    font-family: "Nunito_regular";
+    color: #757575;
+ }
+
+ input:focus {
+    border-color: #CBCBCB; 
+  }
+
+button{
+    text-align: center;
+    padding: 9px 90px;
+    font-size: 18px;
+    margin-top: 10px;
+    border: 1px solid #34A087;
+    border-radius: 20px;
+    background-color: #34A087;
+    color: white;
+    cursor: pointer;
+    display: block;
+    margin-top: 50px;
+    font-family: "Nunito_regular";
+    box-sizing: border-box; 
+    margin-bottom: 20px;
+}
+
+span{
+  font-family: "Nunito_regular";
+}
+.cancelar{
+  background-color: #DB7495;
+  border: 1px solid #DB7495;
+}
+.button-wrapper{
+  display: flex;
+  gap: 20px;
+  text-align: center;
+  justify-content: center;
+}
+
+ #btn{
+  text-align: center;
+  color: #000;
+    padding: 9px 95px;
+    font-size: 18px;
+    margin-top: 10px;
+    border-radius: 20px;
+    background-color: #F5F6FA;
+    border: solid #F5F6FA ;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-family: "Nunito_medium";
+    box-sizing: border-box; 
+    font-weight: 800;
+}
+
+.btn{
+  display: flex;
+}
+
+.content{
+    display: flex;
+    justify-content: center; 
+    gap: 40px; 
+    margin: 0 auto; 
+    padding: 20px;
+    
+}
+
+.seta{
+  margin-top: 20px;
+  margin-left: 70px;
+}
+  
+
+.nomeParentesco{
+    display: flex;
+}
+
+
+
+h2{
+    color: #34A087;
+}
+
+
+.container{
+    width: 330px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin: 0 auto; 
+  }
+  
+  
+  .container .progress-bar{
+    display: flex;
+    margin: 40px 0;
+    user-select: none;
+  }
+  .container .progress-bar .step{
+    position: relative;
+    text-align: center;
+    width: 100%;
+  }
+  
+  
+  .progress-bar .step .bullet{
+    height: 25px;
+    width: 25px;
+    border: 2px solid #34A087;
+    display: inline-block;
+    border-radius: 50%;
+    position: relative;
+    transition: 0.2s;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 25px;
+  }
+  
+  .progress-bar .step .bullet span{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .progress-bar .step .bullet.active span{
+    display: none;
+  }
+  
+  .progress-bar .step .bullet:before,
+  .progress-bar .step .bullet:after{
+    position: absolute;
+    content: '';
+    bottom: 11px;
+    right: -51px;
+    height: 3px;
+    width: 44px;
+    background: #34A087;
+  }
+  
+  .progress-bar .step:last-child .bullet:before,
+  .progress-bar .step:last-child .bullet:after{
+    display: none;
+  }
+
+#bullet3{
+    background: #34A087;
+  }
+
+/* Media Queries para telas menores (tablets e smartphones) */
+@media screen and (max-width: 768px) {
+  input {
+      width: 100%; /* O input ocupa 100% da largura disponível */
+  }
+
+  .content {
+      flex-direction: column;
+      padding: 10px;
+  }
+
+  .container {
+      width: 90%; /* A largura da barra de progresso será 90% da largura da tela */
+  }
+
+  button {
+      width: 100%;
+      padding: 9px 0;
+  }
+}
+
+/* Media Queries para telas muito pequenas (smartphones em modo retrato) */
+@media (max-width: 768px) {
+  .content {
+      flex-direction: column;
+      gap: 10px;
+      padding: 10px;
+  }
+
+  button {
+      width: 100%;
+      padding: 12px 20px;
+  }
+
+  .container {
+      width: 90%;
+  }
+
+  .content1, .content2 {
+      width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+      font-size: 28px;
+  }
+
+  .pessoais {
+      font-size: 18px;
+  }
+
+  label, input {
+      font-size: 16px;
+  }
+
+  .seta {
+      margin-left: 10px;
+  }
+
+  .content {
+      padding: 5px;
+  }
+}

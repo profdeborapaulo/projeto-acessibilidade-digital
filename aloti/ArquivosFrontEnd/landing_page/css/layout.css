@@ -1,0 +1,137 @@
+@media (min-width: 320px) and (max-width: 481px) {
+  .texto1 {
+    font-size: 10px;
+    width: 40%;
+    margin: 5px 15px 5px 15px;
+  }
+
+  .texto2 {
+    font-size: 6px;
+    width: 51%;
+    margin: 10px 15px 15px 15px;
+  }
+
+  .textos_banner {
+    position: relative;
+    bottom: 6em;
+    height: 20px;
+  }
+
+  .button1,
+  .button2 {
+    margin: 5px 15px;
+  }
+
+  .button1 {
+    border-radius: 20px;
+    padding: 10px 30px;
+    font-size: 12px;
+  }
+
+  .button2 {
+    border-radius: 20px;
+    padding: 10px 30px;
+    font-size: 12px;
+  }
+
+  .sobre {
+    flex-direction: column;
+  }
+
+  /* .fundo-contato {
+    flex-direction: column;
+  } */
+
+  .missao,
+  .visao,
+  .valores {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .titulo-missao,
+  .titulo-visao,
+  .titulo-valores {
+    text-align: center;
+  }
+
+}
+
+@media (max-width: 551px) {
+  .texto1 {
+    font-size: 12px;
+    width: 40%;
+    margin: 5px 15px 5px 15px;
+  }
+
+  .texto2 {
+    font-size: 8px;
+    width: 51%;
+    margin: 10px 15px 15px 15px;
+  }
+
+  .textos_banner {
+    position: relative;
+    bottom: 7em;
+    height: 20px;
+  }
+
+  .button1,
+  .button2 {
+    margin: 5px 15px;
+  }
+
+  .button1 {
+    border-radius: 20px;
+    padding: 10px 30px;
+    font-size: 12px;
+  }
+
+  .button2 {
+    border-radius: 20px;
+    padding: 10px 30px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 750px) {
+  .texto1 {
+    font-size: 16px;
+    width: 40%;
+    margin: 5px 15px 5px 15px;
+  }
+
+  .texto2 {
+    font-size: 10px;
+    width: 51%;
+    margin: 10px 15px 15px 15px;
+  }
+
+  .textos_banner {
+    position: relative;
+    bottom: 9em;
+    height: 20px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .texto1 {
+    font-size: 18px;
+    width: 40%;
+    margin: 5px 15px 5px 15px;
+  }
+
+  .texto2 {
+    font-size: 12px;
+    width: 51%;
+    margin: 10px 15px 15px 15px;
+  }
+
+  .textos_banner {
+    position: relative;
+    bottom: 12em;
+    height: 20px;
+  }
+}

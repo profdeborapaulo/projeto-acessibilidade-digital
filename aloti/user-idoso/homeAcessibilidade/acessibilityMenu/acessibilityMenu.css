@@ -1,0 +1,89 @@
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    background-color: #fff;
+    color: #000;
+}
+
+/* Botão de Acessibilidade */
+.accessibility-btn {
+    position: fixed;
+    bottom: 120px; /* Abaixo do VLibras */
+    right: 20px;
+    padding: 10px;
+    background-color: #0057b8;
+    color: #fff;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    z-index: 999;
+    font-size: 24px;
+    transition: background-color 0.3s ease;
+}
+
+.accessibility-btn:hover {
+    background-color: #003c82;
+}
+
+/* Menu de Acessibilidade */
+.accessibility-menu {
+    position: fixed;
+    bottom: 170px; /* Ajustado para o novo local */
+    right: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 998;
+}
+
+.accessibility-option {
+    background-color: #0057b8;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.accessibility-option:hover {
+    background-color: #003c82;
+}
+
+.hidden {
+    display: none;
+}
+
+/* Modo Escala de Cinza */
+.grayscale {
+    filter: grayscale(100%);
+}
+
+/* Modo Alto Contraste (Modo Escuro) */
+.high-contrast {
+    background-color: #000 !important; /* Fundo preto */
+    color: #fff !important; /* Texto branco */
+}
+
+/* Aplicando contraste para links e botões */
+.high-contrast a {
+    color: #00ffff !important; /* Link ciano para bom contraste */
+}
+
+.high-contrast button {
+    background-color: #333 !important; /* Botão com fundo cinza escuro */
+    color: #fff !important; /* Texto dos botões em branco */
+}
+
+/* Ajuste para caixas de texto e inputs */
+.high-contrast input,
+.high-contrast textarea {
+    background-color: #222 !important; /* Fundo dos inputs em cinza escuro */
+    color: #fff !important; /* Texto dos inputs em branco */
+    border: 1px solid #fff !important; /* Borda branca */
+}
+
