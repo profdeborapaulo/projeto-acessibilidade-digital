@@ -1,0 +1,90 @@
+.card{
+    display: flex;
+  flex-direction: column; /* Alinhar os cards em uma coluna */
+  justify-content: center;
+  align-items: center;
+  height: 170vh;
+  margin: 0;
+  background-color: #f0f0f0; /* Apenas para dar um contraste visual */
+  gap: 20px; /* Define o espaço entre os cards */
+}
+.place-card {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 90%;
+    height: 150px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    
+  }
+  
+  .info {
+    flex: 2;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .info h2 {
+    margin: 0;
+    font-size: 1.5em;
+  }
+  
+  .info p {
+    margin: 5px 0;
+    color: #555;
+  }
+  
+  .rating {
+    font-size: 1.2em;
+  }
+  
+  .view-more {
+    background: none;
+    border: none;
+    color: #007bff;
+    font-size: 1em;
+    cursor: pointer;
+  }
+  
+  .view-more:hover {
+    text-decoration: underline;
+  }
+  
+  .image {
+    flex: 1;
+    max-width: 150px;
+    height: 100%;
+  }
+  
+  .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+
+  .link-image {
+    flex: 0.5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .link-image img {
+    width: 60px; /* Ajuste o tamanho da imagem */
+    height: 60px;
+    object-fit: contain;
+    cursor: pointer;
+  }
+  
+  .link-image img:hover {
+    opacity: 0.8; /* Efeito hover para dar feedback visual */
+  }
+  

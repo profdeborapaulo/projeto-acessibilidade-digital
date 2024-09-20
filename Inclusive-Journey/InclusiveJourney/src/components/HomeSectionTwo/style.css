@@ -1,0 +1,14 @@
+.saiba-mais-button {
+    background-color: red;
+    color: #000;
+    border: 1px white solid;
+    padding: 10px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 25px;
+}
+
+.saiba-mais-button:hover {
+    background-color: #ff5500;
+}

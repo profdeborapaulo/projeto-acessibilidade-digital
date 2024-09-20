@@ -1,0 +1,177 @@
+body {
+  font-family: 'inter', sans-serif;
+  background-color: #E7E6ED;
+}
+
+main {
+  display: flex;
+  margin: 90px auto;
+  height: 720px;
+  justify-content: center;
+  box-shadow: Spx 5px 10px rgba(0, 0, 0, 0.312);
+
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+
+img {
+  border-radius: 10px 0px 0px 10px;
+}
+
+.title {
+  color: #002234;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #ffffff;
+  padding: 30px;
+  width: 550px;
+  font-family: 'inter', sans-serif;
+  height: 726px;
+  border-radius: 0px 10px 10px 0px;
+  margin-bottom: 15px;
+}
+
+.botao-personalizado {
+  position: relative;
+  display: inline-block;
+  margin: 2px;
+  padding: 15px 30px;
+  text-align: left;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #002234;
+  background: transparent;
+  cursor: pointer;
+  transition: ease-out 0.5s;
+  border: 2px solid #002234;
+  border-radius: 10px;
+  box-shadow: inset 0 0 0 0 #002234;
+  display: flex;
+}
+
+.botao-personalizado:hover {
+  color: white;
+  box-shadow: inset 0 120px 0 0 #FE4045;
+}
+
+.botao-personalizado:active {
+  transform: scale(0.9);
+}
+
+.icones img {
+  width: 70px;
+  height: 70px;
+}
+
+h3 {
+  margin: 0;
+  /* Remove o espaçamento padrão acima do título */
+  font-weight: bold;
+  /* Torna o texto do título mais pesado */
+
+}
+
+.texto {
+  padding-left: 20px;
+
+}
+
+p {
+  margin-top: 2px;
+  /* Adiciona um pequeno espaçamento acima do parágrafo */
+  font-size: 13px;
+}
+
+.button {
+  background-color: #FE4045;
+  border: none;
+  color: white;
+  padding: 15px 35px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+.button:hover {
+  background-color: #002234;
+  /* Altere para a cor desejada ao passar o mouse */
+}
+
+@media (max-width:1258px) {
+  .primeiro {
+    display: none;
+  }
+}
+
+@media (max-width:930px) {
+  .primeiro {
+    display: none;
+  }
+
+  .main {
+    width: 700px;
+  }
+
+  .form {
+    width: 100%;
+    border-radius: 20px;
+  }
+}
+
+@media (max-width:376px) {
+
+  html {
+    padding: 0px;
+  }
+
+  .container {
+    height: 500px;
+
+  }
+
+  div.title {
+    text-align: center;
+  }
+
+  .form {
+    padding: 10px;
+    width: 100%;
+    height: 200%;
+  }
+
+  .inputForm {
+    width: 95%;
+    padding: 0px;
+    margin-bottom: 0px;
+  }
+
+  .button-submit {
+    margin: auto;
+    display: block;
+    width: 80%;
+  }
+
+  P {
+    width: 90%;
+  }
+
+}
