@@ -1,6 +1,6 @@
 import { DrawerActions } from '@react-navigation/native';
 import React from 'react';
-import { View, StyleSheet, Image, TouchableWithoutFeedback } from 'react-native';
+import { View, StyleSheet, Image, TouchableWithoutFeedback, Text, TouchableOpacity } from 'react-native';
 
 import MapView from 'react-native-maps';
 
@@ -11,19 +11,10 @@ const HomeScreen = ({ navigation }) => {
         <Image source={require('../assets/borboleta.png')} style={styles.borboleta} />
       <View style={styles.container2}>
 
-      <Image source = {require('../assets/menu.png')} style = {styles.menu} />
-      <View style={styles.menu2} />
-      <TouchableWithoutFeedback onPress={() => navigation.navigate('BotaoPanico')}>
-        <Image source = {require('../assets/botao.png')} style = {styles.botao} />
-      </TouchableWithoutFeedback>
-      <View style={styles.menores}>
-      <TouchableWithoutFeedback onPress={() => navigation.navigate('Home')}>
-        <Image source = {require('../assets/localhome.png')} style = {styles.local} />
-      </TouchableWithoutFeedback>
-      <TouchableWithoutFeedback onPress={() => navigation.navigate('ManualDeDefesa')}>
-        <Image source = {require('../assets/manual.png')} style = {styles.manual} />
-      </TouchableWithoutFeedback>
-      </View>
+      <Text style={styles.texto}> Você ainda não tem contatos de emergência Lipa’s! Convide pessoas de confiança usuários Lipa’s  </Text>
+       <TouchableOpacity style={styles.convida} onPress={() => navigation.navigate('BotaoPanico')}> 
+        <Text style={styles.textconvida}> Convidar </Text>
+       </TouchableOpacity>
 
       </View>
     </View>
@@ -61,52 +52,36 @@ const styles = StyleSheet.create({
     borderRadius: 50,
     position: 'absolute',
   },
-  menu: {
+  texto: {
     width: 320,
-    height: 120,
-    marginLeft: 40,
-    marginRight: 40,
-    marginTop: 245,
-    position: 'absolute',
+    fontSize: 16,
+    fontFamily: 'Inter_600SemiBold',
+    color: '#49070A',
+    marginLeft: 'auto',
+    marginHorizontal: 'auto',
+    marginTop: 100,
+    textAlign: 'center',
   },
-  menu2: {
-    backgroundColor: '#49070A',
-    width: 320,
-    height: 120,
-    marginLeft: 40,
-    marginRight: 40,
-    position: 'absolute',
-    marginTop: 350,
+  convida: {
+    width: 150,
+    height: 30,
+    borderWidth: 1.5,
+    borderColor:"#49070A",
+    borderRadius: 40,
+    alignItems: "center",
+    justifyContent: "center",
+    marginTop: 20,
+    marginLeft: 'auto',
+    marginRight: 'auto', 
   },
-  botao: {
-    width: 100,
-    height: 93,
-    marginLeft: 153,
-    marginRight: 153,
-    marginTop: 250,
-    position: 'absolute',
-  },
-  menores:{
-    flexDirection: 'row', // Alinha os itens na horizontal
-    justifyContent: 'space-between', // Espaça os itens uniformemente
-    padding: 15,
-  },
-  local: {
-    width: 55,
-    height: 68,
-    marginLeft: 70,
-    marginTop: 320,
-    position: 'absolute',
-    borderBottomWidth: 2,
-    borderBottomColor: '#FFEDE3',
-  },
-  manual: {
-    width: 60,
-    height: 60,
-    marginLeft: 270,
-    marginTop: 320,
-    position: 'absolute',
+  textconvida: {
+    fontFamily: 'Inter_700Bold', 
+    fontSize: 16, 
+    color: '#49070A', 
   },
 });
 
 export default HomeScreen;
+
+
+

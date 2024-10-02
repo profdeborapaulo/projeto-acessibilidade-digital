@@ -31,6 +31,8 @@ import HemorragiaScreen from "../screens/situHemorragia";
 
 import NumerosScreen from "../screens/cardNumeros";
 
+import ExplicaContato1Screen from "../screens/explicacontato1";
+
 import DrawerNavigator from "./drawer";
 
 const Stack = createNativeStackNavigator();
@@ -155,6 +157,12 @@ function StackNavigator({ onLoginSuccess }) {
         name='Numeros' 
         component={NumerosScreen} 
         options={{ headerShown: false }}/>
+
+      <Stack.Screen 
+        name='ExplicaContato1' 
+        component={ExplicaContato1Screen} 
+        options={{ headerShown: false }}/>
+
 
     </Stack.Navigator>
   );
