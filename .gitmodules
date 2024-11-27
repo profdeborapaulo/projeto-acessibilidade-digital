@@ -13,3 +13,6 @@
 [submodule "higia/Higia"]
 	path = higia/Higia
 	url = https://github.com/gabriellydsantos/Higia.git
+[submodule "AstroKids"]
+	path = AstroKids
+	url = https://github.com/TCC-GINTEC/AstroKids.git
