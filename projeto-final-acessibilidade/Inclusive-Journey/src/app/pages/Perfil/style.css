@@ -1,0 +1,220 @@
+.perfil {
+  height: 100vh;
+
+  .container {
+    background-color: #E7E6ED;
+    margin-top: 10vh;
+    padding: 5vh 8vw 5vh 10vw;
+    height: 80vh;
+    display: flex;
+
+    .left {
+      background-color: #002234;
+      width: 20vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+
+      .avatar {
+        width: 60%;
+        height: auto;
+        object-fit: cover;
+        margin-top: 4vh;
+      }
+
+      .btn-suporte{
+        outline: none;
+        cursor: pointer;
+        border: none;
+        color: #ffffff;
+        font-size: 1.1rem;
+        padding: 1vh 1.5vw;
+        background-color: transparent;
+        transition: 0.3s ease-in-out;
+        margin-top: -30vh;
+        margin-left: -4vw;
+        display: flex;
+        align-items: center;
+        gap: 0.4vw;
+
+        &:hover{
+          text-decoration: underline;
+        }
+
+        .support{
+          width: 24px;
+          height: auto;
+          object-fit: cover;
+        }
+      }
+
+      .btn-logout {
+        margin-bottom: 3vh;
+        outline: none;
+        border: 1px #ff0000 solid;
+        color: #ff0000;
+        display: flex;
+        align-items: center;
+        gap: 0.5vw;
+        padding: 0.8vh 1.5vw;
+        border-radius: 5px;
+        background-color: transparent;
+        margin-right: -9vw;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+
+        &:hover {
+          box-shadow: 0px 0px 6px #ff0000;
+        }
+
+        .logout {
+          width: 14px;
+          height: auto;
+          object-fit: cover;
+        }
+      }
+    }
+
+    .container-loading {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 60vh;
+
+      .loading {
+        width: 35px;
+        height: auto;
+        object-fit: cover;
+        animation: spin 0.8s linear infinite;
+      }
+    }
+
+    .content {
+      background-color: #ffffff;
+      padding: 3vh 2vw;
+      width: 55vw;
+      border-top-right-radius: 10px;
+      border-bottom-right-radius: 10px;
+      box-shadow: 2px 1px 10px rgba(0, 0, 0, 0.338);
+
+      .header {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 4vh;
+
+        div {
+          display: flex;
+          justify-content: space-between;
+          margin-bottom: 1vh;
+
+          h3 {
+            font-size: 1.4rem;
+          }
+
+          .edit {
+            width: 25px;
+            height: 25px;
+            cursor: pointer;
+          }
+        }
+
+        p {
+          color: #808080;
+        }
+      }
+
+      h4 {
+        margin: 2vh 0;
+      }
+
+      .inputForm {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 2vh;
+        gap: 2vh;
+
+        input {
+          border: 1.5px solid #ecedec;
+          border-radius: 10px;
+          height: 50px;
+          padding-left: 10px;
+          outline: none;
+          font-size: 1rem;
+        }
+      }
+
+      .updateButton {
+        background-color: #FE4045;
+        border: none;
+        padding: 1.5vh 2vw;
+        color: #fff;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: 0.4s ease-in-out;
+        font-size: 1rem;
+        right: 0;
+        transition: 0.3s ease-in-out;
+
+        &:hover {
+          filter: brightness(1.6);
+        }
+      }
+    }
+  }
+
+  .favoritos{
+    background-color: #E7E6ED;
+    display: flex;
+    justify-content: center;
+
+    .container-card{
+      width: 81vw;
+      height: min-content;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 10vh;
+
+      h1{
+        margin-bottom: 3vh;
+        font-size: 1.4rem;
+        margin-left: 1vw;
+      }
+
+      .container-loading {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+  
+        .loading {
+          width: 35px;
+          height: auto;
+          object-fit: cover;
+          animation: spin 0.8s linear infinite;
+        }
+      }
+
+      .cards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        p{
+          margin-left: 1vw;
+        }
+      }
+    }
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}

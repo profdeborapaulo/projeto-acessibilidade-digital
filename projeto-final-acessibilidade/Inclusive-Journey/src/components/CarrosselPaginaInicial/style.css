@@ -1,0 +1,48 @@
+.container-pagina-inicial {
+  height: 65%;
+  margin-top: 20vh;
+  width: 45%;
+  margin-left: 5vw;
+
+  .pagina-inicial {
+
+    .item {
+      height: 60vh;
+      display: flex;
+      flex-direction: column;
+      text-align: start;
+      color: #ffffff;
+
+      h1 {
+        font-size: 3.5rem;
+        margin-bottom: 2vh;
+        width: 85%;
+      }
+
+      p {
+        margin: 1vh 0 3vh 0;
+        width: 85%;
+      }
+
+      button {
+        width: 25%;
+        background-color: #FE4045;
+        border: none;
+        color: white;
+        font-size: 1rem;
+        border-radius: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        outline: none;
+        padding: 1.5vh 1vw;
+        cursor: pointer;
+        transition: 0.3s ease-in-out;
+
+        &:hover{
+          filter: brightness(1.6);
+        }
+      }
+    }
+  }
+}

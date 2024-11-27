@@ -1,0 +1,159 @@
+.main-politica-privacidade{
+  header {
+    background-color: #002234;
+    height: 10vh;
+    position: fixed;
+    top: 0;
+    z-index: 9;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  
+    .logo {
+      width: auto;
+      height: 95%;
+      margin-left: 5vw;
+    }
+  
+    .buttons {
+      margin-right: 10vw;
+      width: auto;
+      display: flex;
+      gap: 1vw;
+  
+      button {
+        background-color: #FE4045;
+        border: none;
+        padding: 8% 20%;
+        color: #fff;
+        border-radius: 20px;
+        cursor: pointer;
+        opacity: 0.9;
+        transition: 0.4s ease-in-out;
+        font-size: 1rem;
+  
+        &:hover{
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+  section{
+    padding: 10vh 5vw;
+
+    h1{
+      text-align: center;
+      font-size: 2.4rem;
+      margin-bottom: 6vh;
+    }
+
+    h5{
+      font-size: 1.1rem;
+      margin-bottom: 4vh;
+    }
+
+    h4{
+      margin-bottom: 1vh;
+    }
+
+    p{
+      margin-bottom: 5vh;
+    }
+  }
+
+  footer{
+    background-color: #002234;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5vh 0;
+    color: #fff;
+
+    section{
+      display: flex;
+      justify-content: space-between;
+      padding: 10vh 13vw 0 10vw;
+
+      div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        h3{
+          font-size: 1.5rem;
+          margin-bottom: 2vh;
+        }
+
+        p{
+          margin-bottom: 1vh;
+
+          a{
+            text-decoration: none;
+            color: #fff;
+
+            &:hover{
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+
+      .div-1{
+        p{
+          display: flex;
+          align-items: center;
+
+          .icon{
+            margin-right: 0.5vw;
+            width: auto;
+            height: 1.2rem;
+          }
+        }
+      }
+
+      .div-2{
+        .logo{
+          width: auto;
+          height: 100px;
+          margin-top: -4vh;
+          margin-bottom: 2vh;
+        }
+
+        p{
+          width: 55%;
+          text-align: center;
+        }
+      }
+
+      .div-3{
+        p{
+          text-wrap: nowrap;
+        }
+      }
+    }
+
+    .div-footer{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 1vh;
+
+      p{
+        &:hover{
+          text-decoration: underline;
+          cursor: pointer;
+        }
+
+        &:hover:last-child{
+          text-decoration: none;
+          cursor: auto;
+        }
+      }
+    }
+  }
+}

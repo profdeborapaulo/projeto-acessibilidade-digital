@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'inter', sans-serif;
+}
+
+::-webkit-scrollbar{
+  width: 7px;
+  background-color: #ffffff;
+  border: none;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #303030;
+  border-radius: 50px;
+  height: 10vh;
+}
+
+.back-to-top{
+  position: absolute;
+  bottom: 3vh;
+  right: 2vh;
+  width: 50px;
+  height: auto;
+  object-fit: cover;
+  cursor: pointer;
+}

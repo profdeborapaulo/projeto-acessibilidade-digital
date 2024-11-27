@@ -1,0 +1,45 @@
+.navbar {
+  background-color: #ffffff;
+  height: 10vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  z-index: 9;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .navbar-logo {
+    height: 8vh;
+    width: auto;
+    object-fit: cover;
+    margin-left: 5vw;
+  }
+
+  div {
+    margin-right: 5vw;
+    display: flex;
+    gap: 2vw;
+
+    a {
+      color: #002234;
+      text-decoration: none;
+      padding-bottom: 4px;
+    }
+
+    a.active {
+      color: #ff0000;
+      border-bottom: 2px solid #ff0000;
+    }
+  }
+
+  .navbar-select {
+    width: 6vw;
+    color: #002234;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 500;
+    margin-top: -1vh;
+  }
+}

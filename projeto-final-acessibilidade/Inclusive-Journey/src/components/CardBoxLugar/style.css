@@ -1,0 +1,83 @@
+.cardBoxLugar {
+  margin: 0vh 1vw 5vh 1vw;
+  border-radius: 10px;
+  padding-bottom: 2vh;
+  height: 29vw;
+  max-width: 22vw;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: flex-start;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.7);
+  transition: transform 0.4s ease-in-out, box-shadow 0.3s ease-in-out;
+  position: relative;
+
+  &:hover {
+    transform: scale(1.01);
+    box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.5);
+  }
+
+  .cardBoxImg {
+    max-width: 100%;
+    max-height: 27vh;
+    object-fit: cover;
+    margin-bottom: 2vh;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .heart{
+    width: 30px;
+    height: auto;
+    object-fit: cover;
+    position: absolute;
+    top: 1vh;
+    right: 1vw;
+    cursor: pointer;
+  }
+
+  h3 {
+    color: #002234;
+    padding: 0 1vw;
+    font-size: 1.3rem;
+    margin-bottom: 1vh;
+  }
+
+  h6 {
+    padding: 0 1vw;
+    margin-bottom: 1vh;
+    font-weight: 400;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5vw;
+
+    .star {
+      width: 18px;
+      height: auto;
+    }
+  }
+
+  h5 {
+    padding: 0 1vw;
+    margin-bottom: 1vh;
+    color: #000000;
+    font-size: 0.9rem;
+    font-weight: 400;
+    text-decoration: underline;
+  }
+
+  span {
+    padding-left: 1vw;
+    font-size: 0.9rem;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-top: 2%;
+    transition: 0.3s ease-in-out;
+
+    &:hover{
+      color: #FE4045;
+      font-weight: 500;
+    }
+  }
+}
