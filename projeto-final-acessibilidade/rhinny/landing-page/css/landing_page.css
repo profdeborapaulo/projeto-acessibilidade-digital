@@ -1,0 +1,113 @@
+@import url(../css/cores.css);
+@import url(../css/tipografia.css);
+
+.section-inicial {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  margin-top: 45px;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.imagem-inicial {
+  width: 100%;
+  margin-top: 2em;
+}
+
+.imagem-inicial2 {
+  width: 100%;
+  margin-top: 2em;
+}
+
+.compromissos {
+  margin: 50px;
+}
+
+.titulo1 {
+  font-family: "Poppins-semibold";
+  color: #1e1e1e;
+  font-size: 1.4em;
+}
+
+.titulo2 {
+  font-family: "Poppins-semibold";
+  color: #1e1e1e;
+  width: 80%;
+  margin-left: 15px;
+  margin-bottom: 5px;
+  font-size: 1.3em;
+}
+
+.titulo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.texto1 {
+  font-family: "Poppins-regular";
+  color: #757575;
+}
+
+.texto2 {
+  font-family: "Poppins-regular";
+  color: #757575;
+  width: 80%;
+  margin-left: 46px;
+}
+
+.lista-compromissos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: 50px 35px 65px 35px;
+}
+
+.conteudo {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+}
+
+.info-conteudo {
+  width: 30px;
+}
+
+.imagens {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 5em 10em;
+  gap: 15em;
+}
+
+.img-inclusao,
+.img-facilidade {
+  width: 450px;
+  height: auto;
+}
+
+.campo-img {
+  width: 50%;
+  margin-left: 3em;
+}
+
+.titulo-imagens {
+  font-family: "Poppins-semibold";
+  color: #1e1e1e;
+  margin-top: 1em;
+}
+
+.texto-imagens {
+  font-family: "Poppins-regular";
+  color: #757575;
+  width: 85%;
+  margin-top: 0.5em;
+}
+
+.conjunto-textos {
+  width: 90%;
+}

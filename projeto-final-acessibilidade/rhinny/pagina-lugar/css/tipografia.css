@@ -1,0 +1,41 @@
+/* Cheri */
+@font-face {
+    font-family: "Cheri";
+    src: url(../tipografia/Cheri/Cheri.ttf);
+}
+
+@font-face {
+    font-family: "CheriLiney";
+    src: url(../tipografia/Cheri/CheriLiney.ttf);
+}
+
+/* Poppins */
+@font-face {
+    font-family: "Poppins-black";
+    src: url(../tipografia/Poppins/Poppins-Black.ttf);
+}
+
+@font-face {
+    font-family: "Poppins-bold";
+    src: url(../tipografia/Poppins/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Poppins-extrabold";
+    src: url(../tipografia/Poppins/Poppins-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: "Poppins-medium";
+    src: url(../tipografia/Poppins/Poppins-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Poppins-regular";
+    src: url(../tipografia/Poppins/Poppins-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Poppins-semibold";
+    src: url(../tipografia/Poppins/Poppins-SemiBold.ttf);
+}

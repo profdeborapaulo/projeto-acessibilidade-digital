@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/landing_page.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/header.css">
+  <link rel="stylesheet" href="./css/footer.css">
+  <link rel="stylesheet" href="./css/layout.css">
+
+  <!-- icon -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+  <!-- acessibilidade -->
+  <script src="https://cdn.userway.org/widget.js" data-account="3tjR35sfj5"></script>
+
+  <link rel="shortcut icon" href="./img/rhinny.svg" type="image/x-icon">
+  <title>Landing page</title>
+</head>
+
+<body>
+  <div class="container">
+    <nav>
+      <ul id="logo-nav">
+        <li>
+          <a href="../landing-page/landing_page.html">
+            <img src="./img/logo.svg" id="rhinny" alt="Rhinny" />
+          </a>
+        </li>
+        <div class="menu-toggle" onclick="toggleMenu()">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </ul>
+      <div class="menu-collapse">
+        <div class="botoes">
+          <a href="../pagina-login/login.html" class="btn-login">Login</a>
+          <a href="../pagina-cadastro/cadastro.html" class="btn-cadastro">Cadastro</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="menu-overlay"></div>
+
+    <section class="section-inicial">
+      <img src="./img/imagem-inicial.svg" class="imagem-inicial" alt="">
+      <img src="./img/imagem-inicial2.svg" class="imagem-inicial2" alt="">
+    </section>
+
+    <section class="compromissos">
+      <h1 class="titulo1">Nossos compromissos</h1>
+      <p class="texto1">Nosso compromisso é tornar cada detalhe acessível!</p>
+      <ul class="lista-compromissos">
+        <div class="conteudo">
+          <div class="titulo">
+            <img src="./img/icons/info.svg" class="info-conteudo" alt="">
+            <h2 class="titulo2">Acessibilidade Universal</h2>
+          </div>
+          <li class="texto2">Compromisso em tornar os recursos do site acessíveis para pessoas com deficiência visual,
+            digitalmente e experiências nos locais destacados.
+          </li>
+        </div>
+        <div class="conteudo">
+          <div class="titulo">
+            <img src="./img/icons/info.svg" class="info-conteudo" alt="">
+            <h2 class="titulo2">Empatia e Sensibilidade</h2>
+          </div>
+          <li class="texto2">Enfatizar a importância de entender as necessidades específicas das crianças com
+            deficiência visual e suas famílias na sua rotina.
+          </li>
+        </div>
+        <div class="conteudo">
+          <div class="titulo">
+            <img src="./img/icons/info.svg" class="info-conteudo" alt="">
+            <h2 class="titulo2">Compromisso com a Inclusão</h2>
+          </div>
+          <li class="texto2">Demonstração do comprometimento em destacar espaços inclusivos e acessíveis para crianças
+            com deficiência visual.
+          </li>
+        </div>
+      </ul>
+    </section>
+
+    <section class="imagens">
+      <div class="campo-img">
+        <img src="./img/inclusao.svg" class="img-inclusao" alt="">
+        <div class="conjunto-textos">
+          <h3 class="titulo-imagens">Inclusão</h3>
+          <p class="texto-imagens">Um site que lista lugares com acessibilidade visual para crianças é essencial para
+            garantir que todas possam explorar o mundo ao seu redor de forma segura e igualitária.
+          </p>
+        </div>
+
+      </div>
+      <div class="campo-img">
+        <img src="./img/facilidade.svg" class="img-facilidade" alt="">
+        <div class="conjunto-textos">
+          <h3 class="titulo-imagens">Facilidade para Famílias</h3>
+          <p class="texto-imagens">Ter acesso a informações sobre locais adaptados ajuda famílias a planejar atividades,
+            proporcionando experiências seguras e enriquecedoras para crianças com deficiência visual.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer-container">
+      <div class="descricao-footer">
+        <div class="logo">
+          <img src="./img/logo.svg" class="logo-footer" alt="Imagem Logo 'Rhinny'" />
+        </div>
+        <div class="paginas">
+          <p id="titulo-paginas">Páginas</p>
+          <ul>
+            <li><a href="../landing-page/landing_page.html" id="links-footer">Landing page</a></li>
+            <li><a href="../pagina-inicial/pagina-inicial.html" id="links-footer">Tela inicial</a></li>
+            <li><a href="../pagina-perfil/perfil.html" id="links-footer">Perfil</a></li>
+            <li><a href="../pagina-faq/faq.html" id="links-footer">Fale conosco</a></li>
+            <li><a href="../pagina-politicas/politicas.html" id="links-footer">Política e Privacidade</a></li>
+            <li><a href="../pagina-termos/termos.html" id="links-footer">Termos de uso</a></li>
+          </ul>
+        </div>
+        <div class="redes-sociais">
+          <p id="redes_sociais-titulo">Redes Sociais</p>
+          <ul>
+            <li><a href="#" id="links-footer">Instagram</a></li>
+            <li><a href="#" id="links-footer">Linkedln</a></li>
+          </ul>
+        </div>
+        <div class="contato">
+          <p id="contato-titulo">Contato</p>
+          <ul>
+            <li><a href="" id="links-footer">Telefone</a></li>
+            <li><a href="" id="links-footer">Email</a></li>
+            <li><a href="" id="links-footer">Endereço</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="copyright">Copyright &copy; 2024 Rampoint</p>
+    </footer>
+  </div>
+</body>
+
+<script src="./js/menu.js"></script>
+<script src="./js/botao-acessibilidade.js"></script>
+<script src="../js/acessibilidade.js"></script>
+
+<script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-firestore-compat.js"></script>
+<script src="../firebase_js/authGuard.js"></script>
+<script src="../firebase_js/mostrarDados.js"></script>
+
+</html>

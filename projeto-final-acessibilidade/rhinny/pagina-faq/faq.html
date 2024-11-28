@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/faq.css" />
+    <link rel="stylesheet" href="./css/btn-acessibilidade.css">
+    <link rel="stylesheet" href="./css/layout.css">
+
+    <!-- icon -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+    <script src="https://cdn.userway.org/widget.js" data-account="3tjR35sfj5"></script>
+
+    <link rel="shortcut icon" href="./img/rhinny.png" type="image/x-icon" />
+    <title>Fale conosco</title>
+</head>
+
+<body onload="getUserData()">
+    <div class="container">
+        <nav>
+            <div id="map"></div>
+            <ul id="logo-nav">
+                <li>
+                    <a href="../pagina-inicial/pagina-inicial.html">
+                        <img src="./img/logo.svg" id="rhinny" alt="Rhinny" />
+                    </a>
+                </li>
+                <i class="bx bx-sun modo-leitura-btn"
+                    style="font-size: 22px; position: relative; left: 550px; cursor: pointer;"></i>
+                <div class="user" id="user-icon">
+                    <i class='bx bx-chevron-down' style='color:#6d6d6d; margin-right: 10px;'></i>
+                    <img src="./img/user.svg" id="foto-usuario" alt="Usuário" />
+                </div>
+            </ul>
+        </nav>
+
+        <!-- Modal -->
+        <div id="user-modal" class="modal">
+            <div class="modal-content">
+                <p class="perfil">Perfil</p>
+                <img src="./img/user.svg" id="foto-perfil" alt="Foto de perfil">
+                <div class="content-sem-perfil">
+                    <h3 id="nome_usuario" class="usuario"></h3>
+                    <div class="links">
+                        <a href="../pagina-perfil/perfil.html" class="texto-perfil">Perfil</a>
+                        <hr class="linha">
+                        <a href="../pagina-faq/faq.html" class="texto-perfil">Suporte</a>
+                        <hr class="linha">
+                        <a href="" onclick="logout()" class="texto-sair">Sair</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <section class="section-inicial">
+            <h1 class="titulo-principal">Fale Conosco</h1>
+            <p class="texto-principal">Conte com a ajuda do nosso suporte</p>
+        </section>
+
+        <section class="campo-perguntas">
+            <h1 id="titulo1">Perguntas Frequentes</h1>
+            <p id="texto1">Precisa de uma resposta? Você pode encontrar aqui!</p>
+
+            <section class="perguntas">
+                <div class="faq-container">
+                    <div class="faq-sidebar">
+                        <h3 id="titulo2">Filtrar por categoria</h3>
+                        <ul>
+                            <li><a href="#" class="category-link active" data-category="geral">Geral</a>
+                            </li>
+                            <li><a href="#" class="category-link" data-category="landing-page">Landing Page</a>
+                            </li>
+                            <li><a href="#" class="category-link" data-category="tela-inicial">Tela Inicial</a></li>
+                            <li><a href="#" class="category-link" data-category="perfil">Perfil</a></li>
+                            <li><a href="#" class="category-link" data-category="fale-conosco">Fale Conosco</a></li>
+                            <li><a href="#" class="category-link" data-category="politica-privacidade">Política e
+                                    Privacidade</a></li>
+                            <li><a href="#" class="category-link" data-category="termos-uso">Termos de Uso</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="faq-content">
+                        <div class="accordion" id="geral">
+                            <h1 data-category="geral" id="titulo-accordion">Geral</h1>
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <h3 id="titulo-pergunta">O que é este site?</h3>
+                                    <span class="arrow-icon"><img src="./img/seta.svg" alt=""></span>
+                                </div>
+                                <div class="accordion-body">
+                                    <p id="texto-pergunta">Nosso site é uma plataforma que ajuda a encontrar locais
+                                        acessíveis para crianças com deficiência visual, permitindo que responsáveis
+                                        busquem espaços com os recursos adequados para as necessidades de
+                                        acessibilidade.</p>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <h3 id="titulo-pergunta">Como funciona a busca por locais acessíveis?</h3>
+                                    <span class="arrow-icon"><img src="./img/seta.svg" alt=""></span>
+                                </div>
+                                <div class="accordion-body">
+                                    <p id="texto-pergunta">Os responsáveis podem utilizar a barra de pesquisa para
+                                        encontrar locais como parques, shoppings e jardins, filtrando por
+                                        acessibilidades específicas, como sinalização tátil e áudio-descrição.</p>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <h3 id="titulo-pergunta">Quais tipos de acessibilidade posso encontrar?</h3>
+                                    <span class="arrow-icon"><img src="./img/seta.svg" alt=""></span>
+                                </div>
+                                <div class="accordion-body">
+                                    <p id="texto-pergunta">Você pode buscar locais com diversas formas de
+                                        acessibilidade, como equipamentos acessíveis, sinalizações visuais e auditivas,
+                                        rampas e muito mais.</p>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <h3 id="titulo-pergunta">Há algum custo para utilizar o site?</h3>
+                                    <span class="arrow-icon"><img src="./img/seta.svg" alt=""></span>
+                                </div>
+                                <div class="accordion-body">
+                                    <p id="texto-pergunta">Não, o uso da plataforma é gratuito para todos os usuários.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion" id="landing-page" style="display: none;">
+                            <h1 data-category="landing-page" id="titulo-accordion">Landing Page</h1>
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <h3 id="titulo-pergunta">O que devo fazer na Landing Page?</h3>
+                                    <span class="arrow-icon"><img src="./img/seta.svg" alt=""></span>
+                                </div>
+                                <div class="accordion-body">
+                                    <p id="texto-pergunta">Na Landing Page, você encontrará informações sobre como nossa
+                                        plataforma funciona, além de botões de navegação para começar a busca por locais
+                                        acessíveis, explorar comentários de outros usuários e acessar recursos de
+                                        suporte.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion" id="tela-inicial" style="display: none;">
+                            <h1 data-category="tela-inicial" id="titulo-accordion">Tela Inicial</h1>
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <h3 id="titulo-pergunta">Como faço para buscar um local acessível?</h3>
+                                    <span class="arrow-icon"><img src="./img/seta.svg" alt=""></span>
+                                </div>
+                                <div class="accordion-body">
+                                    <p id="texto-pergunta">Na tela inicial, insira o tipo de local desejado (parques,
+                                        praças, etc.) e escolha as opções de acessibilidade que melhor atendem às
+                                        necessidades da criança.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <h3 id="titulo-pergunta">Como encontro um local específico?</h3>
+                                    <span class="arrow-icon"><img src="./img/seta.svg" alt=""></span>
+                                </div>
+                                <div class="accordion-body">
+                                    <p id="texto-pergunta">Utilize a barra de pesquisa para digitar o nome do local
+                                        desejado. A página retornará resultados com as informações sobre acessibilidade
+                                        e avaliações de outros usuários.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion" id="perfil" style="display: none;">
+                            <h1 data-category="perfil" id="titulo-accordion">Perfil</h1>
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <h3 id="titulo-pergunta">O que posso fazer na página de perfil?</h3>
+                                    <span class="arrow-icon"><img src="./img/seta.svg" alt=""></span>
+                                </div>
+                                <div class="accordion-body">
+                                    <p id="texto-pergunta">Na página de perfil, você pode visualizar os locais
+                                        visitados, seus favoritos e comentários. Também é possível desfavoritar locais e
+                                        excluir comentários, além de editar suas informações pessoais, como nome, e-mail
+                                        e senha.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion" id="fale-conosco" style="display: none;">
+                            <h1 data-category="fale-conosco" id="titulo-accordion">Fale Conosco</h1>
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <h3 id="titulo-pergunta">Como posso entrar em contato com o suporte?</h3>
+                                    <span class="arrow-icon"><img src="./img/seta.svg" alt=""></span>
+                                </div>
+                                <div class="accordion-body">
+                                    <p id="texto-pergunta">Na seção "Fale Conosco", você encontrará um formulário para
+                                        enviar suas dúvidas, sugestões ou relatar problemas. Você também pode nos
+                                        contatar pelo e-mail fornecido na página.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion" id="politica-privacidade" style="display: none;">
+                            <h1 data-category="politica-privacidade" id="titulo-accordion">Política e Privacidade</h1>
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <h3 id="titulo-pergunta">Qual é a política de privacidade do site?</h3>
+                                    <span class="arrow-icon"><img src="./img/seta.svg" alt=""></span>
+                                </div>
+                                <div class="accordion-body">
+                                    <p id="texto-pergunta">Nossa política de privacidade pode ser consultada na seção
+                                        "Políticas", onde explicamos como lidamos com seus dados pessoais.</p>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <h3 id="titulo-pergunta">Quais são os termos de uso do serviço?</h3>
+                                    <span class="arrow-icon"><img src="./img/seta.svg" alt=""></span>
+                                </div>
+                                <div class="accordion-body">
+                                    <p id="texto-pergunta">Os termos de uso estão disponíveis na seção "Políticas" e
+                                        detalham todas as condições para uso do nosso serviço.</p>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <h3 id="titulo-pergunta">Como meus dados são protegidos?</h3>
+                                    <span class="arrow-icon"><img src="./img/seta.svg" alt=""></span>
+                                </div>
+                                <div class="accordion-body">
+                                    <p id="texto-pergunta">Utilizamos medidas de segurança robustas para proteger seus
+                                        dados pessoais. Detalhes completos estão disponíveis em nossa política de
+                                        privacidade.</p>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <h3 id="titulo-pergunta">Posso excluir minha conta e dados pessoais?</h3>
+                                    <span class="arrow-icon"><img src="./img/seta.svg" alt=""></span>
+                                </div>
+                                <div class="accordion-body">
+                                    <p id="texto-pergunta">Sim, você pode solicitar a exclusão de sua conta e dados
+                                        pessoais entrando em contato com nosso suporte ao cliente.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="accordion" id="termos-uso" style="display: none;">
+                            <h1 data-category="termos-uso" id="titulo-accordion">Termos de Uso</h1>
+                            <div class="accordion-item">
+                                <div class="accordion-header">
+                                    <h3 id="titulo-pergunta">Quais são as condições para usar o serviço?</h3>
+                                    <span class="arrow-icon"><img src="./img/seta.svg" alt=""></span>
+                                </div>
+                                <div class="accordion-body">
+                                    <p id="texto-pergunta">Os termos de uso explicam todas as regras e responsabilidades
+                                        ao utilizar nossa plataforma, incluindo o respeito à privacidade e as diretrizes
+                                        de uso.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="campo-feedback">
+                <h1 class="titulo-feedback">Envie seu feedback</h1>
+                <p class="texto-feedback">Gostou da nossa iniciativa? Envie sugestões, críticas ou elogios para
+                    melhorarmos sua experiência conosco!</p>
+
+                <form action="" class="form-feedback">
+                    <label for="email">Email</label>
+                    <input type="email">
+                    <label for="mensagem">Mensagem</label>
+                    <textarea name="" id=""></textarea>
+                    <div class="btn-form">
+                        <button type="submit" class="btn">Enviar</button>
+                    </div>
+                </form>
+            </section>
+
+            <footer class="footer-container">
+                <div class="descricao-footer">
+                    <div class="logo">
+                        <img src="./img/logo.svg" class="logo-footer" alt="Imagem Logo 'Rhinny'" />
+                    </div>
+                    <div class="paginas">
+                        <p id="titulo-paginas">Páginas</p>
+                        <ul>
+                            <li><a href="../landing-page/landing_page.html">Landing page</a></li>
+                            <li><a href="../pagina-inicial/pagina-inicial.html">Tela inicial</a></li>
+                            <li><a href="../pagina-perfil/perfil.html">Perfil</a></li>
+                            <li><a href="../pagina-faq/faq.html">Fale conosco</a></li>
+                            <li><a href="../pagina-politicas/politicas.html">Política e Privacidade</a></li>
+                            <li><a href="../pagina-termos/termos.html">Termos de uso</a></li>
+                        </ul>
+                    </div>
+                    <div class="redes-sociais">
+                        <p id="redes_sociais-titulo">Redes Sociais</p>
+                        <ul>
+                            <li><a href="#">Instagram</a></li>
+                            <li><a href="#">Linkedln</a></li>
+                        </ul>
+                    </div>
+                    <div class="contato">
+                        <p id="contato-titulo">Contato</p>
+                        <ul>
+                            <li><a href="">Telefone</a></li>
+                            <li><a href="">Email</a></li>
+                            <li><a href="">Endereço</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="copyright">Copyright &copy; 2024 Rampoint</p>
+            </footer>
+    </div>
+    <script src="./js/modal-perfil.js"></script>
+    <script src="./js/accordion-faq.js"></script>
+    <script src="./js/botao-acessibilidade.js"></script>
+    <script src="../js/acessibilidade.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-firestore-compat.js"></script>
+    <script src="../firebase_js/authGuard.js"></script>
+    <script src="../firebase_js/mostrarDados.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,357 @@
+@media (min-width: 1920px) {
+  .campo-login {
+    height: 25em;
+    margin-top: 25em;
+  }
+
+  #rhinny-form {
+    left: 49em;
+  }
+}
+
+/* @media (max-width: 1920px) {
+  .campo-login {
+    height: 25em;
+    margin-top: 25em;
+  }
+
+  #rhinny-form {
+    left: 47.5em;
+  }
+} */
+
+/* @media (max-width: 1500px) {
+  .campo-login {
+    height: 25em;
+    margin-top: 25em;
+  }
+
+  #rhinny-form {
+    width: 22em;
+    left: 35.5em;
+  }
+}
+
+@media (max-width: 1490px) {
+  #rhinny-form {
+    left: 34em;
+  }
+} */
+
+@media (max-width: 1350px) {
+  #rhinny-form {
+    left: 29em;
+    bottom: 10em;
+  }
+}
+
+@media (max-width: 1100px) {
+  .menu-toggle {
+    display: none;
+  }
+
+  #rhinny-form {
+    width: 19em;
+    left: 24em;
+    bottom: 5em;
+  }
+}
+
+@media (max-width: 975px) {
+  nav {
+    height: 2em;
+    position: relative;
+    padding: 0 10px;
+    border-bottom: 1px solid #d9d9d9;
+  }
+
+  #logo-nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    list-style: none;
+  }
+
+  nav ul {
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    padding: 1em;
+    z-index: 1000;
+  }
+
+  .menu-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    margin: 0;
+  }
+
+  .menu-toggle div {
+    width: 100%;
+    height: 4px;
+    background-color: #000;
+  }
+
+  .botoes {
+    display: none;
+  }
+
+  nav.menu-open .botoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    position: absolute;
+    top: 4em;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 2em;
+    z-index: 1000;
+    border-bottom: 1px solid #d9d9d9;
+    border-radius: 8px;
+  }
+
+  .menu-collapse.menu-open {
+    position: absolute;
+    top: 7em;
+    right: 1em;
+    width: 13em;
+    height: 9em;
+    z-index: 1000;
+    border-bottom: 1px solid #d9d9d9;
+    border-radius: 8px;
+  }
+
+  .menu-collapse .botoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+
+  .btn-login,
+  .btn-cadastro {
+    font-size: 0.8em;
+    padding: 8px 16px;
+    margin: 10px 0;
+  }
+
+  #email_login,
+  #senha_cadastro {
+    background-color: #f8f8f8;
+    width: 25em;
+  }
+
+  .campo-login {
+    height: 15em;
+    margin-top: 15em;
+  }
+
+  #rhinny-form {
+    display: none;
+  }
+}
+
+@media (max-width: 845px) {
+  .menu-toggle {
+    display: flex;
+    margin-right: 1em;
+  }
+
+  .menu-collapse {
+    display: none;
+  }
+  .botoes {
+    display: none;
+  }
+
+  nav.menu-open .botoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: gray;
+    border-bottom: 1px solid #d9d9d9;
+    border-radius: 8px;
+  }
+
+  .menu-collapse .botoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+
+  .campo-login {
+    margin-top: 15em;
+    height: 15em;
+  }
+
+  #rhinny-form {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    overflow-y: scroll;
+  }
+
+  .menu-toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    margin: 0;
+  }
+
+  .menu-toggle div {
+    width: 100%;
+    height: 4px;
+    background-color: #000;
+  }
+
+  .botoes {
+    display: none;
+  }
+
+  nav.menu-open .botoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    position: absolute;
+    top: 4em;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 2em;
+    z-index: 1000;
+    border-bottom: 1px solid #d9d9d9;
+    border-radius: 8px;
+  }
+
+  .menu-collapse .botoes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+
+  .btn-login,
+  .btn-cadastro {
+    font-size: 0.8em;
+    padding: 8px 16px;
+    margin: 10px 0;
+  }
+
+  #rhinny-form {
+    display: none;
+  }
+}
+
+@media (max-width: 550px) {
+  .campo-login {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media (max-width: 475px) {
+  .menu-toggle {
+    margin-right: 1em;
+  }
+
+  .campo-login {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .form-login {
+    width: 25em;
+    height: 22em;
+  }
+
+  #email_login,
+  #senha_cadastro {
+    background-color: #f8f8f8;
+    width: 25em;
+  }
+
+  #btn-entrar {
+    width: 15em;
+  }
+}
+
+@media (max-width: 455px) {
+  .form-login {
+    width: 22em;
+  }
+
+  #email_login,
+  #senha_cadastro {
+    background-color: #f8f8f8;
+    width: 20em;
+  }
+
+  #btn-entrar {
+    width: 13em;
+  }
+}
+
+@media (max-width: 395px) {
+  .menu-overlay {
+    height: 115vh;
+  }
+
+  .form-login {
+    width: 20em;
+  }
+
+  #email_login,
+  #senha_cadastro {
+    width: 18em;
+  }
+
+  #btn-entrar {
+    width: 12em;
+  }
+}
+
+@media (max-width: 345px) {
+  .form-login {
+    width: 18em;
+  }
+
+  #email_login,
+  #senha_cadastro {
+    width: 16em;
+  }
+
+  #btn-entrar {
+    width: 10em;
+  }
+}
+
+@media (max-width: 365px) {
+  .menu-overlay {
+    height: 115vh;
+  }
+
+  .menu-toggle {
+    margin-right: 1em;
+  }
+}

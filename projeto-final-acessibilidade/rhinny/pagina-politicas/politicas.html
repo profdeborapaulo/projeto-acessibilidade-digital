@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/politicas.css" />
+    <link rel="stylesheet" href="./css/btn-acessibilidade.css">
+    <link rel="stylesheet" href="./css/layout.css">
+
+    <!-- icon -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+    <script src="https://cdn.userway.org/widget.js" data-account="3tjR35sfj5"></script>
+
+    <link rel="shortcut icon" href="./img/rhinny.png" type="image/x-icon" />
+    <title>Política e Privacidade</title>
+</head>
+
+<body onload="getUserData()">
+    <div class="container">
+        <nav>
+            <div id="map"></div>
+            <ul id="logo-nav">
+                <li>
+                    <a href="../pagina-inicial/pagina-inicial.html">
+                        <img src="./img/logo.svg" id="rhinny" alt="Rhinny" />
+                    </a>
+                </li>
+                <i class="bx bx-sun modo-leitura-btn"
+                    style="font-size: 22px; position: relative; left: 550px; cursor: pointer;"></i>
+                <div class="user" id="user-icon">
+                    <i class='bx bx-chevron-down' style='color:#6d6d6d; margin-right: 10px;'></i>
+                    <img src="./img/user.svg" id="foto-usuario" alt="Usuário" />
+                </div>
+            </ul>
+        </nav>
+
+        <!-- Modal -->
+        <div id="user-modal" class="modal">
+            <div class="modal-content">
+                <p class="perfil">Perfil</p>
+                <img src="./img/user.svg" id="foto-perfil" alt="Foto de perfil">
+                <div class="content-sem-perfil">
+                    <h3 id="nome_usuario" class="usuario"></h3>
+                    <div class="links">
+                        <a href="../pagina-perfil/perfil.html" class="texto-perfil">Perfil</a>
+                        <hr class="linha">
+                        <a href="../pagina-faq/faq.html" class="texto-perfil">Suporte</a>
+                        <hr class="linha">
+                        <a href="" onclick="logout()" class="texto-sair">Sair</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <section class="termos">
+            <h1 class="titulo">Política e Privacidade</h1>
+
+            <ul class="lista-termos">
+                <li class="titulo-termos"> 1. Introdução</li>
+                <li class="texto-termos">Bem-vindo à Rhinny!. Estamos comprometidos em proteger a sua privacidade e
+                    garantir que suas informações pessoais sejam manuseadas de forma segura e responsável. Esta Política
+                    de Privacidade descreve como coletamos, usamos, e protegemos suas informações pessoais.
+                </li>
+                <li class="titulo-termos">2. Informações que Coletamos</li>
+                <li class="texto-termos">Coletamos informações pessoais de várias maneiras, incluindo:
+                    <br>
+                    - Informações fornecidas diretamente por você: Nome, endereço de e-mail e localização.
+                    <br>
+                    - Informações coletadas automaticamente: Dados de navegação, como endereço IP, tipo de navegador,
+                    páginas visitadas e tempo gasto em nosso site.
+                    <br>
+                    - Informações de terceiros: Podemos receber informações sobre você de outras fontes, como redes
+                    sociais ou parceiros de negócios.
+                </li>
+                <li class="titulo-termos">3. Uso das Informações</li>
+                <li class="texto-termos">Usamos as informações coletadas para:
+                    <br>
+                    - *Fornecer e gerenciar nossos serviços: Para processar suas solicitações, responder a perguntas e
+                    melhorar a funcionalidade do Site.
+                    <br>
+                    - Comunicação: Enviar e-mails informativos, promocionais e outras comunicações relacionadas aos
+                    nossos serviços.
+                    <br>
+                    - Análise e melhoria: Monitorar e analisar tendências, uso e atividades para melhorar nossos
+                    serviços e o Site.
+                    <br>
+                    - Cumprimento legal: Atender a obrigações legais e regulatórias.
+                </li>
+                <li class="titulo-termos">4. Compartilhamento de Informações</li>
+                <li class="texto-termos">Não vendemos, trocamos ou alugamos suas informações pessoais para terceiros.
+                    Podemos compartilhar suas informações com:
+                    <br>
+                    - Fornecedores de serviços: Empresas terceirizadas que nos ajudam a operar o Site e fornecer nossos
+                    serviços.
+                    <br>
+                    - Requisitos legais: Se formos obrigados por lei a divulgar suas informações ou para proteger nossos
+                    direitos e segurança.
+                </li>
+                <li class="titulo-termos">5. Segurança das Informações</li>
+                <li class="texto-termos">Implementamos medidas de segurança apropriadas para proteger suas informações
+                    contra acesso não autorizado, alteração, divulgação ou destruição. No entanto, nenhum método de
+                    transmissão pela Internet ou armazenamento eletrônico é 100% seguro.
+                </li>
+                <li class="titulo-termos">6. Seus Direitos</li>
+                <li class="texto-termos">Você tem o direito de:
+                    <br>
+                    - Acessar suas informações pessoais: Solicitar uma cópia das informações que temos sobre você.
+                    <br>
+                    - Corrigir informações incorretas: Atualizar ou corrigir suas informações pessoais.
+                    <br>
+                    - Excluir suas informações: Solicitar a exclusão de suas informações pessoais.
+                    <br>
+                    - Optar por não receber comunicações: Cancelar a assinatura de e-mails promocionais.
+                </li>
+                <li class="titulo-termos">7. Cookies e Tecnologias Semelhantes</li>
+                <li class="texto-termos">Usamos cookies e tecnologias semelhantes para melhorar sua experiência no Site.
+                    Você pode configurar seu navegador para recusar cookies, mas isso pode afetar a funcionalidade do
+                    Site.
+                </li>
+                <li class="titulo-termos">8. Alterações na Política de Privacidade</li>
+                <li class="texto-termos">Podemos atualizar esta Política de Privacidade periodicamente. Recomendamos que
+                    você reveja esta política regularmente para se manter informado sobre como estamos protegendo suas
+                    informações.
+                </li>
+                <li class="titulo-termos">9. Contato</li>
+                <li class="texto-termos">Se você tiver perguntas ou preocupações sobre esta Política de Privacidade,
+                    entre em contato conosco:
+                </li>
+                <li class="texto-termos">- E-mail: rhinny@gmail.com</li>
+                <li class="texto-termos">- Telefone: (11) 93350-6834</li>
+                <li class="data"><span id="span-preto">Data de Vigência:</span> 1 de junho de 2024</li>
+                <li class="texto-termos">Esta Política de Privacidade foi atualizada pela última vez em 16 de setembro
+                    de
+                    2024.</li>
+            </ul>
+        </section>
+
+        <footer class="footer-container">
+            <div class="descricao-footer">
+                <div class="logo">
+                    <img src="./img/logo.svg" class="logo-footer" alt="Imagem Logo 'Rhinny'" />
+                </div>
+                <div class="paginas">
+                    <p id="titulo-paginas">Páginas</p>
+                    <ul>
+                        <li><a href="../landing-page/landing_page.html">Landing page</a></li>
+                        <li><a href="../pagina-inicial/pagina-inicial.html">Tela inicial</a></li>
+                        <li><a href="../pagina-perfil/perfil.html">Perfil</a></li>
+                        <li><a href="../pagina-faq/faq.html">Fale conosco</a></li>
+                        <li><a href="../pagina-politicas/politicas.html">Política e Privacidade</a></li>
+                        <li><a href="../pagina-termos/termos.html">Termos de uso</a></li>
+                    </ul>
+                </div>
+                <div class="redes-sociais">
+                    <p id="redes_sociais-titulo">Redes Sociais</p>
+                    <ul>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Linkedln</a></li>
+                    </ul>
+                </div>
+                <div class="contato">
+                    <p id="contato-titulo">Contato</p>
+                    <ul>
+                        <li><a href="">Telefone</a></li>
+                        <li><a href="">Email</a></li>
+                        <li><a href="">Endereço</a></li>
+                    </ul>
+                </div>
+            </div>
+            <p class="copyright">Copyright &copy; 2024 Rampoint</p>
+        </footer>
+    </div>
+
+    <script src="./js/modal-perfil.js"></script>
+    <script src="./js/botao-acessibilidade.js"></script>
+    <script src="../js/acessibilidade.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.13.1/firebase-firestore-compat.js"></script>
+    <script src="../firebase_js/authGuard.js"></script>
+    <script src="../firebase_js/mostrarDados.js"></script>
+</body>
+
+</html>
