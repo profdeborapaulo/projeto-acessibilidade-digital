@@ -153,7 +153,6 @@ function obterCheckboxesAtivos() {
   });
   
   return filtrosAtivos;
-
 }
 
 function obterCheckboxesPai() {
@@ -168,80 +167,74 @@ function obterCheckboxesPai() {
   });
   
   return filtrosAtivos;
-
 }
 
 // Função para buscar lugares no Firestore
 async function buscarLugares() {
-  
   const filtrosAtivos = obterCheckboxesAtivos();
-  const filtroPai = obterCheckboxesPai()
-  console.log(filtroPai)
+  const filtroPai = obterCheckboxesPai();
+  console.log(filtroPai);
 
-  if (filtrosAtivos.length === 0 && filtroPai.length === 0 ) {
+  // Limpa o contêiner antes de adicionar novos lugares
+  const campoLocais = document.getElementById("campo-locais");
+  campoLocais.innerHTML = ""; // Limpa a seção de locais
+
+  // Verifica se não há filtros ativos e exibe mensagem "não"
+  if (filtrosAtivos.length === 0 && filtroPai.length === 0) {
     console.log("Nenhum filtro ativo.");
-    getGeolocation()
+    campoLocais.innerHTML = "<p>Não</p>"; // Mensagem quando não há filtros ativos
+    getGeolocation();
     return;
   }
 
   try {
     const db = firebase.firestore(); // Inicializa o Firestore
     const lugaresRef = db.collection("lugares");
-    
+
     // Cria uma consulta com base nos filtros ativos
     let query = lugaresRef;
 
-    if(filtroPai == 'sinalizacao'){
-      filtrosAtivos.forEach(filtro => { 
-        query = query.where('sinalizacao', "==", filtro); // Assume que o campo no Firestore é booleano
+    // Adiciona cláusulas WHERE apenas para filtros ativos
+    if (filtroPai.includes('sinalizacao')) { 
+      filtrosAtivos.forEach(filtro => {
+        query = query.where('sinalizacao', "==", filtro);
       });
-  
-      const snapshot = await query.get();
-      
-      snapshot.forEach(doc => {
-        const lugarData = doc.data();
-        console.log(lugarData)
-         criarTabelaMapaFiltro(lugarData)
+    }
+
+    if (filtroPai.includes('audio')) { 
+      filtrosAtivos.forEach(filtro => {
+        query = query.where('audio', "==", filtro);
       });
-      
-    }else if(filtroPai == 'audio'){
-      filtrosAtivos.forEach(filtro => { 
-        query = query.where('audio', "==", filtro); // Assume que o campo no Firestore é booleano
+    }
+
+    if (filtroPai.includes('equipamento')) { 
+      filtrosAtivos.forEach(filtro => {
+        query = query.where('equipamento', "==", filtro);
       });
-  
-      const snapshot = await query.get();
-      
-      snapshot.forEach(doc => {
-        const lugarData = doc.data();
-        console.log(lugarData)
-         criarTabelaMapaFiltro(lugarData)
-      });
-      
-    } else if (filtroPai == 'equipamento'){
-      filtrosAtivos.forEach(filtro => { 
-        query = query.where('equipamento', "==", filtro); // Assume que o campo no Firestore é booleano
-      });
-  
-      const snapshot = await query.get();
-      
-      snapshot.forEach(doc => {
-        const lugarData = doc.data();
-        console.log(lugarData)
-         criarTabelaMapaFiltro(lugarData)
-      });
-    } 
+    }
+
+    // Obtém os dados dos lugares
+    const snapshot = await query.get();
+
+    if (snapshot.empty) {
+      campoLocais.innerHTML = "<p style='margin-bottom: 250px;'>Não foram encontrados locais com os filtros selecionados.</p>"; // Mensagem quando não há resultados
+      return;
+    }
+
+    snapshot.forEach(doc => {
+      const lugarData = doc.data();
+      console.log(lugarData);
+      criarTabelaMapaFiltro(lugarData);
+    });
 
   } catch (error) {
     console.error("Erro ao buscar lugares:", error);
   }
 }
 
-
 function criarTabelaMapaFiltro(lugar) {
-  
   var lugarSection = document.createElement("section");
   lugarSection.classList.add("card");
-  document.getElementById("campo-locais").innerHTML = ""
 
   lugarSection.innerHTML = `
     <div class="grupo-locais" data-name="${lugar.name}">
@@ -264,17 +257,11 @@ function criarTabelaMapaFiltro(lugar) {
     const address = lugar.formatted_address || "Endereço não disponível";
     const phone = lugar.formatted_phone_number || "Telefone não disponível";
     // Redireciona para a página de detalhes
-    window.location.href = "../../pagina-lugar/pagina_lugarFiltro.html?uid="+lugar.id;
+    window.location.href = "../../pagina-lugar/pagina_lugarFiltro.html?uid=" + lugar.id;
   });
 
   // Adiciona o lugar ao contêiner com o ID 'campo-locais'
   document.getElementById("campo-locais").appendChild(lugarSection);
 }
 
-const checkboxes = document.querySelectorAll('input[type=checkbox]');
-  checkboxes.forEach(checkbox => {
-    if (checkbox.checked) {
-      checkbox.addEventListener('click',buscarLugares  )
-      ; // Adiciona o ID do checkbox ativo
-    }
-  })
+// Adiciona eventos de clique nas checkboxes para atualizar a busca

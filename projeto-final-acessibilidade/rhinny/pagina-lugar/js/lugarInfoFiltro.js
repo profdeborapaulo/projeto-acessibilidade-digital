@@ -6,30 +6,6 @@ function pegarUrl() {
 const url = pegarUrl();
 
 
-document.getElementById("favoritar").addEventListener("click", () => {
-  var nomeLugar = localStorage.getItem('nomeLugar')
-  var photoLugar = localStorage.getItem('img')
-  firebase.auth().onAuthStateChanged((user) => {
-    if (user) {
-      var uid = user.uid;
-      const favoritoRef = db.collection("users").doc(uid).collection('favoritos');
-
-      favoritoRef
-        .add({
-          photos: photoLugar,
-          name: nomeLugar,
-          id: url,
-        })
-        .then(() => {
-          console.log("Favoritado");
-        })
-        .catch((error) => {
-          console.log(error);
-        });
-    }
-  });
-});
-
 firebase.firestore().collection('lugares').doc(url).get().then((snapshot) => {
 
     var img = document.getElementById("praca-boulevard");

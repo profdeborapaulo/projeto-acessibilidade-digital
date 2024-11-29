@@ -25,8 +25,8 @@ function entrar(){
     var errorCode = error.code;
     var errorMessage = error.message;
 
-    console.log(errorCode)
-    console.log(errorMessage)
+    alert(errorCode)
+    alert(errorMessage)
   });
 
 }

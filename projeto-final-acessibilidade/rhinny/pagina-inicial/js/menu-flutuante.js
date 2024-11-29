@@ -9,7 +9,7 @@ window.addEventListener("scroll", function () {
   const footerOffsetTop = footer.offsetTop;
   const menuHeight = menu.offsetHeight;
 
-  const maxScrollTop = footerOffsetTop - menuHeight - 20;
+  const maxScrollTop = footerOffsetTop - menuHeight - 50;
 
   if (scrollPosition >= maxScrollTop) {
     menu.style.position = "absolute";

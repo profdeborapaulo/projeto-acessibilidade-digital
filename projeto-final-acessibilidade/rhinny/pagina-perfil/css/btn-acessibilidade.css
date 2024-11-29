@@ -263,7 +263,7 @@ body.modo-escuro .delete-account {
 
 body.modo-escuro .menu-flutuante,
 body.modo-escuro .content-sem-perfil,
-.modal-content-config {
+body.modo-escuro .modal-content-config {
     background-color: #282828;
 }
 

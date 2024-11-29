@@ -19,27 +19,6 @@ const db = firebase.firestore();
 const idLugar = lugarInfos.place_id
 console.log(idLugar)
 
-document.getElementById("favoritar").addEventListener("click", () => {
-  firebase.auth().onAuthStateChanged((user) => {
-    if (user) {
-      var uid = user.uid;
-      const favoritoRef = db.collection("users").doc(uid).collection('favoritos');
-      favoritoRef
-        .add({
-          photos: lugarInfos.photo,
-          name: lugarInfos.name,
-          id: url,
-        })
-        .then(() => {
-          console.log("Favoritado");
-        })
-        .catch((error) => {
-          console.log(error);
-        });
-    }
-  });
-});
-
 firebase.auth().onAuthStateChanged((user) => {
   if (user) {
     var uid = user.uid;
@@ -84,6 +63,7 @@ async function adicionarComentario() {
       data: obterDataAtual(),
       titulo: titulo,
       usuarioID: id,
+      idLugar:url,
     })
     .then(() => {
       console.log("Comentário adicionado com sucesso");
@@ -114,7 +94,7 @@ async function adicionarComentario() {
       photos: lugarInfos.photo,
       name: lugarInfos.name,
       id: url,
-    })
+    }, {merge:true})
     .then(() => {
       console.log("Dados adicionados com sucesso");
     })
@@ -163,9 +143,9 @@ function exibirComentarioNaTela(Comentario, key) {
   let estrelasHTML = "";
   for (let i = 1; i <= 5; i++) {
     if (i <= estrelasArredondadas) {
-      estrelasHTML += `<span class="estrela" onclick="salvarAvaliacao('${i}','${key}')" style="color: #fcc803;">⭐</span>`; // Estrela preenchida
+      estrelasHTML += `<span class="estrela" onclick="salvarAvaliacao('${i}','${key}')" style="color: #fcc803; cursor: pointer;">⭐</span>`; // Estrela preenchida
     } else {
-      estrelasHTML += `<span class="estrela" onclick="salvarAvaliacao('${i}','${key}')" style="opacity:0.5;">⭐</span>`; // Estrela vazia
+      estrelasHTML += `<span class="estrela" onclick="salvarAvaliacao('${i}','${key}')" style="opacity:0.5; cursor: pointer;">⭐</span>`; // Estrela vazia
     }
   }
 

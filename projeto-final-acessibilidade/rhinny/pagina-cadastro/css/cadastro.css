@@ -123,6 +123,7 @@
   flex-direction: column;
   margin: 0px;
   outline: none;
+
 }
 
 .campo-email {
@@ -142,12 +143,14 @@
   display: flex;
   flex-direction: column;
   margin: 5px 0px;
+  color: #333;
 }
 
 #titulo-form {
   font-family: "Poppins-regular";
   font-size: 1.2em;
   margin-bottom: 5px;
+  
 }
 
 .grupo {

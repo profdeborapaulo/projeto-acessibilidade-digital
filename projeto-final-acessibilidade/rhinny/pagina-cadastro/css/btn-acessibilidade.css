@@ -250,7 +250,7 @@ body.modo-escuro #senha-cadastro,
 body.modo-escuro #data,
 #nome-cadastro-crianca,
 #data-cadastro-crianca {
-    color: #DADADC;
+    color: #333;
     background-color: rgba(217, 217, 217, 0.5);
     border: none;
     outline: none;

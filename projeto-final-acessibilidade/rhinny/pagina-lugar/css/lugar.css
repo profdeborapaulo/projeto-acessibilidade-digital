@@ -15,15 +15,15 @@
   align-items: center;
   position: absolute;
   top: 75px;
-  left: 95px;
+  left: 180px;
   background-color: #0098FF;
-  border-radius: 50%;
-  padding: 10px;
+  border-radius: 20%;
+  padding: 7px;
   z-index: 10;
 }
 
 .heart-icon img {
-  width: 1.5em;
+  width: 1em;
   height: auto;
   cursor: pointer;
 }
@@ -270,9 +270,10 @@
 .campo-outros-comentarios {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin: 0.5em auto;
+  margin: 25px auto;
   gap: 5em;
 }
 
@@ -331,6 +332,7 @@
 .p-localize {
   font-family: "Poppins-regular";
   color: #757575;
+  cursor: pointer;
 }
 
 .localizar img {
