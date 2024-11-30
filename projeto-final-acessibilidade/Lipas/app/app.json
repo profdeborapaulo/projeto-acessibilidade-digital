@@ -1,0 +1,54 @@
+{
+  "expo": {
+    "photosPermission": "The app accesses your photos to let you share them with your friends.",
+    "name": "lipas",
+    "slug": "lipas",
+    "newArchEnabled": true,
+    "sdkVersion": "52.0.0",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "scheme": "your-app-scheme",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#49070a",
+      "width": "auto",
+      "height": "auto"
+    },
+    "permissions":[
+      "ACCESS_BACKGROUND_LOCATION",
+      "FOREGROUND_SERVICE"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#49070a"
+      },
+      "permissions": [
+        "android.permission.RECORD_AUDIO",
+        "android.permission.RECORD_AUDIO",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_BACKGROUND_LOCATION"
+      ],
+      "package": "lipas.com"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-image-picker",
+      "expo-font"
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "9819879b-b2f4-433d-8f4a-8450c3fa259d"
+      }
+    }
+  }
+}
