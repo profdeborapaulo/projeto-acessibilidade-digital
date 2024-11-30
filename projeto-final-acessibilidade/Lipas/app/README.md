@@ -1,9 +1,13 @@
 PARA EMULAR ATRAVÉS DA EXPO
+
    npx expo start
 
 
+
 PARA EMULAR ATRAVÉS DO ANDROID STUDIO
+
    npm run android
+
 
 
 INSTALAÇÕES NECESSÁRIAS
@@ -128,6 +132,8 @@ Se caso não funcionar o comando de instalar as dependências, abaixo vai estar 
    npx expo install expo-task-manager expo-location firebase
 
 
+
 Criar o apk
+
    eas build -p android --profile preview
 
