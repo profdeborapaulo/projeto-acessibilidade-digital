@@ -1,0 +1,436 @@
+/*NAVBAR*/
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px ;
+    background-color: #1C2454;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.header::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; 
+  background-color: #1c245485;
+  z-index: -1;
+}
+
+.header::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, #020a3af3, transparent);
+  transition: .8s;
+}
+
+header:hover::after{
+  left: 100%;
+}
+
+.logo {
+    height: 4rem;
+}
+header nav a {
+  font-size: 1.15rem;
+  font-weight: 500;
+  margin-left: 2.5rem;
+  color: #fff;
+  text-decoration: none;
+  padding-right: 3rem;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+#check{
+  display: none;
+}
+
+.icon{
+  font-size: 2.8rem;
+  color: white;
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  right: 0;
+  padding-right: 5rem;
+}
+
+@media (max-width: 992px) {
+  .header{
+    padding: 1.3rem 5%;
+  }
+}
+
+@media (max-width: 768px) {
+  .icon{
+    display: inline-flex;
+  }
+
+  #check:checked~.icon #menu-icon{
+  display: none;
+  }
+
+  nav{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 0;
+    background-color: #1c2454f6;
+    overflow: hidden;
+    box-shadow: 0 .5rem 1rem #1C2454;
+    transition: .3s ease;
+  }
+
+  #check:checked~nav{
+    height: 17.7rem;
+  }
+
+  nav a{
+    display: block;
+    font-size: 1.1rem;
+    margin: 1.5rem 0;
+    text-align: center;
+    transform: translateY(-50px);
+    transition: .3s ease;
+    opacity: 0;
+  }
+
+  #check:checked~nav a{
+    height: 2rem;
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: calc(.15s * var(--i));
+  }
+
+  #check:checked~.icon #close-icon{
+    display: block;
+    }
+
+  .icon #close-icon {
+    display: none;
+  }
+}
+/* FIM NAVBAR */
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #19235a;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Cloud shapes in the corners */
+.cloud {
+    position: absolute;
+    background-color: #19235a;
+    border-radius: 50%;
+}
+
+/* Top left cloud */
+.cloud.top-left {
+    width: 400px;
+    height: 400px;
+    top: -200px;
+    left: -200px;
+}
+
+.cloud.top-left::before,
+.cloud.top-left::after,
+.cloud.top-left::nth-child(3) {
+    content: '';
+    position: absolute;
+    background-color: #19235a;
+    border-radius: 50%;
+}
+
+.cloud.top-left::before {
+    width: 250px;
+    height: 250px;
+    top: 100px;
+    left: 150px;
+}
+
+.cloud.top-left::after {
+    width: 150px;
+    height: 150px;
+    top: 250px;
+    left: 300px;
+}
+
+/* Top right cloud */
+.cloud.top-right {
+    width: 400px;
+    height: 400px;
+    top: -200px;
+    right: -200px;
+}
+
+.cloud.top-right::before,
+.cloud.top-right::after,
+.cloud.top-right::nth-child(3) {
+    content: '';
+    position: absolute;
+    background-color: #19235a;
+    border-radius: 50%;
+}
+
+.cloud.top-right::before {
+    width: 250px;
+    height: 250px;
+    top: 100px;
+    right: 150px;
+}
+
+.cloud.top-right::after {
+    width: 150px;
+    height: 150px;
+    top: 250px;
+    right: 300px;
+}
+
+/* Bottom left cloud */
+.cloud.bottom-left {
+    width: 400px;
+    height: 400px;
+    bottom: -200px;
+    left: -200px;
+}
+
+.cloud.bottom-left::before,
+.cloud.bottom-left::after,
+.cloud.bottom-left::nth-child(3) {
+    content: '';
+    position: absolute;
+    background-color: #19235a;
+    border-radius: 50%;
+}
+
+.cloud.bottom-left::before {
+    width: 250px;
+    height: 250px;
+    bottom: 100px;
+    left: 150px;
+}
+
+.cloud.bottom-left::after {
+    width: 150px;
+    height: 150px;
+    bottom: 250px;
+    left: 300px;
+}
+
+/* Bottom right cloud */
+.cloud.bottom-right {
+    width: 400px;
+    height: 400px;
+    bottom: -200px;
+    right: -200px;
+}
+
+.cloud.bottom-right::before,
+.cloud.bottom-right::after,
+.cloud.bottom-right::nth-child(3) {
+    content: '';
+    position: absolute;
+    background-color: #19235a;
+    border-radius: 50%;
+}
+
+.cloud.bottom-right::before {
+    width: 250px;
+    height: 250px;
+    bottom: 100px;
+    right: 150px;
+}
+
+.cloud.bottom-right::after {
+    width: 150px;
+    height: 150px;
+    bottom: 250px;
+    right: 300px;
+}
+
+.login-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    text-align: center;
+    position: relative;
+    border: 3px solid #ff7a00;
+    z-index: 1;
+    margin-top: 30px;
+}
+
+.logo-form{ 
+    width: 80px; /* Largura da div, ajuste conforme necessário */
+    height: 80px; /* Altura da div, deve ser igual à largura para manter o formato redondo */
+    border-radius: 50%; /* Torna a div redonda */
+    border: 2px solid #ff7a00; /* Borda laranja com espessura de 4 pixels */
+    display: flex; /* Usa flexbox para centralizar o conteúdo */
+    align-items: center; /* Alinha o conteúdo verticalmente no centro */
+    justify-content: center; /* Alinha o conteúdo horizontalmente no centro */
+    overflow: hidden; /* Garante que a imagem não ultrapasse a borda redonda */
+    background-color: white; /* Opcional: define uma cor de fundo para a div */
+    margin: -60px 0 30px 120px;
+}
+
+.logo-form img {
+    width: auto; /* Mantém a proporção da imagem */
+    height: 100%; /* Ajusta a altura da imagem dentro da div */
+    object-fit: contain; /* Garante que a imagem se ajuste sem distorção */
+}
+
+.login-form {
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+select, input[type="text"], input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+    margin-left: 10px;
+}
+
+.password-container {
+    display: flex;
+    align-items: center;
+}
+
+.password-container input {
+    flex: 1;
+}
+
+.toggle-password {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.toggle-password img {
+    width: 20px;
+    height: 20px;
+
+}
+
+button {
+    cursor: pointer;
+}
+
+button:active {
+    background-color: #19235a;
+    color: #fff;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button[disabled] {
+    opacity: 0.7;
+    /* cursor: not-allowed; */
+    background-color: #f0f0f0; /* Cor do botão quando desabilitado */
+    color: #aaa;
+}
+
+.clear {
+    width: 100%;
+    padding: 10px;
+    color: #19235a;
+    border: 2px solid #19235a;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.clear:hover {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.solid {
+    background-color: #19235a;
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+    border: 2px solid #19235a;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, color 0.3s;
+    margin-bottom: 5px;
+}
+
+.solid:disabled {
+    background-color: #f0f0f0;
+    color: #aaa;
+}
+
+
+/* Accessibility Button */
+ .accessibility-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: 2px solid #014B92;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+    overflow: hidden; /* Garante que a imagem não ultrapasse a borda redonda */
+}
+
+
+.acd {
+    width: auto; /* Mantém a proporção da imagem */
+    height: 100%; /* Ajusta a altura da imagem dentro da div */
+    object-fit: contain; /* Garante que a imagem se ajuste sem distorção */
+    background-color: #014B92;
+}
+
+.accessibility-button:hover {
+    background-color: #014B92;
+}
+
+.accessibility-button:hover img {
+    filter: brightness(0) invert(1); /* Invert image color on hover */
+}

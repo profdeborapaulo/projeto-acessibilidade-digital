@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achados e Perdidos</title>
+    <link rel="stylesheet" href="../css/achados.css">
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <div class="navbar-container">
+        <div id="navbar" class="navbar">
+            <div class="pag">
+                <h4>Administrador</h4>
+            </div>
+            <div class="logo-container">
+                <a href="../html/home.html">
+                    <img src="../img/Logo.png" alt="Logo" class="logo">
+                </a>
+            </div>
+            <div class="nav-links">
+                <a class="active" href="achados.html">Achados e Perdidos</a>
+                <a href="visitas.html">Visitas</a>
+                <a href="matricula.html">Intenções de matrícula</a>
+                <a href="reservas.html">Solicitações de reserva </a>
+                <a href="parcerias.html">Propostas de parceria</a>
+                <a href="cadastro.html">Cadastrar Usuário</a>
+                <a href="../../visitante/html/login.html" style="--i:0;">Logout</a>
+            </div>
+        </div>
+        <button class="toggle-btn">☰</button> <!-- Botão fixo fora da navbar -->
+    </div>
+    <!-- FIM NAVBAR -->
+
+    <div class="container">
+        <button class="botao" id="addItemBtn">Adicionar item</button>
+
+        <div class="cartoes">
+            <div class="linha">
+                <div class="cards1" id="cardContainer"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para adicionar imagem -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Adicionar nova imagem</h2>
+            <form id="addImageForm">
+                <input type="file" id="imageInput" accept="image/*" required>
+                <button type="submit">Adicionar imagem</button>
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="../js/achados.js"></script>
+</body>
+
+</html>

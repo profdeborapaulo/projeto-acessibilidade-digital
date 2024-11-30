@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Adm</title>
+    <link rel="stylesheet" href="../css/cadastro.css">
+    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-auth.js"></script>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <div class="navbar-container">
+        <div id="navbar" class="navbar">
+            <div class="pag">
+                <h4>Administrador</h4>
+            </div>
+            <div class="logo-container">
+                <a href="../html/home.html">
+                    <img src="../img/Logo.png" alt="Logo" class="logo">
+                </a>
+            </div>
+            <div class="nav-links">
+                <a href="achados.html">Achados e Perdidos</a>
+                <a href="visitas.html">Visitas</a>
+                <a href="matricula.html">Intenções de matrícula</a>
+                <a href="reservas.html">Solicitações de reserva </a>
+                <a href="parcerias.html">Propostas de parceria</a>
+                <a class="active" href="cadastro.html">Cadastrar Usuário</a>
+                <a href="../../visitante/html/login.html" style="--i:0;">Logout</a>
+            </div>
+        </div>
+        <button class="toggle-btn">☰</button> <!-- Botão fixo fora da navbar -->
+    </div>
+    <!-- FIM NAVBAR -->
+
+    <div class="form-container">
+        <h2>Cadastro do usuário</h2>
+        <form id="form-cadastro">
+            <div class="form-group">
+                <label for="cargo">* Cargo:</label>
+                <select id="cargo" name="cargo" required>
+                    <option value="administrador">Administrador</option>
+                    <option value="responsavel">Responsável</option>
+                    <option value="professor">Professor</option>
+                </select>
+            </div>
+            
+            <div class="group1">
+            <div class="form-group">
+                <label for="rm">* RM:</label>
+                <input type="text" id="rm" name="rm" required maxlength="5" pattern="{1,5}" placeholder="Ex: 12345">
+            </div>
+            <div class="form-group">
+                <label for="senha">* Senha:</label>
+                <input type="password" id="senha" name="senha" required maxlength="6" pattern=".{1,6}"
+                    placeholder="A senha deve ter entre 1 e 6 caracteres." required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">* Email:</label>
+                <input type="text" id="email" name="email" placeholder="" required>
+            </div>
+        </div>
+        <div class="group2">
+            <div class="form-group">
+                <label for="telefone">* Telefone:</label>
+                <input type="number" id="telefone" name="telefone" placeholder="" required>
+            </div>
+            <div class="form-group">
+                <label for="cpf">* CPF:</label>
+                <input type="text" id="cpf" name="cpf" placeholder="" required>
+            </div>
+        
+            <div class="form-group">
+                <label for="rg">* RG:</label>
+                <input type="text" id="rg" name="rg" placeholder="" required>
+            </div>
+        </div>
+        <div class="group3">
+            <div class="form-group">
+                <label for="cep">* CEP:</label>
+                <input type="text" id="cep" name="cep" placeholder="" required>
+            </div>
+            <div class="form-group">
+                <label for="nomeCrianca">Nome da criança:</label>
+                <input type="text" id="nomeCrianca" name="nomeCrianca" placeholder="">
+            </div>
+            <div class="form-group">
+                <label for="idade">Idade da criança:</label>
+                <input type="text" id="idade" name="idade" placeholder="">
+            </div>
+        </div>
+        
+
+            <div class="form-group" id="enviar">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+    </div>
+
+    <script src="../js/cadastro.js"></script>
+</body>
+
+</html>

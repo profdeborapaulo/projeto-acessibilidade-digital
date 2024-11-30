@@ -1,0 +1,209 @@
+/* Estilo base para a página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+}
+
+
+
+/* NAVBAR */
+
+/* Container para a navbar e o botão */
+.navbar-container {
+    display: flex;
+    position: relative;
+}
+
+.navbar {
+    width: 250px; /* Largura padrão da navbar */
+    height: 100vh; /* Altura da navbar para a tela inteira */
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #1C2454; /* Cor principal da navbar */
+    overflow-x: hidden;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    z-index: 1; /* Garante que a navbar fique abaixo do botão */
+}
+
+.navbar.collapsed {
+    transform: translateX(-100%); /* Move a navbar para fora da tela */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centraliza a logo horizontalmente */
+    padding: 20px 0; /* Ajusta o padding superior e inferior */
+    flex-shrink: 0; /* Impede que o container da logo encolha */
+    flex-grow: 0; /* Impede que o container da logo cresça */
+}
+
+.logo {
+    max-width: 100%; /* Ajusta a largura máxima da logo */
+    height: auto; /* Mantém a proporção da altura */
+    max-height: 120px; /* Define uma altura máxima para a logo */
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3)); /* Sombra de filtro para efeito 3D */
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.logo:hover {
+    filter: drop-shadow(0 8px 12px rgba(0, 0, 0, 0.5)); /* Intensificação da sombra no hover */
+    transform: rotateX(5deg) rotateY(5deg) scale(1.1); /* Efeito 3D com zoom */
+}
+
+.pag{
+    text-align: center;
+    color: #0096D5;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding-left: 0;
+    margin: 0;
+}
+
+.nav-links a {
+    padding: 15px 0;
+    text-decoration: none;
+    font-size: 16px; /* Ajuste do tamanho dos links */
+    color: #f1f1f1; /* Cor dos links */
+    display: block;
+    transition: color 0.3s, transform 0.3s, box-shadow 0.3s;
+    margin: 10px 0;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.nav-links a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, rgba(255,255,255,0.2), rgba(255,255,255,0.1));
+    transition: left 0.3s;
+    z-index: -1;
+}
+
+.nav-links a:hover::before {
+    left: 100%;
+}
+
+.nav-links a:hover {
+    color: #ffffff; /* Cor do texto no hover */
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* Sombra mais clara */
+}
+
+.toggle-btn {
+    background-color: #1C2454; /* Cor do botão */
+    color: #f1f1f1; /* Cor do texto do botão */
+    border: none;
+    cursor: pointer;
+    position: fixed; /* Mantém o botão fixo na tela */
+    top: 10px;
+    right: 10px; /* Posiciona o botão na tela */
+    transition: background-color 0.3s, transform 0.3s;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    z-index: 2; /* Mantém o botão acima da navbar */
+}
+
+.toggle-btn:hover {
+    background-color: #162e7d; /* Cor do botão no hover */
+    transform: scale(1.1);
+}
+
+/* Esconde logo e links quando a navbar está colapsada */
+.navbar.collapsed .nav-links,
+.navbar.collapsed .logo-container {
+    display: none;
+}
+
+/* Ajustes de responsividade */
+@media (max-width: 768px) {
+    .navbar {
+        width: 100%; /* Navbar ocupa toda a largura em telas menores */
+        height: 100vh; /* Garante a altura total da tela em telas menores */
+    }
+
+    .navbar.collapsed {
+        transform: translateX(-100%); /* Move a navbar para fora da tela em telas menores */
+    }
+
+    .logo-container {
+        padding: 10px 0; /* Ajusta o padding em telas menores */
+        max-height: 80px; /* Ajusta a altura máxima do container da logo */
+    }
+
+    .logo {
+        max-width: 80%; /* Reduz a largura máxima da logo em telas menores */
+        max-height: 70px; /* Ajusta a altura máxima da logo em telas menores */
+    }
+
+    .nav-links a {
+        font-size: 14px; /* Ajuste do tamanho dos links em telas menores */
+    }
+}
+
+/* Link ativo */
+.nav-links a.active {
+    background-color: #061255; /* Cor de fundo quando o link está ativo */
+    color: #ffffff; /* Cor do texto quando o link está ativo */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* Sombra mais clara */
+    
+}
+
+/* Ajustes adicionais */
+.nav-links a.active::before {
+    left: 0; /* Garante que o destaque do link ativo esteja visível */
+}
+
+/*FIM NAV*/
+
+.perfil-container {
+    background-color: #fff;
+    border-radius: 15px; /* Bordas arredondadas */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 80%; /* Largura ajustada para ser mais larga */
+    max-width: 600px; /* Limite máximo de largura */
+    text-align: center;
+    margin: 100px auto; /* Aumenta a margem superior para 100px */
+}
+
+.perfil-imagem {
+    border-radius: 50%; /* Imagem circular */
+    width: 100px;
+    height: 100px;
+}
+
+.perfil-nome {
+    margin: 10px 0;
+}
+
+.perfil-descricao {
+    color: #666;
+}
+
+.perfil-informacoes {
+    list-style-type: none; /* Remove marcadores da lista */
+    padding: 0;
+}
+
+.perfil-informacoes li {
+    margin: 5px 0;
+}

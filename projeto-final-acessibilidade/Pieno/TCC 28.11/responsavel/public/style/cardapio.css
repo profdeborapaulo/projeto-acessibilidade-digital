@@ -1,0 +1,512 @@
+*{
+  margin: 0; padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+
+.container-home{
+ width: 100%;
+ margin: 0;
+ padding: 0;
+ height: 100vh;
+}
+
+
+/*NAVBAR*/
+ header {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   padding: 10px ;
+   background-color: #1C2454;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   z-index: 100;
+}
+
+.header::before{
+ content: '';
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%; 
+ background-color: #1c245485;
+ z-index: -1;
+}
+
+.header::after{
+ content: '';
+ position: absolute;
+ top: 0;
+ left: -100%;
+ width: 100%;
+ height: 100%;
+ background: linear-gradient(90deg, transparent, #020a3af3, transparent);
+ transition: .8s;
+}
+
+header:hover::after{
+ left: 100%;
+}
+
+.logo {
+   height: 4rem;
+}
+header nav a {
+ font-size: 1.15rem;
+ font-weight: 500;
+ margin-left: 2.5rem;
+ color: #fff;
+ text-decoration: none;
+ padding-right: 3rem;
+}
+
+#check{
+ display: none;
+}
+
+.icon{
+ font-size: 2.8rem;
+ color: white;
+ cursor: pointer;
+ display: none;
+ position: absolute;
+ right: 0;
+ padding-right: 5rem;
+}
+
+@media (max-width: 992px) {
+ .header{
+   padding: 1.3rem 5%;
+ }
+}
+
+@media (max-width: 768px) {
+ .icon{
+   display: inline-flex;
+ }
+
+ #check:checked~.icon #menu-icon{
+ display: none;
+ }
+
+ nav{
+   position: absolute;
+   top: 100%;
+   left: 0;
+   width: 100%;
+   height: 0;
+   background-color: #1c2454f6;
+   overflow: hidden;
+   box-shadow: 0 .5rem 1rem #1C2454;
+   transition: .3s ease;
+ }
+
+ #check:checked~nav{
+   height: 17.7rem;
+ }
+
+ nav a{
+   display: block;
+   font-size: 1.1rem;
+   margin: 1.5rem 0;
+   text-align: center;
+   transform: translateY(-50px);
+   transition: .3s ease;
+   opacity: 0;
+ }
+
+ #check:checked~nav a{
+   height: 2rem;
+   opacity: 1;
+   transform: translateY(0);
+   transition-delay: calc(.15s * var(--i));
+ }
+
+ #check:checked~.icon #close-icon{
+   display: block;
+   }
+
+ .icon #close-icon {
+   display: none;
+ }
+}
+
+
+
+/*Botão*/
+.acima{
+  display: flex;
+  flex-direction: row;
+  margin-top: 150px;
+}
+
+.text-h1{
+  width: 100%;
+  text-align: center;
+  color: #1C2454;
+}
+
+h1{
+  text-align: center;
+}
+
+.button {
+  display: block;
+  position: relative;
+  width: 56px;
+  height: 56px;
+  margin: 0;
+  overflow: hidden;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  border: 0;
+  margin-top: -5%;
+}
+
+.button:before,
+.button:after {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  inset: 7px;
+}
+
+.button:before {
+  border: 4px solid #1C2454;
+  transition: opacity 0.4s cubic-bezier(0.77, 0, 0.175, 1) 80ms,
+    transform 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) 80ms;
+}
+
+.button:after {
+  border: 4px solid #FF640D;
+  transform: scale(1.3);
+  transition: opacity 0.4s cubic-bezier(0.165, 0.84, 0.44, 1),
+    transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  opacity: 0;
+}
+
+.button:hover:before,
+.button:focus:before {
+  opacity: 0;
+  transform: scale(0.7);
+  transition: opacity 0.4s cubic-bezier(0.165, 0.84, 0.44, 1),
+    transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.button:hover:after,
+.button:focus:after {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 0.4s cubic-bezier(0.77, 0, 0.175, 1) 80ms,
+    transform 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) 80ms;
+}
+
+.button-box {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.button-elem {
+  display: block;
+  width: 20px;
+  height: 20px;
+  margin: 17px 18px 0 18px;
+  transform: rotate(180deg);
+  fill: #1C2454;
+}
+
+.button:hover .button-box,
+.button:focus .button-box {
+  transition: 0.4s;
+  transform: translateX(-56px);
+}
+
+/* FIM BOTAO */
+
+
+
+
+.meses {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 90px;
+  gap: 50px;
+  align-content: center;
+  margin-left: 30rem;
+  
+}
+
+.link{
+  text-decoration: none;
+}
+
+.card {
+  align-items: center;
+  --background: linear-gradient(to right, #0096D5 0%, #1C2454 100%);
+  width: 190px;
+  height: 254px;
+  padding: 5px;
+  border-radius: 1rem;
+  overflow: visible;
+  background: #0096D5;
+  background: var(--background);
+  position: relative;
+  z-index: 1;
+}
+
+.card::before,
+.card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  z-index: -1;
+}
+
+.card::before {
+  background: linear-gradient(to bottom right, #0096D5 0%, #0096D5 100%);
+  transform: rotate(2deg);
+}
+
+.card::after {
+  background: linear-gradient(to top right, #1C2454 0%, #3041a3 100%);
+  transform: rotate(-2deg);
+}
+
+.card-info {
+  --color: #0096D5; /* Cor dos meses */
+  background: #e9f2f7; /* Fundo claro */
+  color: var(--color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+  border-radius: 0.7rem;
+  position: relative;
+  z-index: 2;
+  transition: none; /* Remove a transição */
+}
+
+.card .title {
+  font-weight: bold;
+  letter-spacing: 0.1em;
+}
+
+.card:hover::before,
+.card:hover::after {
+  opacity: 0;
+}
+
+.card:hover .card-info {
+  color: #0096D5;
+}
+
+
+
+/*RODAPÉ*/
+
+
+  /*LOGO RODAPÉ*/
+  .logo-foot{
+    height: 10rem;
+  }
+
+/*ONDAS*/
+footer .wave{
+  position: absolute;
+  top: -95px;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-image: url(../img/wave1.png);
+  background-size: 1300px 100px ;
+}
+
+footer .wave#wave1{
+  z-index: 1000;
+  opacity: 1;
+  bottom: 0;
+  animation: animateWaves 11s linear infinite;
+}
+
+footer .wave#wave2{
+  z-index: 999;
+  opacity: 0.5;
+  bottom: 10px;
+  animation: animateWaves_02 11s linear infinite;
+}
+
+footer .wave#wave3{
+  z-index: 1000;
+  opacity: 0.2;
+  bottom: 15px;
+  animation: animateWaves 10s linear infinite;
+}
+
+footer .wave#wave4{
+  z-index: 999;
+  opacity: 0.7;
+  bottom: 20px;
+  animation: animateWaves_02 10s linear infinite;
+}
+
+@keyframes animateWaves
+{
+  0%
+  {
+    background-position-x: 1000px;
+  }
+  100%
+  {
+    background-position-x: 0px;
+  }
+}
+
+@keyframes animateWaves_02
+{
+  0%
+  {
+    background-position-x: 0px;
+  }
+  100%
+  {
+    background-position-x: 1000px;
+  }
+}
+
+.foot{
+  display: flex;
+  justify-content: flex-end;
+  min-width: 100vh;
+  margin-top: 10rem;
+}
+
+  footer{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: #1C2454;
+    min-height: 100px;
+    padding: 20px 50px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 20px;
+  }
+
+
+
+  .footer-link {
+    text-decoration: none;
+}
+
+.footer-link1 {
+  text-decoration: none;
+}
+
+
+#footer_content {
+    background-color: var(--color-neutral-10);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 3rem 3.5rem;
+}
+
+#footer_contacts h1 {
+    margin-bottom: 0.75rem;
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+   margin-left: 1rem;
+    list-style: none;
+    color: white;
+}
+
+#footer-list a{
+  color: rgba(255, 255, 255, 0.795);
+}
+
+#footer-list #text p{
+  color: rgba(255, 255, 255, 0.795);
+}
+
+.footer-list .footer-link {
+    color: var(--color-neutral-30);
+    transition: all 0.4s;
+}
+
+#footer-list .footer-link:hover {
+    color: #0096D5;
+}
+
+.redes{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.redes li{
+  display: flex;
+  flex-direction: row;
+  margin-left: 0.5rem;
+}
+
+ #footer_subscribe {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    color: white;
+}
+
+#footer_subscribe p {
+    color: var(--color-neutral-30);
+    color: rgba(255, 255, 255, 0.795);
+} 
+
+
+
+
+#footer_copyright {
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-neutral-0);
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    font-weight: 100;
+}
+
+@media screen and (max-width: 768px) {
+    #footer_content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        align-items: left;
+        
+    }
+}
+
+@media screen and (max-width: 426px) {
+    #footer_content {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 3rem 2rem;
+    }
+} 
+
+
+
+/* FIM RODAPÉ */

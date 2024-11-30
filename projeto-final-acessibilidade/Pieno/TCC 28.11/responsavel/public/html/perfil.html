@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <script src="../js/Href.js"></script>
+  
+  <link rel="stylesheet" href="../style/perfil.css">
+  <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-auth.js"></script>
+    <script src="../js/perfil.js"></script>
+</head>
+
+<header class="header">
+  <a data-page="home"href="#"><img class="logo" src="../img/Logo1.png"></a>
+
+
+  <input type="checkbox" id="check">
+  <label for="check" class="icon">
+    <i class='bx bx-menu' id="menu-icon"></i>
+    <i class='bx bx-x' id="close-icon"></i>
+  </label>
+
+  <nav class="navbar">
+    <a href="../../visitante/html/login.html" style="--i:0;">Logout</a>
+    <a data-page="uniformes"href="#" style="--i:2;">Uniforme</a>
+    <a data-page="sobrenos"href="#" style="--i:3;">Sobre Nós</a>
+    <a data-page="perfil"href="#" style="--i:4;">Meu perfil</a>
+  </nav>
+
+</header>
+
+<body> 
+  <div class="perfil-container" id="sidebar">
+    <div class="sidebar-content">
+      <div class="profile-section">
+        <label for="fileInput" class="camera-icon">
+          <img src="https://via.placeholder.com/100" alt="Foto de Perfil" class="profile-pic" id="profilePic">
+          <img src="../../responsavel/img/camera.png" alt="Camera" class="camera">
+        </label>
+        <input type="file" id="fileInput" accept="image/*" onchange="previewProfilePic(event)" style="display:none;">
+        <button type="button" id="confirmButton" class="confirm-button" style="display:none;"
+          onclick="confirmProfilePic()">Confirmar</button>
+        <div class="profile-info">
+          <h2 class="perfil-nome">Seu Nome</h2>
+          <ul class="perfil-informacoes">
+            <li id="cargo"><strong>Usuário:</strong> Professor </li>
+            <li id="email"><strong>E-mail:</strong> seuemail@exemplo.com</li>
+            <li id="telefone"><strong>Telefone: </strong> 11 98760-8044 </li>
+            <li id="rm"><strong>RM:</strong> RM </li>
+            <li id="cpf"><strong>CPF:</strong> CPF </li>
+            <li id="rg"><strong>RG:</strong> RG </li>
+            <li id="cep"><strong>CEP:</strong> CEP </li>
+            <li id="nomeCrianca"><strong>Nome da criança:</strong> Nome da criança </li>
+            <li id="idade"><strong>Idade da criança:</strong> Idade da criança </li>
+        </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+<div class="foot">
+    <footer>
+      <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
+      </div>
+
+      <div id="footer_content">
+        <div id="footer_contacts">
+          <img class="logo-foot" src="../img/Logo.png" alt="">
+        </div>
+
+        <div id="footer_subscribe">
+          <h3>Siga-nos</h3>
+          <ul class="redes">
+            <li class="li-rodape"><a href="#"><img src="../img/fb-icon.png"></a></li>
+            <li class="li-rodape"><a href="https://www.instagram.com/colegiopieno?igsh=MWJ1dTlpYndiM2g5ZA=="><img
+                  src="../img/instagram-icon.png"></a></li>
+          </ul>
+        </div>
+
+        <ul class="footer-list" id="footer-list">
+          <li>
+            <h3>Links</h3>
+          </li>
+
+          <li>
+            <a data-page="home" href="#" class="footer-link">Home</a>
+          </li>
+
+          <li>
+            <a data-page="nossas_turmasresp" href="#" class="footer-link">Nossas Turmas</a>
+          </li>
+
+          <li>
+            <a data-page="eventos" href="#" class="footer-link">Eventos Realizados </a>
+          </li>
+
+          <li>
+            <a href="#" data-page="sobrenos" class="footer-link">Sobre Nós</a>
+          </li>
+        </ul>
+
+        <ul class="footer-list" id="footer-list">
+          <li>
+            <h3>Entre em Contato</h3>
+          </li>
+          <li>
+            <a href="" class="footer-link1"><i class='bx bxs-map' id="icon-map" style='color:#0096D5'></i>
+              Estr. do Gopiúva 1953, Carapicuíba, SP, 06330-00</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link1"><i class='bx bx-envelope' style='color:#0096D5'></i>
+              colegiopienodiangeli@gmail.com</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link1"><i class='bx bxs-phone' style='color:#0096D5'></i>
+              +55 11 4374-0686 </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </div>
+  <!-- FIM RODAPÉ -->
+
+
+  <script src="../js/perfil.js"></script>
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+  </div>
+</body>
+
+</html>

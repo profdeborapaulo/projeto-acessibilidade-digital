@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="../style/home.css">
+  <script src="../js/jshome.js"></script>
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <script src="https://vlibras.gov.br/vlibras-plugin/vlibras.js"></script>
+    
+
+</head>
+
+
+<!-- NAVBAR -->
+<header class="header">
+  <a href="home.html"><img class="logo" src="../img/Logo1.png"></a>
+
+
+  <input type="checkbox" id="check">
+     <label for="check" class="icon">
+       <i class='bx bx-menu' id="menu-icon"></i>
+       <i class='bx bx-x' id="close-icon"></i>
+      </label>
+
+  <nav class="navbar">
+    <a href="login.html" style="--i:0;">Login</a>
+    <a href="matricula.html" style="--i:1;">Matrícula</a>
+    <a href="visita.html" style="--i:2;">Visita</a>
+    <a href="sobrenos.html" style="--i:3;">Sobre Nós</a>
+  </nav>
+
+</header>
+
+
+
+<body>
+   <div class="container-home">
+
+    <!-- CARROUSEL -->
+
+    <div class="carousel">
+      <div class="carousel-inner">
+          <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+          <div class="carousel-item">
+              <img src="../img/slidee1.png">
+          </div>
+          <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+          <div class="carousel-item">
+              <img src="../img/slidee2.png">
+          </div>
+          <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+          <div class="carousel-item">
+              <img src="../img/slidee3.png">
+          </div>
+          <label for="carousel-3" class="carousel-control prev control-1">‹</label>
+          <label for="carousel-2" class="carousel-control next control-1">›</label>
+          <label for="carousel-1" class="carousel-control prev control-2">‹</label>
+          <label for="carousel-3" class="carousel-control next control-2">›</label>
+          <label for="carousel-2" class="carousel-control prev control-3">‹</label>
+          <label for="carousel-1" class="carousel-control next control-3">›</label>
+          <ol class="carousel-indicators">
+              <li>
+                  <label for="carousel-1" class="carousel-bullet">•</label>
+              </li>
+              <li>
+                  <label for="carousel-2" class="carousel-bullet">•</label>
+              </li>
+              <li>
+                  <label for="carousel-3" class="carousel-bullet">•</label>
+              </li>
+          </ol>
+      </div>
+  </div>
+
+        
+<!-- FIM CARROUSEL -->
+
+
+<div class="botoes">
+  <ul class="example-2">
+    <div class="resp1">
+    <li class="icon-content" id="resp">
+      <a
+        href="../html/nossas_turmas.html"
+        aria-label="Nossas Turmas"
+        data-social="Nossas Turmas"
+      >
+        <div class="filled"></div>
+        <img class="icones" src="../img/ícone_turmas.png" alt="">
+      </a>
+      <div class="tooltip">Nossas Turmas</div>
+    </li>
+
+    <li class="icon-content" id="resp">
+      <a
+        href="../html/calendario.html"
+        aria-label="Calendário"
+        data-social="Calendário"
+      >
+        <div class="filled"></div>
+        <img class="icones" src="../img/ícone_calend.png" alt="">
+      </a>
+      <div class="tooltip"> Calendário</div>
+    </li>
+
+    <li class="icon-content" id="resp">
+      <a
+        href="../html/eventos.html"
+        aria-label="Eventos Realizados"
+        data-social="Eventos Realizados"
+      >
+        <div class="filled"></div>
+        <img class="icones" src="../img/ícone_eventos.png">
+      </a>
+      <div class="tooltip">Eventos Realizados</div>
+    </li>
+</div>
+<div class="resp2">
+    <li class="icon-content">
+      <a
+        href="../html/cardapio.html"
+        aria-label="Cardápio"
+        data-social="Cardápio"
+      >
+        <div class="filled"></div>
+        <img class="icones" src="../img/ícone_culinaria.png" alt="">
+      </a>
+      <div class="tooltip">Cardápio</div>
+    </li>
+
+    <li class="icon-content">
+      <a
+        href="../html/parcerias.html"
+        aria-label="Parceria"
+        data-social="Parceria"
+      >
+        <div class="filled"></div>
+        <img class="icones" src="../img/ícone_parceria.png" alt="">
+      </a>
+      <div class="tooltip">Parcerias</div>
+    </li>
+  </div>
+  </ul>
+
+  <!-- FIM BOTOES -->
+
+</div>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+  <path fill="#1C2454" fill-opacity="1" d="M0,160L60,181.3C120,203,240,245,360,256C480,267,600,245,720,218.7C840,192,960,160,1080,154.7C1200,149,1320,171,1380,181.3L1440,192L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
+</svg>
+
+
+  <h1 class="h1-atvextras">Atividades Extras</h1>
+
+<div class="container">
+  <div data-text="Ballet" style="--r:-15;" class="glass">
+    <img class="icones-atvextras" src="../img/ícone ballet.png" alt="">
+      <path
+        d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+      ></path>
+  </div>
+
+  <div data-text="Hapkido" style="--r:5;" class="glass">
+    <img class="icones-atvextras" src="../img/ícone hapkido.png">
+      <path
+        d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"
+      ></path>
+  </div>
+
+  <div data-text="Inglês" style="--r:-15;" class="glass">
+    <img class="icones-atvextras" src="../img/ícone ingles.png" >
+      <path
+        d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+      ></path>
+  </div>
+
+  <div data-text="Culinária" style="--r:5;" class="glass">
+    <img class="icones-atvextras" src="../img/ícone culinária.png" >
+      <path
+        d="M392.8 1.2c-17-4.9-34.7 5-39.6 22l-128 448c-4.9 17 5 34.7 22 39.6s34.7-5 39.6-22l128-448c4.9-17-5-34.7-22-39.6zm80.6 120.1c-12.5 12.5-12.5 32.8 0 45.3L562.7 256l-89.4 89.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l112-112c12.5-12.5 12.5-32.8 0-45.3l-112-112c-12.5-12.5-32.8-12.5-45.3 0zm-306.7 0c-12.5-12.5-32.8-12.5-45.3 0l-112 112c-12.5 12.5-12.5 32.8 0 45.3l112 112c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L77.3 256l89.4-89.4c12.5-12.5 12.5-32.8 0-45.3z"
+      ></path>
+  </div>
+
+  <div data-text="Musicalização" style="--r:-15;" class="glass">
+    <img class="icones-atvextras" src="../img/ícone musicalização.png" >
+      <path
+        d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"
+      ></path>
+  </div>
+</div>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#1C2454" fill-opacity="1" d="M0,128L60,138.7C120,149,240,171,360,149.3C480,128,600,64,720,53.3C840,43,960,85,1080,85.3C1200,85,1320,43,1380,21.3L1440,0L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
+  
+
+  
+
+  <h1 class="espaco-h1">Conheça Nosso Espaço</h1>
+  <div class="container2">
+      
+    <img class="local1" src="../img/img1.jpeg" alt="">
+    <img class="local2" src="../img/img2.jpeg" alt="">
+    <img class="local3" src="../img/img3.jpeg" alt="">
+    <img class="local4" src="../img/img4.jpeg" alt="">
+    <img class="local5" src="../img/img5.jpeg" alt="">
+    <img class="local6" src="../img/img6.jpeg" alt="">
+    
+    
+  </div>
+
+  
+    <div class="mapa-h1">
+    <h1 class="h1-visita">Nos visite</h1>
+    </div>
+    <div class="mapa">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.2767600134375!2d-46.83412962079285!3d-23.558501606807162!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cf001f5bda9c1d%3A0x2238723de6fc2335!2sEstr.%20do%20Gopi%C3%BAva%2C%201953%20-%20Vila%20da%20Oportunidade%2C%20Carapicu%C3%ADba%20-%20SP%2C%2063300-000!5e0!3m2!1spt-BR!2sbr!4v1722423089404!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+    <svg class="ondas-visita" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#1C2454" fill-opacity="1" d="M0,160L60,181.3C120,203,240,245,360,256C480,267,600,245,720,218.7C840,192,960,160,1080,154.7C1200,149,1320,171,1380,181.3L1440,192L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
+    </svg>
+  </div>
+  
+  <div class="visitas" id="visitas">
+    <a href="visita.html"><button id="visita">Agendar visita</button></a>
+  </div>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#1C2454" fill-opacity="1" d="M0,128L60,138.7C120,149,240,171,360,149.3C480,128,600,64,720,53.3C840,43,960,85,1080,85.3C1200,85,1320,43,1380,21.3L1440,0L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path></svg>
+
+
+  
+
+<!-- RODAPÉ -->
+
+ <div class="foot">
+    <footer>
+       <div class="waves">
+         <div class="wave" id="wave1"></div>
+         <div class="wave" id="wave2"></div>
+         <div class="wave" id="wave3"></div>
+         <div class="wave" id="wave4"></div>
+      </div> 
+
+      <div id="footer_content">
+        <div id="footer_contacts">
+            <img class="logo-foot" src="../img/Logo.png" alt="">
+
+           
+        </div>
+
+        <div id="footer_subscribe">
+          <h3>Siga-nos</h3>
+          <ul class="redes">
+            <li class="li-rodape"><a href="#"><img src="../img/fb-icon.png"></a></li>
+            <li class="li-rodape"><a href="https://www.instagram.com/colegiopieno?igsh=MWJ1dTlpYndiM2g5ZA=="><img src="../img/instagram-icon.png"></a></li>
+          </ul>
+      </div>
+
+     <ul class="footer-list" id="footer-list">
+        <li>
+            <h3>Links</h3>
+        </li>
+
+        <li>
+            <a href="home.html" class="footer-link">Home</a>
+        </li>
+
+        <li>
+            <a href="nossas_turmas.html" class="footer-link">Nossas Turmas</a>
+        </li>
+
+        <li>
+          <a href="eventos.html" class="footer-link">Eventos Realizados </a>
+        </li> 
+
+        <li>
+          <a href="parcerias.html" class="footer-link">Parcerias</a>
+        </li>
+
+        <li>
+          <a href="matricula.html" class="footer-link">Matrícula</a>
+        </li>
+
+        <li>
+          <a href="sobrenos.html" class="footer-link">Sobre Nós</a>
+        </li>
+    </ul> 
+        
+        <ul class="footer-list" id="footer-list">
+            <li>
+                <h3>Entre em Contato</h3>
+            </li>
+             <li>
+              <a href="" class="footer-link1"><i class='bx bxs-map' id="icon-map" style='color:#0096D5'></i> 
+              Estr. do Gopiúva 1953, Carapicuíba</a>
+            </li>
+
+            <li>
+                <a href="#" class="footer-link1"><i class='bx bx-envelope' style='color:#0096D5'></i> 
+                colegiopienodiangeli@gmail.com</a>
+            </li> 
+
+            <li>
+                <a href="#" class="footer-link1"><i class='bx bxs-phone' style='color:#0096D5'></i> 
+                  +55 11 4374-0686 </a>
+            </li>
+        </ul> 
+    </div>    
+</footer>
+</div>
+<!-- FIM RODAPÉ -->
+<div vw class="enabled">
+  <div vw-access-button class="active"></div>
+  <div vw-plugin-wrapper>
+    <div class="vw-plugin-top-wrapper"></div>
+  </div>
+</div>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+  new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
+
+   </div>
+</body>
+</html>

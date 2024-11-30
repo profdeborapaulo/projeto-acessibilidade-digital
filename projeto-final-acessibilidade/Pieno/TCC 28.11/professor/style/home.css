@@ -1,0 +1,153 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #1C2454; /* Cor principal */
+    overflow-x: hidden;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-container {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.logo {
+    max-width: 200px;
+    max-height: 200px;
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3)); /* Sombra de filtro para efeito 3D */
+    transform: perspective(500px) rotateX(10deg) rotateY(10deg); /* Efeito de perspectiva */
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.logo:hover {
+    filter: drop-shadow(0 8px 12px rgba(0, 0, 0, 0.5)); /* Intensificação da sombra no hover */
+    transform: perspective(500px) rotateX(5deg) rotateY(5deg) scale(1.1); /* Efeito 3D com zoom */
+}
+
+.pag{
+    text-align: center;
+    color: #0096D5;
+}
+
+.nav-links {
+    flex: 1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    text-align: center;
+}
+
+.nav-links a {
+    padding: 15px 0;
+    text-decoration: none;
+    font-size: 25px;
+    color: #f1f1f1; /* Cor dos links */
+    display: block;
+    transition: color 0.3s, transform 0.3s, box-shadow 0.3s;
+    margin: 10px 0;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.3s;
+}
+
+.nav-links a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, rgba(255,255,255,0.2), rgba(255,255,255,0.1));
+    transition: left 0.3s;
+    z-index: -1;
+}
+
+.nav-links a:hover::before {
+    left: 100%;
+}
+
+.nav-links a:hover {
+    color: #ffffff; /* Cor do texto no hover */
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* Sombra mais clara */
+    
+}
+
+.navbar.full-screen {
+    width: 100%;
+    height: 100%;
+}
+
+.open-btn, .close-btn {
+    font-size: 30px;
+    cursor: pointer;
+    background-color: #1C2454; /* Cor do botão */
+    color: #f1f1f1; /* Cor do texto do botão */
+    border: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    transition: 0.3s;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.open-btn:hover, .close-btn:hover {
+    background-color: #162e7d; /* Cor do botão no hover */
+    transform: scale(1.1);
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.navbar.collapsed {
+    width: 250px;
+    padding-top: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar.collapsed .logo-container {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+}
+
+.navbar.collapsed .logo {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.navbar.collapsed .nav-links {
+    flex: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: calc(100% - 80px); /* Ajusta o espaço disponível para links */
+    width: 100%; /* Garante que a largura é 100% */
+    padding-left: 0;
+}
+
+.navbar.collapsed .nav-links a {
+    font-size: 20px; /* Tamanho menor dos links */
+}

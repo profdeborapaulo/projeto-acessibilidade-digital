@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../style/perfil.css">
+    <script src="https://www.gstatic.com/firebasejs/11.0.2/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/11.0.2/firebase-firestore-compat.js"></script>
+</head>
+<body>
+
+    <div id="navbar" class="navbar full-screen">
+        <div class="pag">
+            <h4>Professor</h4>
+        </div>
+        <div class="logo-container">
+           <a href="home.html"> <img src="../img/Logo.png" alt="Logo" class="logo"></a>
+        </div>
+        <div class="nav-links">
+          <a href="#" data-page="achados">Achados e Perdidos</a>
+            <a href="#"data-page="reserva" >Reserva de Salas</a>
+            <a href="#"data-page="confirmacao">Reservas Realizadas</a>
+            <a href="#"data-page="calendario">Calendário</a>
+            <a href="#"data-page="perfil" >Meu perfil</a>
+            <a href="../../visitante/html/login.html" style="--i:0;">Logout</a>
+        </div>
+    </div>
+    
+
+    <div class="perfil-container" id="sidebar">
+        <div class="sidebar-content">
+          <div class="profile-section">
+            <label for="fileInput" class="camera-icon">
+              <img src="https://via.placeholder.com/100" alt="Foto de Perfil" class="profile-pic" id="profilePic">
+              <img src="../../responsavel/img/camera.png" alt="Camera" class="camera">
+            </label>
+            <input type="file" id="fileInput" accept="image/*" onchange="previewProfilePic(event)" style="display:none;">
+            <button type="button" id="confirmButton" class="confirm-button" style="display:none;"
+              onclick="confirmProfilePic()">Confirmar</button>
+            <div class="profile-info">
+              <h2 class="perfil-nome">Seu Nome</h2>
+              <ul class="perfil-informacoes">
+                  <li id="cargo"><strong>Usuário:</strong> Professor </li>
+                  <li id="email"><strong>E-mail:</strong> seuemail@exemplo.com</li>
+                  <li id="telefone"><strong>Telefone: </strong> 11 98760-8044 </li>
+                  <li id="rm"><strong>RM:</strong> RM </li>
+                  <li id="cpf"><strong>CPF:</strong> CPF </li>
+                  <li id="rg"><strong>RG:</strong> RG </li>
+                  <li id="cep"><strong>CEP:</strong> CEP </li>
+                  <li id="nomeCrianca"><strong>Nome da criança:</strong> Nome da criança </li>
+                  <li id="idade"><strong>Idade da criança:</strong> Idade da criança </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+
+
+    <script src="../js/home.js"></script>
+    <script src="../js/perfil.js"></script>
+
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+    
+</body>
+</html>

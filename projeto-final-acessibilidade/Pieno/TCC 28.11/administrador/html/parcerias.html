@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propostas</title>
+    <link rel="stylesheet" href="../css/parcerias.css">
+    <script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.4/firebase-firestore-compat.js"></script>
+</head>
+<body>
+    <div class="navbar-container">
+        <div id="navbar" class="navbar">
+            <div class="pag">
+                <h4>Administrador</h4>
+            </div>
+            <div class="logo-container">
+                <a href="../html/home.html">
+                    <img src="../img/Logo.png" alt="Logo" class="logo">
+                </a>
+            </div>
+            <div class="nav-links">
+                <a href="achados.html">Achados e Perdidos</a>
+                <a href="visitas.html">Visitas</a>
+                <a href="matricula.html">Intenções de matrícula</a>
+                <a href="reservas.html">Solicitações de reserva </a>
+                <a class="active" href="parcerias.html">Propostas de parceria</a>
+                <a href="cadastro.html">Cadastrar Usuário</a>
+                <a href="../../visitante/html/login.html" style="--i:0;">Logout</a>
+            </div>
+        </div>
+        <button class="toggle-btn">☰</button> <!-- Botão fixo fora da navbar -->
+    </div>
+    <div>
+        <ul id="parceria">
+        </ul>
+    </div>
+    <script src="../js/parcerias.js"></script>
+</body>
+</html>

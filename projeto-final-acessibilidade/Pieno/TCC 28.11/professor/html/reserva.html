@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reserva de Salas</title>
+    <link rel="stylesheet" href="../style/reserva.css">
+    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-auth.js"></script>
+</head>
+
+<body>
+
+    <div class="navbar-container">
+        <div id="navbar" class="navbar">
+            <div class="pag">
+                <h4>Professor</h4>
+            </div>
+            <div class="logo-container">
+                <a href="home.html">
+                    <img src="../img/Logo.png" alt="Logo" class="logo">
+                </a>
+            </div>
+            <div class="nav-links">
+                <a href="#" data-page="achados">Achados e Perdidos</a>
+            <a href="#"data-page="reserva" >Reserva de Salas</a>
+            <a href="#"data-page="confirmacao">Reservas Realizadas</a>
+            <a href="#"data-page="calendario">Calendário</a>
+            <a href="#"data-page="perfil" >Meu perfil</a>
+            <a href="../../visitante/html/login.html" style="--i:0;">Logout</a>
+            </div>
+        </div>
+        <button class="toggle-btn">☰</button> <!-- Botão fixo fora da navbar -->
+    </div>
+
+    <div class="container">
+        <h1>Reservar Salas</h1>
+        <div class="sala-lista">
+            <div class="sala">
+                <span>Sala 1</span>
+                <button class="botao-reservar" onclick="mostrarFormulario('Sala 1')">Reservar</button>
+            </div>
+            <div class="sala">
+                <span>Sala 2</span>
+                <button class="botao-reservar" onclick="mostrarFormulario('Sala 2')">Reservar</button>
+            </div>
+            <!-- Adicione mais salas conforme necessário -->
+        </div>
+
+        <div id="reserva"></div>
+
+        <form class="reserva" id="reserva-form" style="display:none;">
+            <h2>Reservar Sala</h2>
+            <div class="campo-reserva">
+                <label for="data">Data</label>
+                <input type="date" id="data" required>
+            </div>
+            <div class="campo-reserva">
+                <label for="horaInicio">Hora de Início</label>
+                <input type="time" id="horaInicio" required>
+            </div>
+            <div class="campo-reserva">
+                <label for="horaFim">Hora de Fim</label>
+                <input type="time" id="horaFim" required>
+            </div>
+            <button type="submit" id="confirmarReserva">Confirmar Reserva</button>
+        </form>
+
+        <!-- Mensagem de reserva concluída -->
+        <div class="mensagem-reserva" id="mensagem-reserva" style="display:none;">
+            <h2>Reserva Concluída</h2>
+            <p>Sua reserva foi concluída com sucesso!</p>
+            <button onclick="fecharMensagem()">Fechar</button>
+        </div>
+
+        <!-- Notificação de conflito -->
+        <div class="notificacao" id="notificacao" style="display:none; color: red;">
+            Horário ocupado, escolha outro.
+        </div>
+    </div>
+    
+    <script src="../js/reserva.js"></script>
+    <script src="../js/home.js"></script>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+
+</body>
+
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/recuperarSenha.css">
+    <script src="https://vlibras.gov.br/vlibras-plugin/vlibras.js"></script>
+</head>
+
+<!-- NAVBAR -->
+<header class="header">
+    <a href="home.html"><img class="logo" src="../img/Logo1.png"></a>
+  
+  
+    <input type="checkbox" id="check">
+       <label for="check" class="icon">
+         <i class='bx bx-menu' id="menu-icon"></i>
+         <i class='bx bx-x' id="close-icon"></i>
+        </label>
+  
+    <nav class="navbar">
+      <a href="login.html" style="--i:0;">Login</a>
+      <a href="matricula.html" style="--i:1;">Matrícula</a>
+      <a href="visita.html" style="--i:2;">Visita</a>
+      <a href="sobrenos.html" style="--i:3;">Sobre Nós</a>
+    </nav>
+  
+  </header>
+
+<body>
+
+<div class="login-container">
+
+    <div class="logo-form">
+        <img src="../img/Logo2.png" alt="Pieno Logo">
+    </div>
+
+    <form class="login-form">
+
+    <div class="form-group">
+        <label for="login">Login</label>
+        <select id="login" name="login">
+            <option value="administrador">Administrador</option>
+            <option value="professor">Professor</option>
+            <option value="responsavel">Responsável</option>
+        </select>
+    </div>
+    <br>
+    <div class="form-group">
+        <label for="rm">Usuário</label>
+        <input type="text" id="rm" name="rm"  placeholder="seu RM">
+    </div><br>
+    <div class="form-group">
+        <label for="cpf">Cpf</label>
+        <input type="text" id="cpf" name="cpf"  placeholder="seu cpf">
+        </div><br>
+        <div class="form-group">
+            <label for="senha">Nova senha</label>
+            <input type="password" id="senha" name="senha"  placeholder="sua nova senha">
+            </div><br>
+            
+    <button type="button" class="solid" onclick="recuperarSenha()">Recuperar</button>
+    <button type="button" class="solid"><a href="login.html">Voltar</a></button>
+    <div id="resposta">
+    </div>
+
+</form>
+</div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-auth.js"></script>
+    <script src="js/login.js"></script>
+
+
+
+<!-- ACESSIBILIDADE -->
+<div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+  <!-- ACESSIBILIDADE -->
+
+</body>
+</html>

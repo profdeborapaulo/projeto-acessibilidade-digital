@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Achados e Perdidos</title>
+    <link rel="stylesheet" href="../style/achados.css">
+</head>
+<header class="header">
+    <a data-page="home"href="#" ><img class="logo" src="../img/Logo1.png"></a>
+    
+    
+      <input type="checkbox" id="check">
+         <label for="check" class="icon">
+           <i class='bx bx-menu' id="menu-icon"></i>
+           <i class='bx bx-x' id="close-icon"></i>
+          </label>
+    
+      <nav class="navbar">
+        <a href="../../visitante/html/login.html" style="--i:0;">Logout</a>
+        <a data-page="uniformes"href="uniformes.html" style="--i:2;">Uniforme</a>
+        <a data-page="sobrenos"href="../html/sobrenos.html" style="--i:3;">Sobre Nós</a>
+        <a data-page="perfil"href="perfil.html" style="--i:4;">Meu perfil</a>
+      </nav>
+    
+    </header>
+<body>
+<div class="container-home">
+    <!-- BOTAO -->
+  <div class="acima">
+    
+    <a data-page="home" href="#"><button class="button">
+        <div class="button-box">
+          <span class="button-elem">
+            <svg viewBox="0 0 46 40" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M46 20.038c0-.7-.3-1.5-.8-2.1l-16-17c-1.1-1-3.2-1.4-4.4-.3-1.2 1.1-1.2 3.3 0 4.4l11.3 11.9H3c-1.7 0-3 1.3-3 3s1.3 3 3 3h33.1l-11.3 11.9c-1 1-1.2 3.3 0 4.4 1.2 1.1 3.3.8 4.4-.3l16-17c.5-.5.8-1.1.8-1.9z"
+              ></path>
+            </svg>
+          </span>
+          <span class="button-elem">
+            <svg viewBox="0 0 46 40">
+              <path
+                d="M46 20.038c0-.7-.3-1.5-.8-2.1l-16-17c-1.1-1-3.2-1.4-4.4-.3-1.2 1.1-1.2 3.3 0 4.4l11.3 11.9H3c-1.7 0-3 1.3-3 3s1.3 3 3 3h33.1l-11.3 11.9c-1 1-1.2 3.3 0 4.4 1.2 1.1 3.3.8 4.4-.3l16-17c.5-.5.8-1.1.8-1.9z"
+              ></path>
+            </svg>
+          </span>
+        </div>
+      </button></a>
+      <div class="text-h1">
+      <h1> ITENS PERDIDOS</h1>
+    </div>
+    </div>
+    <!-- FIM BOTAO -->
+
+    <div class="container">
+        <div class="cartoes">
+            <div class="linha">
+                <div class="cards1" id="cardContainer"></div>
+            </div>
+        </div>
+    </div>
+
+</div> 
+
+<script src="../js/achados.js"></script>
+<script src="../js/Href.js"></script>
+
+<div vw class="enabled">
+  <div vw-access-button class="active"></div>
+  <div vw-plugin-wrapper>
+    <div class="vw-plugin-top-wrapper"></div>
+  </div>
+</div>
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+<script>
+  new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
+
+</body>
+</html>

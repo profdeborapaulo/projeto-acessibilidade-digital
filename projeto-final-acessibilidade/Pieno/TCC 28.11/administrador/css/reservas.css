@@ -1,0 +1,311 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+
+/* NAVBAR */
+
+/* Container para a navbar e o botão */
+.navbar-container {
+    display: flex;
+    position: relative;
+}
+
+.navbar {
+    width: 250px; /* Largura padrão da navbar */
+    height: 100vh; /* Altura da navbar para a tela inteira */
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #1C2454; /* Cor principal da navbar */
+    overflow-x: hidden;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    z-index: 1; /* Garante que a navbar fique abaixo do botão */
+}
+
+.navbar.collapsed {
+    transform: translateX(-100%); /* Move a navbar para fora da tela */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centraliza a logo horizontalmente */
+    padding: 20px 0; /* Ajusta o padding superior e inferior */
+    flex-shrink: 0; /* Impede que o container da logo encolha */
+    flex-grow: 0; /* Impede que o container da logo cresça */
+}
+
+.logo {
+    max-width: 100%; /* Ajusta a largura máxima da logo */
+    height: auto; /* Mantém a proporção da altura */
+    max-height: 120px; /* Define uma altura máxima para a logo */
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3)); /* Sombra de filtro para efeito 3D */
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.logo:hover {
+    filter: drop-shadow(0 8px 12px rgba(0, 0, 0, 0.5)); /* Intensificação da sombra no hover */
+    transform: rotateX(5deg) rotateY(5deg) scale(1.1); /* Efeito 3D com zoom */
+}
+
+.pag{
+    text-align: center;
+    color: #0096D5;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding-left: 0;
+    margin: 0;
+}
+
+.nav-links a {
+    padding: 15px 0;
+    text-decoration: none;
+    font-size: 16px; /* Ajuste do tamanho dos links */
+    color: #f1f1f1; /* Cor dos links */
+    display: block;
+    transition: color 0.3s, transform 0.3s, box-shadow 0.3s;
+    margin: 10px 0;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.nav-links a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, rgba(255,255,255,0.2), rgba(255,255,255,0.1));
+    transition: left 0.3s;
+    z-index: -1;
+}
+
+.nav-links a:hover::before {
+    left: 100%;
+}
+
+.nav-links a:hover {
+    color: #ffffff; /* Cor do texto no hover */
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* Sombra mais clara */
+}
+
+.toggle-btn {
+    background-color: #1C2454; /* Cor do botão */
+    color: #f1f1f1; /* Cor do texto do botão */
+    border: none;
+    cursor: pointer;
+    position: fixed; /* Mantém o botão fixo na tela */
+    top: 10px;
+    right: 10px; /* Posiciona o botão na tela */
+    transition: background-color 0.3s, transform 0.3s;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    z-index: 2; /* Mantém o botão acima da navbar */
+}
+
+.toggle-btn:hover {
+    background-color: #162e7d; /* Cor do botão no hover */
+    transform: scale(1.1);
+}
+
+/* Esconde logo e links quando a navbar está colapsada */
+.navbar.collapsed .nav-links,
+.navbar.collapsed .logo-container {
+    display: none;
+}
+
+/* Ajustes de responsividade */
+@media (max-width: 768px) {
+    .navbar {
+        width: 100%; 
+        height: 100vh; 
+    }
+
+    .navbar.collapsed {
+        transform: translateX(-100%); 
+    }
+
+    .logo-container {
+        padding: 10px 0; 
+        max-height: 80px; 
+    }
+
+    .logo {
+        max-width: 80%; 
+        max-height: 70px; 
+    }
+
+    .nav-links a {
+        font-size: 14px; 
+    }
+}
+
+/* Link ativo */
+.nav-links a.active {
+    background-color: #061255; /* Cor de fundo quando o link está ativo */
+    color: #ffffff; /* Cor do texto quando o link está ativo */
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); /* Sombra mais clara */
+    
+}
+
+/* Ajustes adicionais */
+.nav-links a.active::before {
+    left: 0; /* Garante que o destaque do link ativo esteja visível */
+}
+/* FIM NAVBAR */
+
+
+/* Estilo base para a página de confirmação */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0e4eb; /* Alterado para um cinza suave */
+}
+
+.container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #1C2454; /* Alterado para um cinza claro */
+    border-radius: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 80px;
+    margin-left: 250px;
+}
+
+/* Estilo para cada reserva */
+.reserva {
+    background-color: #f8f9fc; /* Cor de fundo suave */
+    border-radius: 10px; /* Bordas arredondadas menores */
+    padding: 10px; /* Espaçamento interno reduzido */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    transition: transform 0.2s; /* Efeito de transição suave */
+    max-width: 100%; /* Garante que não ultrapasse a largura do container */
+    margin-right: 50px;
+    margin-bottom: 10px;
+}
+
+/* Efeito ao passar o mouse sobre a reserva */
+.reserva:hover {
+    transform: scale(1.02); /* Aumenta ligeiramente ao passar o mouse */
+}
+
+/* Estilo para os títulos das intenções */
+.reserva h3 {
+    margin: 0; /* Remove margens padrão */
+    font-size: 16px; /* Tamanho de fonte menor para o título */
+    color: #333; /* Cor do texto do título */
+}
+
+/* Estilo para os parágrafos dentro da reserva */
+.reserva p {
+    margin: 3px 0; /* Margem vertical entre os parágrafos reduzida */
+}
+
+
+
+h1 {
+    text-align: center;
+    color: #ffffff; /* Mantido */
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #1C2454; /* Mantido */
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#detalhes-reserva {
+    padding: 20px;
+    background-color: #edeff8; /* Alterado para um cinza muito claro */
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    margin-bottom: 20px;
+}
+
+.reserva-info {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #ffffff; /* Mantido, mas pode ser alterado para um tom mais suave */
+    border: 1px solid #404874; /* Alterado para um cinza mais suave */
+    position: relative;
+}
+
+.reserva-info p {
+    margin: 5px 0;
+}
+
+.reserva-info .icon-delete {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 18px;
+    color: #d9534f; /* Red color for delete icon */
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.reserva-info .icon-delete:hover {
+    color: #a94442; /* Darker red for hover effect */
+}
+
+button {
+    padding: 12px 24px;
+    background-color: #1C2454; /* Mantido */
+    color: white; /* Mantido */
+    border: none; 
+    border-radius: 12px; 
+    cursor: pointer; 
+    font-size: 16px; 
+    transition: background-color 0.3s ease, transform 0.3s ease; 
+    font-weight: bold; 
+}
+
+button:hover {
+    background-color: #16203f; /* Mantido */
+    transform: scale(1.05); 
+}
+
+/* Ajustes de responsividade */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px; 
+        background-color: #f8f9fa; /* Certifique-se de que o fundo permanece consistente em telas menores */
+     }
+}
+
+/* Mensagem de ausência de reservas */
+#mensagem-vazia {
+    text-align: center;
+    color: #666;
+    font-size: 18px;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #edeff8;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+

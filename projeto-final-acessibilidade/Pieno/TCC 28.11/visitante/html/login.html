@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Pieno</title>
+    <link rel="stylesheet" href="../style/login.css">
+    <script src="https://vlibras.gov.br/vlibras-plugin/vlibras.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<!-- NAVBAR -->
+<header class="header">
+    <a href="home.html"><img class="logo" src="../img/Logo1.png"></a>
+
+    <input type="checkbox" id="check">
+    <label for="check" class="icon">
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <i class='bx bx-x' id="close-icon"></i>
+    </label>
+
+    <nav class="navbar">
+        <a href="login.html" style="--i:0;">Login</a>
+        <a href="matricula.html" style="--i:1;">Matrícula</a>
+        <a href="visita.html" style="--i:2;">Visita</a>
+        <a href="sobrenos.html" style="--i:3;">Sobre Nós</a>
+    </nav>
+</header>
+
+<body>
+    <div class="cloud top-left"></div>
+    <div class="cloud top-right"></div>
+    <div class="cloud bottom-left"></div>
+    <div class="cloud bottom-right"></div>
+
+    <div class="login-container">
+        <div class="logo-form">
+            <img src="../img/Logo2.png" alt="Pieno Logo">
+        </div>
+        <form class="login-form">
+            <div class="form-group">
+                <label for="login">Login</label>
+                <select id="login" name="login">
+                    <option value="administrador">Administrador</option>
+                    <option value="professor">Professor</option>
+                    <option value="responsavel">Responsável</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="rm">Usuário</label>
+                <input type="text" id="rm" name="rm" placeholder="seu RM">
+            </div>
+            <div class="form-group">
+                <label for="senha">Senha</label>
+                <div class="password-container">
+                    <input type="password" id="password" name="password" placeholder="Digite sua senha">
+                    <button type="button" class="toggle-password"></button>
+                </div>
+            </div>
+        </form>
+        <button type="button" class="solid" href="recuperarSenha.html" onclick="recuperarHref()" id="recover-password-button">Recuperar senha</button>
+        <button type="button" class="solid" id="login-button" onclick="login()">Entrar</button>
+    </div>
+
+    <!-- Popup personalizado -->
+    <div id="popupAlert" class="popup hidden">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <p id="popupMessage">Mensagem do alerta</p>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.5.0/firebase-auth.js"></script>
+    <script src="js/login.js"></script>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+</body>
+</html>
+

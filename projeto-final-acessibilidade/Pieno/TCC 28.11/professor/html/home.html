@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../style/home.css">
+</head>
+<body>
+
+    <div id="navbar" class="navbar full-screen">
+        <div class="pag">
+            <h4>Professor</h4>
+        </div>
+        <div class="logo-container">
+           <a href="home.html"> <img src="../img/Logo.png" alt="Logo" class="logo"></a>
+        </div>
+        <div class="nav-links">
+            <a href="#" data-page="achados">Achados e Perdidos</a>
+            <a href="#"data-page="reserva" >Reserva de Salas</a>
+            <a href="#"data-page="confirmacao">Reservas Realizadas</a>
+            <a href="#"data-page="calendario">Calendário</a>
+            <a href="#"data-page="perfil" >Meu perfil</a>
+            <a href="../../visitante/html/login.html" style="--i:0;">Logout</a>
+        </div>
+    </div>
+    
+
+    <script src="../js/home.js"></script>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+      
+</body>
+</html>

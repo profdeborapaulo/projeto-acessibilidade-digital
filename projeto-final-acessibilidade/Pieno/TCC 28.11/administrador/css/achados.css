@@ -1,0 +1,437 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+
+/* NAVBAR */
+
+/* Container para a navbar e o botão */
+.navbar-container {
+    display: flex;
+    position: relative;
+}
+
+.navbar {
+    width: 250px; 
+    height: 100vh; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #1C2454; 
+    overflow-x: hidden;
+    transition: transform 0.3s;
+    display: flex;
+    flex-direction: column;
+    z-index: 1000; 
+}
+
+.navbar.collapsed {
+    transform: translateX(-100%); 
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    padding: 20px 0; /* Ajusta o padding superior e inferior */
+    flex-shrink: 0; /* Impede que o container da logo encolha */
+    flex-grow: 0; /* Impede que o container da logo cresça */
+}
+
+.logo {
+    max-width: 100%; /* Ajusta a largura máxima da logo */
+    height: auto; /* Mantém a proporção da altura */
+    max-height: 120px; /* Define uma altura máxima para a logo */
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3)); /* Sombra de filtro para efeito 3D */
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.logo:hover {
+    filter: drop-shadow(0 8px 12px rgba(0, 0, 0, 0.5)); /* Intensificação da sombra no hover */
+    transform: rotateX(5deg) rotateY(5deg) scale(1.1); /* Efeito 3D com zoom */
+}
+
+.pag{
+    text-align: center;
+    color: #0096D5;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding-left: 0;
+    margin: 0;
+}
+
+.nav-links a {
+    padding: 15px 0;
+    text-decoration: none;
+    font-size: 16px; 
+    color: #f1f1f1; 
+    display: block;
+    transition: color 0.3s, transform 0.3s, box-shadow 0.3s;
+    margin: 10px 0;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.nav-links a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, rgba(255,255,255,0.2), rgba(255,255,255,0.1));
+    transition: left 0.3s;
+    z-index: -1;
+}
+
+.nav-links a:hover::before {
+    left: 100%;
+}
+
+.nav-links a:hover {
+    color: #ffffff; 
+    transform: scale(1.05);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); 
+}
+
+.toggle-btn {
+    background-color: #1C2454; 
+    color: #f1f1f1; 
+    border: none;
+    cursor: pointer;
+    position: fixed; 
+    top: 10px;
+    right: 10px; 
+    transition: background-color 0.3s, transform 0.3s;
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    z-index: 2000; 
+}
+
+.toggle-btn:hover {
+    background-color: #162e7d; 
+    transform: scale(1.1);
+}
+
+/* Esconde logo e links quando a navbar está colapsada */
+.navbar.collapsed .nav-links,
+.navbar.collapsed .logo-container {
+    display: none;
+}
+
+/* Ajustes de responsividade */
+@media (max-width: 768px) {
+    .navbar {
+        width: 100%; 
+        height: 100vh; 
+    }
+
+    .navbar.collapsed {
+        transform: translateX(-100%); 
+    }
+
+    .logo-container {
+        padding: 10px 0; 
+        max-height: 80px; 
+    }
+
+    .logo {
+        max-width: 80%; 
+        max-height: 70px; 
+    }
+
+    .nav-links a {
+        font-size: 14px; 
+    }
+}
+
+/* Link ativo */
+.nav-links a.active {
+    background-color: #061255;
+    color: #ffffff; 
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); 
+    
+}
+
+/* Ajustes adicionais */
+.nav-links a.active::before {
+    left: 0; 
+}
+/* FIM NAVBAR */
+
+
+/* Container principal */
+.container {
+    padding: 20px; 
+    box-sizing: border-box; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin-top: 50px;  
+    align-content: center;
+    z-index: 1;
+}
+
+.img{
+    width: 160px;
+    height: 224px;
+}
+
+/* Container das cartas */
+.cards1 {
+    display: flex; 
+    flex-wrap: wrap; 
+    gap: 3rem; 
+    margin-top: 3rem; 
+    justify-content: flex-start; 
+    
+}
+
+/* Estilo das cartas */
+.card {
+    --background: linear-gradient(to right, #1C2454 0%, #0096D5 100%);
+    width: 190px;
+    height: 254px;
+    padding: 5px; 
+    border-radius: 1rem; 
+    overflow: visible; 
+    background: #74ebd5; 
+    background: var(--background); 
+    position: relative; 
+    z-index: 1; 
+    margin: 0; 
+}
+
+.cartoes{
+    padding: 50px;
+    align-items: center;
+    align-content: center;
+}
+
+/* Efeitos das cartas */
+.card::before,
+.card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    z-index: -1;
+}
+
+.card::before {
+    background: linear-gradient(to bottom right, #1C2454 0%, #0096D5 100%);
+    transform: rotate(2deg);
+}
+
+.card::after {
+    background: linear-gradient(to top right, #1C2454 0%, #0096D5 100%);
+    transform: rotate(-2deg);
+}
+
+.card-info {
+    --color: #f5fbfde1;
+    background: var(--color);
+    color: var(--color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    border-radius: 0.7rem;
+    position: relative;
+    z-index: 2;
+}
+
+.card .title {
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+
+.card:hover::before,
+.card:hover::after {
+    opacity: 0;
+}
+
+.card:hover .card-info {
+    color: #74ebd5;
+    transition: color 1s;
+}
+
+.linha {
+    display: flex; /* Usar Flexbox para o contêiner */
+    flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha */
+    justify-content: flex-start; /* Alinha os itens à esquerda */
+}
+
+
+.botao{
+    background-color: #1C2454;
+    color: white;
+    border-radius: 20px;
+    width: 220px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Estilos para o modal */
+.modal {
+    display: none; /* Inicialmente escondido */
+    position: fixed;
+    z-index: 1000;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); /* Centraliza o modal */
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo escurecido com mais opacidade */
+    backdrop-filter: blur(5px); /* Efeito de desfoque no fundo */
+    justify-content: center;
+    align-items: center; /* Centraliza o conteúdo */
+}
+
+.modal-content {
+    background-color: #f9f9f9; 
+    padding: 20px;
+    border-radius: 10px; 
+    width: 100%;
+    max-width: 600px; 
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); 
+    position: relative;
+    animation: modalFadeIn 0.5s ease-in-out; 
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center;
+}
+
+/* Animação de fade-in para o modal */
+@keyframes modalFadeIn {
+    from { opacity: 0; transform: translate(-50%, -60%); }
+    to { opacity: 1; transform: translate(-50%, -50%); }
+}
+
+/* Estilo para o botão de fechar (X) */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+}
+
+.close:hover {
+    color: #FF640D; 
+}
+
+/* Título do modal */
+.modal h2 {
+    text-align: center;
+    color: #1C2454; /* Cor principal */
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+/* Input de arquivo */
+input[type="file"] {
+    width: 100%; 
+    padding: 12px; 
+    margin-bottom: 20px;
+    border: 2px solid #ddd; 
+    border-radius: 10px;
+    font-size: 16px; 
+    cursor: pointer; 
+    transition: border-color 0.3s, background-color 0.3s; 
+    background-color: #fff; 
+}
+
+/* Estilo quando o input está em foco */
+input[type="file"]:focus {
+    border-color: #1C2454;
+    outline: none; 
+    background-color: #f0f8ff; 
+}
+
+/* Estilo para o texto do input (opcional) */
+input[type="file"]::file-selector-button {
+    background-color: #0096D5; 
+    color: white; 
+    border: none; 
+    border-radius: 10px; 
+    padding: 10px 15px; 
+    cursor: pointer; 
+}
+
+input[type="file"]::file-selector-button:hover {
+    background-color: #026e9c; 
+}
+
+/* Estilo do botão de enviar */
+button[type="submit"] {
+    width: auto; 
+    padding: 10px 20px;
+    background-color: #1C2454;
+    color: #fff;
+    border: none;
+    border-radius: 8px; 
+    font-size: 16px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block; 
+    margin: 0 auto; 
+}
+
+
+button[type="submit"]:hover {
+    background-color: #050b27; 
+}
+
+
+/* Botão de remover */
+.remove-button {
+    display: block;
+    margin: 10px auto 0; /* Centraliza o botão */
+    padding: 8px 16px;
+    background-color: #AD3574;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.remove-button:hover {
+    background-color: #5f0e38; /* Cor mais escura no hover */
+}
+
+/* Responsividade extra para telas menores */
+@media (max-width: 600px) {
+    .modal-content {
+        width: 90%; /* Modal se ajusta para telas pequenas */
+    }
+}
+
+.remove{
+    align-items: center;
+    align-content: center;
+}
