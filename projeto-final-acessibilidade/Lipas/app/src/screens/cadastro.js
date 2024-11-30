@@ -2,7 +2,6 @@ import React from 'react';
 import { useState } from 'react';
 import { View, Image, TouchableOpacity, Text, StyleSheet, ScrollView} from 'react-native';
 import { Input }  from 'react-native-elements';
-import { useTheme } from './ThemeContext'; 
 import { auth, db } from '../services/firebase/conf';
 import { doc, setDoc } from 'firebase/firestore';
 import { createUserWithEmailAndPassword } from 'firebase/auth';
@@ -14,7 +13,7 @@ export default function CadastroScreen({ navigation }){
   const [userEmail, setEmail] = useState('');
   const [userSenha, setSenha] = useState('');
   const [message, setMessage] = useState('');
-  const { theme, switchTheme } = useTheme();
+
   const handleSignUp = async () => {
     try {
       const userCredential = await createUserWithEmailAndPassword(auth, userEmail, userSenha);
@@ -35,7 +34,7 @@ export default function CadastroScreen({ navigation }){
   };
 
   return (
-    <View style={[styles.container, { backgroundColor: theme.background }]}>
+    <View style={styles.container}>
     <Image source = {require('../assets/borboleta.png')} style = {styles.borboleta} />
     <View style={styles.container2}>
     
