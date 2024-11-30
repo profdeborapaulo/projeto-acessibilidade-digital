@@ -1,3 +1,11 @@
+PARA EMULAR ATRAVÉS DA EXPO
+   npx expo start
+
+
+PARA EMULAR ATRAVÉS DO ANDROID STUDIO
+   npm run android
+
+
 INSTALAÇÕES NECESSÁRIAS
 
 - Instalar bibliotecas de dependências: 
